@@ -1,0 +1,5 @@
+Solve_OOP_assignment,120,1
+visit_parents,240,1
+sleep,25,2
+Respond_to_emails,45,2
+eat_sushi,30,3
