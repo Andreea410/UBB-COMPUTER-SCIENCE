@@ -65,6 +65,10 @@ int main(int argc , char*argv[])
                 pthread_join(threads[i],NULL);
 
         pthread_barrier_destroy(&d->barrier);
+        pthread_mutex_destroy(&d->mutex);
+        free(d);
+        free(threads);
+
 
 
         return 0;
