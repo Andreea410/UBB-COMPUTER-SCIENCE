@@ -1,0 +1,4 @@
+IT:programming
+HR:connecting with people
+FrontDesk:managing the office
+BackEnd:managing the server

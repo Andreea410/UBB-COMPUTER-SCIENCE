@@ -1,0 +1,18 @@
+Mihai:mihai@yahoo.com:volei,programming:IT
+Emilia:emilia@yahoo:reading:HR
+Andrei:andrei@gamil.com:tennis,football:HR
+Valer:valer@yahoo.com:playing on computer:HR
+Ionut:ionut@yahoo.com:eating:IT
+Ioana:ioana@yahoo.com:makeup:BackEnd
+Alexandra:alexandra@yahoo.com:volei:BackEnd
+Lacy:lacy@yahoo.com:server player:IT
+Mariana:mariana@yahoo.com:writting,drawing:Unassigned
+Luana:luana@gmail.com:server:BackEnd
+Horatiu:horatiu@yahoo.com:server :HR
+Adelin:adelin@yaho.com:server user:Unassigned
+Teodora:teodora@email.:managing:Unassigned
+Mario:mario@email:managing server:Unassigned
+Andreea:andreea@yahoo:eating:FrontDesk
+Maria:maria@knas:nature:Unassigned
+LIana:liana"yahoo:kiasn:Unassigned
+jkbsd:ksnd:jkas:Unassigned
