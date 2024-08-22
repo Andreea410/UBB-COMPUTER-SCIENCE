@@ -1,0 +1,109 @@
+﻿  file-work.cpp
+A:\CS-UBB\SEMESTRUL II\GRAFURI\PracticalWork1\PracticalWork1\file-work.cpp(157,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+A:\CS-UBB\SEMESTRUL II\GRAFURI\PracticalWork1\PracticalWork1\file-work.cpp(167,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99): error C2280: 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare(const std::_Uhash_compare<_Kty,_Hasher,_Keyeq> &)': attempting to reference a deleted function
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99): error C2280:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99): error C2280:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99): error C2280:             _Kty=std::pair<int,int>,
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99): error C2280:             _Hasher=std::hash<std::pair<int,int>>,
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99): error C2280:             _Keyeq=std::equal_to<std::pair<int,int>>
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99): error C2280:         ]
+  (compiling source file 'file-work.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xhash(174,1):
+  compiler has generated 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare' here
+          with
+          [
+              _Kty=std::pair<int,int>,
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xhash(174,1):
+  'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare(const std::_Uhash_compare<_Kty,_Hasher,_Keyeq> &)': function was implicitly deleted because a data member invokes a deleted or inaccessible function 'std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true>::_Compressed_pair(const std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true> &)'
+          with
+          [
+              _Kty=std::pair<int,int>,
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>
+          ]
+          and
+          [
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(1537,1):
+  'std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true>::_Compressed_pair(const std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true> &)': function was implicitly deleted because a base class invokes a deleted or inaccessible function 'std::hash<std::pair<int,int>>::hash(const std::hash<std::pair<int,int>> &)'
+          with
+          [
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\type_traits(2386,1):
+  'std::hash<std::pair<int,int>>::hash(const std::hash<std::pair<int,int>> &)': function was implicitly deleted because a base class invokes a deleted or inaccessible function 'std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(const std::_Conditionally_enabled_hash<_Kty,false> &)'
+          with
+          [
+              _Kty=std::pair<int,int>
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\type_traits(2373,5):
+  'std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(const std::_Conditionally_enabled_hash<_Kty,false> &)': function was explicitly deleted
+          with
+          [
+              _Kty=std::pair<int,int>
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,99):
+  the template instantiation context (the oldest one first) is
+  	A:\CS-UBB\SEMESTRUL II\GRAFURI\PracticalWork1\PracticalWork1\repository.h(15,50):
+  	see reference to class template instantiation 'std::unordered_map<std::pair<int,int>,int,std::hash<std::pair<int,int>>,std::equal_to<std::pair<int,int>>,std::allocator<std::pair<const std::pair<int,int>,int>>>' being compiled
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(66,30):
+  	see reference to class template instantiation 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=std::pair<int,int>,
+              _Ty=int,
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>,
+              _Alloc=std::allocator<std::pair<const std::pair<int,int>,int>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xhash(332,56):
+  	see reference to class template instantiation 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' being compiled
+          with
+          [
+              _Kty=std::pair<int,int>,
+              _Ty=int,
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>,
+              _Alloc=std::allocator<std::pair<const std::pair<int,int>,int>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(49,5):
+  	while compiling class template member function 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>::_Umap_traits(const _Tr &) noexcept(false)'
+          with
+          [
+              _Kty=std::pair<int,int>,
+              _Ty=int,
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>,
+              _Alloc=std::allocator<std::pair<const std::pair<int,int>,int>>,
+              _Tr=std::_Uhash_compare<std::pair<int,int>,std::hash<std::pair<int,int>>,std::equal_to<std::pair<int,int>>>
+          ]
+  		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xhash(373,21):
+  		see the first reference to 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>::_Umap_traits' in 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::_Hash'
+          with
+          [
+              _Kty=std::pair<int,int>,
+              _Ty=int,
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>,
+              _Alloc=std::allocator<std::pair<const std::pair<int,int>,int>>
+          ]
+  		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(106,30):
+  		see the first reference to 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::_Hash' in 'std::unordered_map<std::pair<int,int>,int,std::hash<std::pair<int,int>>,std::equal_to<std::pair<int,int>>,std::allocator<std::pair<const std::pair<int,int>,int>>>::unordered_map'
+          with
+          [
+              _Kty=std::pair<int,int>,
+              _Ty=int,
+              _Hasher=std::hash<std::pair<int,int>>,
+              _Keyeq=std::equal_to<std::pair<int,int>>,
+              _Alloc=std::allocator<std::pair<const std::pair<int,int>,int>>
+          ]
+  		A:\CS-UBB\SEMESTRUL II\GRAFURI\PracticalWork1\PracticalWork1\repository.h(18,5):
+  		see the first reference to 'std::unordered_map<std::pair<int,int>,int,std::hash<std::pair<int,int>>,std::equal_to<std::pair<int,int>>,std::allocator<std::pair<const std::pair<int,int>,int>>>::unordered_map' in 'DoubleDictGraph::DoubleDictGraph'
+  
