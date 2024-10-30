@@ -1,0 +1,62 @@
+MENTION: !!! 0\ represents empty list
+
+heterogeneous list : [[1,3],a,[6],7]
+H=[1,3]
+T=[a,[b],7]
+			
+			O/ if n=0
+process(l1l2..n) = {	process(l2...ln) if l1 is a list
+			l1 U process(l2..ln) if l1 is atom
+			
+
+---given a list of numbers and sublists of numbers , substitute each sublist in which the sum of elements is odd with the first element of the sublist(Assume sublists are not empty)
+
+EX:[1,2,[2,4],7,3,[4,6,7],[1],8,10,[3,2]] ===> [1,2,[2,4],7,3,4,1,8,10,3]
+
+
+modifiy(l1l2...ln) = {	0/ if n=0
+			just(l1) U modify(l2...ln) if l1 is a list and l1=l11l12l..l1n , sum(l11,l12..l1n) %2
+			l1 U modify(l2...ln) otherwise
+
+----Given a heterogenous list , composed of numbers and lists of numbers , reverse the odd numbers from the list so we have a mountain aspect (3++ , incr. seq followed by decr seq)
+
+ex: [1,2,[1,2,3,2],6,[1,2],[1,4,5,6,7,1],8,2,[4,3,1],11,5,[6,7,6],8]]
+	   [2,2]		[4,6]                      [6,6]
+
+
+mountain(l1l2...ln,f) = { 
+				true if n=1 and f=1
+				mountain(l2l3...ln,0) if l1<l2 and f=0
+				mountain(l2l3...ln,1) is l1>l2 and f=0
+				mountain(l2l3...ln,1) if l1>l2 and f=1
+				false otherwise
+			}
+
+reverse_odd(l1...ln) = {
+				0/ if n=0;
+				l1 U remove_add(l2..ln) if l1 mod 2=0
+				remove_odd(l2l3...ln) otherwise
+			}
+
+process(l1l2...ln) = {
+			0/ if n=0
+			remove_odd(l1) U proces(l2l3...ln) if l1 is a list
+							mainMountain(l1)
+			l1 U process(l2l3...ln) otherwise
+           	      }
+
+mainMountain(l1l2..ln) = {
+				mountain(l1l2...ln , 0) if l1> l2
+				false otherwise
+			}
+
+----Given a linear numerical list , remove all subsequences of consecutive values.
+Ex: [1,2,4,6,7,8,10] ===>[4,10]
+
+removeConsecutives(l1l2l3...ln) = {
+					0/ ,if n=2 and l2-l1=1
+					l1 ,if n=1
+					removeConsecutives(l2l3l4...ln) , if l2-l1 = 1 and l3-l2 = 1	 
+					removeConsecutives(l3l4...ln) , if l2-l1 = 1 and l3-l2 != 1
+					l1 U removeConsecutives(l2l3l4...ln) if l2-l1!=1
+			       	  }
