@@ -1,0 +1,12 @@
+------EXE_STACK------
+My stack contains : 
+------SYM_TABLE------
+a -> 17
+b -> 18
+
+------OUT------
+My list contains 18
+
+------FILE_TABLE------
+
+

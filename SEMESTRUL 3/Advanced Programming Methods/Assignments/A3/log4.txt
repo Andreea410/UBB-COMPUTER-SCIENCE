@@ -1,0 +1,1440 @@
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+
+SYM_TABLE
+varf -> E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+OUT
+My list contains 
+FILE_TABLE
+E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+int varc
+
+SYM_TABLE
+varf -> E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+OUT
+My list contains 
+FILE_TABLE
+E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+
+SYM_TABLE
+varf -> E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+model.statements.ReadFileStatement@6267c3bb
+
+SYM_TABLE
+varf -> E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+E:\CS-UBB\SEMESTRUL 3\MAP\ASSIGNMENTS\Toy-Language-Interpreter\Toy_Language_Interpreter\test.in
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+int varc
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+model.statements.ReadFileStatement@6267c3bb
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+int varc
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+model.statements.ReadFileStatement@6267c3bb
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+int varc
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+model.statements.ReadFileStatement@6267c3bb
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+int varc
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+model.statements.ReadFileStatement@6267c3bb
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))
+print(varc)
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);model.statements.CloseReadFileStatement@246b179d)
+model.statements.ReadFileStatement@533ddba
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);model.statements.CloseReadFileStatement@246b179d)
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : model.statements.CloseReadFileStatement@246b179d
+print(varc)
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : model.statements.CloseReadFileStatement@246b179d
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+50
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+50
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+int varc
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+model.statements.ReadFileStatement@6267c3bb
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))
+print(varc)
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);model.statements.CloseReadFileStatement@246b179d)
+model.statements.ReadFileStatement@533ddba
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);model.statements.CloseReadFileStatement@246b179d)
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : model.statements.CloseReadFileStatement@246b179d
+print(varc)
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : model.statements.CloseReadFileStatement@246b179d
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+50
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+50
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (String varf;(varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+String varf
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (varf = test.in;(model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))))
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+varf = test.in
+
+SYM_TABLE
+varf -> 
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.OpenReadFileStatement@5910e440;(int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+model.statements.OpenReadFileStatement@5910e440
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int varc;(model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))))
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+int varc
+
+SYM_TABLE
+varf -> test.in
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@6267c3bb;(print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))))
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+model.statements.ReadFileStatement@6267c3bb
+
+SYM_TABLE
+varf -> test.in
+varc -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);(model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d)))
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))
+print(varc)
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (model.statements.ReadFileStatement@533ddba;(print(varc);model.statements.CloseReadFileStatement@246b179d))
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);model.statements.CloseReadFileStatement@246b179d)
+model.statements.ReadFileStatement@533ddba
+
+SYM_TABLE
+varf -> test.in
+varc -> 15
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : (print(varc);model.statements.CloseReadFileStatement@246b179d)
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : model.statements.CloseReadFileStatement@246b179d
+print(varc)
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : model.statements.CloseReadFileStatement@246b179d
+
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+50
+
+FILE_TABLE
+test.in
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+varf -> test.in
+varc -> 50
+
+OUT
+My list contains 15
+50
+
+FILE_TABLE
+
+
