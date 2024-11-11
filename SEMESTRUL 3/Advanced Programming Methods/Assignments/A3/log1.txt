@@ -1,0 +1,209 @@
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> 2
+
+OUT
+My list contains 2
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(v = 2;print(v)))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (v = 2;print(v))
+int v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (v = 2;print(v))
+
+SYM_TABLE
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 2
+
+SYM_TABLE
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+v -> 2
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> 2
+
+OUT
+My list contains 2
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(v = 2;print(v)))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (v = 2;print(v))
+int v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (v = 2;print(v))
+
+SYM_TABLE
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 2
+
+SYM_TABLE
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+v -> 2
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> 2
+
+OUT
+My list contains 2
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(v = 2;print(v)))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (v = 2;print(v))
+int v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (v = 2;print(v))
+
+SYM_TABLE
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 2
+
+SYM_TABLE
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+v -> 2
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> 2
+
+OUT
+My list contains 2
+
+FILE_TABLE
+
+
