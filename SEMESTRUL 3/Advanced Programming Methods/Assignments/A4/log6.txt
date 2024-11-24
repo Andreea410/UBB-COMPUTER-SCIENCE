@@ -1,0 +1,276 @@
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7)))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));print(model.expressions.ArithmeticalExpression@306a30c7))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@306a30c7)
+print(HeapRead(v))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@306a30c7)
+print(HeapRead(v))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@306a30c7)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@306a30c7)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+

@@ -1,0 +1,1380 @@
+EXE_STACK
+My stack contains : (Ref(int) v;(model.statements.HeapAllocationStatement@3d646c37;(Ref(Ref(int)) a;(model.statements.HeapAllocationStatement@41cf53f9;(print(v);print(a))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.HeapAllocationStatement@3d646c37;(Ref(Ref(int)) a;(model.statements.HeapAllocationStatement@41cf53f9;(print(v);print(a)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.HeapAllocationStatement@3d646c37;(Ref(Ref(int)) a;(model.statements.HeapAllocationStatement@41cf53f9;(print(v);print(a)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;(model.statements.HeapAllocationStatement@41cf53f9;(Ref(Ref(int)) a;(model.statements.HeapAllocationStatement@5a10411;(model.statements.HeapAllocationStatement@2ef1e4fa;print(model.expressions.HeapReadExpression@306a30c7))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.HeapAllocationStatement@41cf53f9;(Ref(Ref(int)) a;(model.statements.HeapAllocationStatement@5a10411;(model.statements.HeapAllocationStatement@2ef1e4fa;print(model.expressions.HeapReadExpression@306a30c7)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (model.statements.HeapAllocationStatement@41cf53f9;(Ref(Ref(int)) a;(model.statements.HeapAllocationStatement@5a10411;(model.statements.HeapAllocationStatement@2ef1e4fa;print(model.expressions.HeapReadExpression@306a30c7)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(model.expressions.HeapReadExpression@41cf53f9))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(model.expressions.HeapReadExpression@41cf53f9)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(model.expressions.HeapReadExpression@41cf53f9)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+(v 30)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+(v 30)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a)))))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);((v 30);print(HeapRead(HeapRead(a))))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);((v 30);print(HeapRead(HeapRead(a)))))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 30);print(HeapRead(HeapRead(a))))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+(v 30)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+(v 30)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(HeapRead(a)))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (3 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+print(v)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+print(v)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+(2 Ref(int))
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+(2 Ref(int))
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a))))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(Ref(int)) a;((a v);(print(v);print(a))))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+Ref(Ref(int)) a
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((a v);(print(v);print(a)))
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+(a v)
+
+SYM_TABLE
+a -> (0 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(v);print(a))
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+print(v)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+print(v)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(a)
+
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+(2 Ref(int))
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> (2 Ref(int))
+v -> (1 int)
+
+OUT
+My list contains (1 int)
+(2 Ref(int))
+
+FILE_TABLE
+
+
