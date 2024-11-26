@@ -27,10 +27,6 @@ This repository centralizes contents & assignments from the Faculty of Mathemati
 | 16. | Computer Networks                              | Python 3, TCP, UDP, Cisco Packet Tracer, WebSockets, HTTP, DNS, FTP, Routing, Distance Vector |
 | 17. | Probability Theory & Statistics                | MATLAB, Octave, Random Variables, Poisson Distribution, Hypergeometric Distribution, Cauchy Distribution |
 
-## Important Remarks ⚠️
-- **The contents of lectures and seminaries (except for personal notes) are not my property.** Credits given to the author of each educational resource (BBU Department of CS).
-- For more details regarding exam resources, check: [Google Drive Link](https://drive.google.com/drive/u/0/folders/1TW0SZJbsb5aMYfgKjhyJ4a7z1yArVJE8?fbclid=IwAR1eokzROA8toGSJcGf0e5i0xJGaF1nYO3FouOcfH47zxI_AIAlFF67FAEw)
-
 ## Semester Focus 🎯
 ### **1<sup>st</sup> Semester 📅**
 - **Fundamentals of Programming:** Dive into Python basics, using tools like PyTables, Pygame, and databases. Master concepts such as layered architecture. 🐍
