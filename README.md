@@ -1,7 +1,4 @@
-# University Contents & Assignments from Babes-Bolyai University (BBU)
-
-## About
-This repository centralizes contents & assignments from the Faculty of Mathematics and Informatics (in English) of Babes-Bolyai University from Cluj-Napoca, Romania. 🎓📚
+"This repository serves as a centralized collection of educational materials, assignments, and resources from the Faculty of Mathematics and Computer Science at Babes-Bolyai University, Cluj-Napoca, Romania. All content is provided in English and covers a variety of subjects from the university's computer science and mathematics curriculum. 🎓📚"
 
 ## Index
 | No. | Discipline                                      | Tech Stack/Concepts                                                      |
