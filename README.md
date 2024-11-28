@@ -1,29 +1,5 @@
 "This repository serves as a centralized collection of educational materials, assignments, and resources from the Faculty of Mathematics and Computer Science at Babes-Bolyai University, Cluj-Napoca, Romania. All content is provided in English and covers a variety of subjects from the university's computer science and mathematics curriculum. 🎓📚"
 
-## Index
-| No. | Discipline                                      | Tech Stack/Concepts                                                      |
-|-----|-------------------------------------------------|--------------------------------------------------------------------------|
-| **1<sup>st</sup> Semester**                       |                                                                          |
-| 1.  | Fundamentals of Programming                    | Python, PyTables, Pygame, Pickle, CSV, JSON, SQL, Layered Architecture    |
-| 2.  | Computer Systems Architecture                  | x86 Assembly, C, Low-Level Multi-Module Programming                       |
-| 3.  | Computational Logic                            | CNF, DNF, Propositional Calculus, Predicate Calculus, Boolean Algebra, Logic Circuits |
-| 4.  | Mathematical Analysis                          | Differential Calculus, Integral Calculus, Least Squares, Planar Curves    |
-| 5.  | Algebra                                        | Linear Algebra, Page Ranking, Cryptography, Relational Database          |
-| **2<sup>nd</sup> Semester**                       |                                                                          |
-| 6.  | Object-Oriented Programming                    | C, C++, Qt, Observer Design Pattern, Model-View-Controller Design Pattern|
-| 7.  | Data Structures & Algorithms                   | C++, Test-Driven Development, Sparse Matrices, AVL Trees, Huffman Codes, Red-Black Trees |
-| 8.  | Graph Algorithms                               | Python, PyTables, Topological Sorting, Maximum Flows, Prüfer Coding/Decoding, Graph Coloring |
-| 9.  | Operating Systems                              | bash, C, Processes, Threads, bat File, Solaris, Linux, BSD               |
-| 10. | Dynamical Systems                              | Maple, Sage, Taylor Expansion, Newton's Second Law of Movement            |
-| 11. | Geometry                                       | Analytic Geometry, Quadratic Curves & Surfaces, Affine Geometry          |
-| 12. | Fundamentals of Entrepreneurship               | MVP, Business Plan, Pitching Skills, Economics, Regulations of Launching  |
-| **3<sup>rd</sup> Semester**                       |                                                                          |
-| 13. | Functional & Logic Programming                 | Prolog, Lisp, Collector Variable Method, MAP Functions, Composed Objects, Functors, Binary Trees |
-| 14. | Databases                                      | SQL SERVER, Clustered Index, Fragmentation, Transact-SQL, Data Streams, Conceptual Modeling |
-| 15. | Advanced Programming Methods                   | Java, C#, Scala, MVC, OOD, JavaFX, VM Interpreter, Unsafe Garbage Collector, Heap Memory Management |
-| 16. | Computer Networks                              | Python 3, TCP, UDP, Cisco Packet Tracer, WebSockets, HTTP, DNS, FTP, Routing, Distance Vector |
-| 17. | Probability Theory & Statistics                | MATLAB, Octave, Random Variables, Poisson Distribution, Hypergeometric Distribution, Cauchy Distribution |
-
 ## Semester Focus 🎯
 ### **1<sup>st</sup> Semester 📅**
 - **Fundamentals of Programming:** Dive into Python basics, using tools like PyTables, Pygame, and databases. Master concepts such as layered architecture. 🐍
