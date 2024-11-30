@@ -1,0 +1,708 @@
+------EXE_STACK------
+My stack contains : 
+------SYM_TABLE------
+a -> bool
+v -> 3
+
+------OUT------
+My list contains 3
+
+------FILE_TABLE------
+
+
+EXE_STACK
+My stack contains : (bool a;(int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+bool a
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+int v
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+a = bool
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+if(a){v = 2}else{v = 3}
+
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 3
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 3
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (bool a;(int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+bool a
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+int v
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+a = bool
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+if(a){v = 2}else{v = 3}
+
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 3
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 3
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (bool a;(int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+bool a
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+int v
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+a = bool
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+if(a){v = 2}else{v = 3}
+
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 3
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 3
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 3
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (bool a;(int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+bool a
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+bool a
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (int v;(a = bool;(if(a){v = 2}else{v = 3}
+;print(v))))
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+int v
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+int v
+
+SYM_TABLE
+a -> bool
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (a = bool;(if(a){v = 2}else{v = 3}
+;print(v)))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+a = bool
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+a = bool
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (if(a){v = 2}else{v = 3}
+;print(v))
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+if(a){v = 2}else{v = 3}
+
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+if(a){v = 2}else{v = 3}
+
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 3
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+v = 3
+
+SYM_TABLE
+a -> bool
+v -> 0
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(v)
+
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 3
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+a -> bool
+v -> 3
+
+OUT
+My list contains 3
+
+FILE_TABLE
+
+

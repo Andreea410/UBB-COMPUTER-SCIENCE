@@ -1,0 +1,1026 @@
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8)))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8)))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8)))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))
+print(HeapRead(v))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))
+print(HeapRead(v))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap(v, 30);print(model.expressions.ArithmeticalExpression@b81eda8))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@b81eda8)
+WriteHeap(v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@b81eda8)
+WriteHeap(v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@b81eda8)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(model.expressions.ArithmeticalExpression@b81eda8)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+35
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+35
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap( v, 30);print(HeapRead(v) ADD 5))
+print(HeapRead(v))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap( v, 30);print(HeapRead(v) ADD 5))
+print(HeapRead(v))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap( v, 30);print(HeapRead(v) ADD 5))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (WriteHeap( v, 30);print(HeapRead(v) ADD 5))
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+35
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+35
+
+FILE_TABLE
+
+
+EXE_STACK
+My stack contains : (Ref(int) v;((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))))
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : ((v 20);(print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5))))
+Ref(int) v
+
+SYM_TABLE
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : (print(HeapRead(v));(WriteHeap( v, 30);print(HeapRead(v) ADD 5)))
+(v 20)
+
+SYM_TABLE
+v -> (0 int)
+
+OUT
+My list contains 
+FILE_TABLE
+
+HEAP
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : print(HeapRead(v) ADD 5)
+WriteHeap( v, 30)
+
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 20
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
+EXE_STACK
+My stack contains : 
+SYM_TABLE
+v -> (1 int)
+
+OUT
+My list contains 20
+25
+
+FILE_TABLE
+
+HEAP
+1(INT):-> 30
+
+
