@@ -1,5 +1,5 @@
 
-# Concurrent ToyLanguage: Assignment A5
+# ToyLanguage: Assignment A5
 
 This project enhances the ToyLanguage interpreter by introducing support for concurrent programming. Below are the detailed modifications and features added to the project as part of Assignment A5.
 
