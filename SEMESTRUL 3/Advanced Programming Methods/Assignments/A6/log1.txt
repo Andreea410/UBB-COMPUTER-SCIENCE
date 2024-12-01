@@ -1,0 +1,80 @@
+ID = 1
+Execution Stack = {(int v;(v = 2;print(v)))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {(v = 2;print(v))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {(v = 2;print(v))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {(v = 2;print(v))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {(v = 2;print(v))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {print(v)|v = 2}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {print(v)|v = 2}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {print(v)}
+SymTable = {v-> 2}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {print(v)}
+SymTable = {v-> 2}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 1
+Execution Stack = {}
+SymTable = {v-> 2}
+Output List = {2}
+File Table = {}
+Heap = 
+====================>
+
