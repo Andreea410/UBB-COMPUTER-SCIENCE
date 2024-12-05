@@ -191,8 +191,7 @@ GO
 
 SELECT * FROM Tests
 EXEC addTableTest 2 ,1 , 100 , 1
-EXEC addViewTest 2, 1; -- Adds a reference to the first view in the Views table for test 1
-
+EXEC addViewTest 2, 1;
 GO
 
 SELECT * FROM Views
