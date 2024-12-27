@@ -8,6 +8,5 @@ module Toy.Language.Interpreter {
     exports view.gui.selectwindow to javafx.fxml;
 
     opens view.gui.selectwindow to javafx.fxml;
-
     opens view.gui.executewindow to javafx.fxml;
 }
