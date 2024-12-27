@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="469.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.gui.selectwindow.SelectStatementController">
+   <children>
+      <!-- Use a VBox for vertical arrangement -->
+      <VBox alignment="CENTER" layoutX="9.0" layoutY="16.0" prefHeight="402.0" prefWidth="690.0" spacing="20">
+         <!-- Label at the top -->
+         <Label fx:id="selectStatementLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="480.0" text="Select a statement to execute" textAlignment="CENTER" textOverrun="CLIP">
+            <font>
+               <Font name="Book Antiqua" size="24.0" />
+            </font>
+         </Label>
+
+         <!-- ListView with flexible width and anchored resizing -->
+         <ListView fx:id="statementsListView" prefHeight="278.0" prefWidth="582.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+
+         <!-- Button at the bottom -->
+         <Button fx:id="executeButton" maxWidth="200.0" mnemonicParsing="false" text="Execute statement" onAction="#handleExecuteButtonAction">
+            <font>
+               <Font name="Book Antiqua Bold" size="14.0" />
+            </font>
+         </Button>
+      </VBox>
+   </children>
+</AnchorPane>
