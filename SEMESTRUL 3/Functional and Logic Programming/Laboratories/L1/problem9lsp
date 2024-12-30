@@ -1,0 +1,89 @@
+; 9.
+; a) Write a function that merges two sorted linear lists and keeps double values.
+; b) Write a function to replace an element E by all elements of a list L1 at all levels of a given list L.
+; c) Write a function to determines the sum of two numbers in list representation, and returns the 
+; corresponding decimal number, without transforming the representation of the number from list to 
+; number.
+; d) Write a function to return the greatest common divisor of all numbers in a linear list.
+
+
+;a)
+
+(defun mergeSortedLists (l1 l2)
+  (cond
+    ((null l1) l2)
+    ((null l2) l1)
+    ((< (car l1) (car l2)) (append (list (car l1)) (mergeSortedLists (cdr l1) l2)))
+    (t (append (list (car l2)) (mergeSortedLists l1 (cdr l2))))
+  )
+)
+
+(print(mergeSortedLists '(1 5 10 11 15) '(2 3 4 6 9 10 12 16)))
+
+;b)
+
+(defun replaceElement (l1 E L)
+  (cond
+    ((null l1) nil)
+    ((and (atom (car l1)) (= (car l1) E)) (append L (replaceElement (cdr l1) E L)))
+    ((listp (car l1)) (append (list (replaceElement (car l1) E L)) (replaceElement (cdr l1) E L)))
+    (t (append (list (car l1)) (replaceElement (cdr l1) E L)))
+  )
+)
+
+(print (replaceElement '(1 10 2 6 (2 20 (2))) 2 '(9 9 9)))
+
+;c)
+
+(defun invertList (l)
+  (cond
+    ((null l) nil)
+    (t (append (invertList (cdr l)) (list (car l))))
+  )
+)
+
+(print (invertList '(1 2 3 4 5 6)))
+
+(defun addNumbers (l1 l2 carry)
+(cond
+  ((and (null l1) (null l2) (= carry 0)) nil)
+  ((and (null l1) (null l2) (> carry 0)) (list carry))
+  ((null l1) (append (list(mod (+ (car l2) carry) 10)) (addNumbers l1 (cdr l2) (floor (+ (car l2) carry) 10))))
+  ((null l2) (append (list(mod (+ (car l1) carry) 10)) (addNumbers (cdr l1)  l2 (floor (+ (car l1) carry) 10))))
+  (t (append (list(mod (+ (+(car l1) (car l2)) carry) 10)) (addNumbers (cdr l1) (cdr l2) (floor (+ (+ (car l1) (car l2)) carry) 10))))
+)
+)
+
+(print (addNumbers '(1 9 3) '(6 7 8) 0))
+
+(defun addNumbersMain (l1 l2)
+  (cond
+    ((null l1) l2)
+    ((null l2) l1)
+    (t (invertList(addNumbers (invertList l1) (invertList l2) 0)))
+  )
+)
+
+(print (addNumbersMain '(1 9 8) '(8 7 9)))
+
+;d)
+
+(defun gdc (e1 e2)
+  (cond
+    ((= e1 e2) e1)
+    ((> e2 e1) (gcd e2 e2))
+    (t (gcd (- e1 e2) e2))
+  )
+)
+
+(print(gcd 7 15))
+
+(defun gcdList (l)
+  (cond
+    ((null l) 0)
+    ((null (cdr l)) (car l))
+    (t (gcd (car l) (gcdList (cdr l))))
+  )
+)
+
+(print (gcdList '(10 15 20 30 40)))
