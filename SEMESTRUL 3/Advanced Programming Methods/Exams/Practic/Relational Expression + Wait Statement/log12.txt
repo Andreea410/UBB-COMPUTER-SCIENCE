@@ -1,0 +1,432 @@
+ID = 12
+Execution Stack = {(int v;(v = 20;(Wait(10);print(v MULTIPLY 10))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(v = 20;(Wait(10);print(v MULTIPLY 10)))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(v = 20;(Wait(10);print(v MULTIPLY 10)))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(v = 20;(Wait(10);print(v MULTIPLY 10)))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(v = 20;(Wait(10);print(v MULTIPLY 10)))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(Wait(10);print(v MULTIPLY 10))|v = 20}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(Wait(10);print(v MULTIPLY 10))|v = 20}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(Wait(10);print(v MULTIPLY 10))}
+SymTable = {v-> 20}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(Wait(10);print(v MULTIPLY 10))}
+SymTable = {v-> 20}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(10)}
+SymTable = {v-> 20}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(10)}
+SymTable = {v-> 20}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(9)|print(10)}
+SymTable = {v-> 20}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(9)|print(10)}
+SymTable = {v-> 20}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(9)}
+SymTable = {v-> 20}
+Output List = {10}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(9)}
+SymTable = {v-> 20}
+Output List = {10}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(8)|print(9)}
+SymTable = {v-> 20}
+Output List = {10}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(8)|print(9)}
+SymTable = {v-> 20}
+Output List = {10}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(8)}
+SymTable = {v-> 20}
+Output List = {10|9}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(8)}
+SymTable = {v-> 20}
+Output List = {10|9}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(7)|print(8)}
+SymTable = {v-> 20}
+Output List = {10|9}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(7)|print(8)}
+SymTable = {v-> 20}
+Output List = {10|9}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(7)}
+SymTable = {v-> 20}
+Output List = {10|9|8}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(7)}
+SymTable = {v-> 20}
+Output List = {10|9|8}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(6)|print(7)}
+SymTable = {v-> 20}
+Output List = {10|9|8}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(6)|print(7)}
+SymTable = {v-> 20}
+Output List = {10|9|8}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(6)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(6)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(5)|print(6)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(5)|print(6)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(5)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(5)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(4)|print(5)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(4)|print(5)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(4)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(4)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(3)|print(4)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(3)|print(4)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(3)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(3)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(2)|print(3)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(2)|print(3)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(2)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(2)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(1)|print(2)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(1)|print(2)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(1)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(1)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(0)|print(1)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(0)|print(1)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(0)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|Wait(0)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {}
+SymTable = {v-> 20}
+Output List = {10|9|8|7|6|5|4|3|2|1|200}
+File Table = {}
+Heap = 
+====================>
+

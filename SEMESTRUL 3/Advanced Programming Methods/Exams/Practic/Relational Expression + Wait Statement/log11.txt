@@ -1,0 +1,177 @@
+ID = 11
+Execution Stack = {(int v1;(int v2;(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(int v2;(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)))|int v1}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(int v2;(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)))|int v1}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(int v2;(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)))}
+SymTable = {v1-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(int v2;(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)))}
+SymTable = {v1-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+))|int v2}
+SymTable = {v1-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+))|int v2}
+SymTable = {v1-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+))}
+SymTable = {v1-> 0 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v1 = 2;(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+))}
+SymTable = {v1-> 0 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)|v1 = 2}
+SymTable = {v1-> 0 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)|v1 = 2}
+SymTable = {v1-> 0 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)}
+SymTable = {v1-> 2 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {(v2 = 3;if(v1 != 0){print(v1 * v2)}else{print(v1)}
+)}
+SymTable = {v1-> 2 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {if(v1 != 0){print(v1 * v2)}else{print(v1)}
+|v2 = 3}
+SymTable = {v1-> 2 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {if(v1 != 0){print(v1 * v2)}else{print(v1)}
+|v2 = 3}
+SymTable = {v1-> 2 | v2-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {if(v1 != 0){print(v1 * v2)}else{print(v1)}
+}
+SymTable = {v1-> 2 | v2-> 3}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {if(v1 != 0){print(v1 * v2)}else{print(v1)}
+}
+SymTable = {v1-> 2 | v2-> 3}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {print(v1 * v2)}
+SymTable = {v1-> 2 | v2-> 3}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {print(v1 * v2)}
+SymTable = {v1-> 2 | v2-> 3}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 11
+Execution Stack = {}
+SymTable = {v1-> 2 | v2-> 3}
+Output List = {1}
+File Table = {}
+Heap = 
+====================>
+
