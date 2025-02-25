@@ -1,0 +1,160 @@
+ID = 13
+Execution Stack = {(int v;(v = 1;(Fork(v = 2);Fork(v = 3))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(v = 1;(Fork(v = 2);Fork(v = 3)))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(v = 1;(Fork(v = 2);Fork(v = 3)))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(v = 1;(Fork(v = 2);Fork(v = 3)))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(v = 1;(Fork(v = 2);Fork(v = 3)))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(Fork(v = 2);Fork(v = 3))|v = 1}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(Fork(v = 2);Fork(v = 3))|v = 1}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(Fork(v = 2);Fork(v = 3))}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {(Fork(v = 2);Fork(v = 3))}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {Fork(v = 3)|Fork(v = 2)}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {Fork(v = 3)|Fork(v = 2)}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {Fork(v = 3)}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 14
+Execution Stack = {v = 2}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {Fork(v = 3)}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 14
+Execution Stack = {v = 2}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 13
+Execution Stack = {}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 14
+Execution Stack = {}
+SymTable = {v-> 2}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 15
+Execution Stack = {v = 3}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 15
+Execution Stack = {v = 3}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+
+ID = 15
+Execution Stack = {}
+SymTable = {v-> 3}
+Output List = {}
+File Table = {}
+Heap = 
+Barrier Table = ====================>
+

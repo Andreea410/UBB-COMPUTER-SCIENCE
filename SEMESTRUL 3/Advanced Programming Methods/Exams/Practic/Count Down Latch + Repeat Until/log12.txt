@@ -1,0 +1,744 @@
+ID = 12
+Execution Stack = {(int v;(v = 0;(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(v = 0;(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(v = 0;(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(v = 0;(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(v = 0;(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))))|v = 0}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))))|v = 0}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3;(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|repeat (Fork((print(v);v = v SUBTRACT 1));v = v ADD 1) until v == 3}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|((Fork((print(v);v = v SUBTRACT 1));v = v ADD 1);While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)})}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|((Fork((print(v);v = v SUBTRACT 1));v = v ADD 1);While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)})}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1|Fork((print(v);v = v SUBTRACT 1))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1|Fork((print(v);v = v SUBTRACT 1))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 13
+Execution Stack = {(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 13
+Execution Stack = {(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 13
+Execution Stack = {v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}}
+SymTable = {v-> 1}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 13
+Execution Stack = {v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 13
+Execution Stack = {v = v SUBTRACT 1}
+SymTable = {v-> 0}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 13
+Execution Stack = {v = v SUBTRACT 1}
+SymTable = {v-> 0}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1|Fork((print(v);v = v SUBTRACT 1))}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 13
+Execution Stack = {}
+SymTable = {v-> -1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1|Fork((print(v);v = v SUBTRACT 1))}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 14
+Execution Stack = {(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 14
+Execution Stack = {(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}}
+SymTable = {v-> 2}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 14
+Execution Stack = {v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}}
+SymTable = {v-> 2}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 14
+Execution Stack = {v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 1}
+Output List = {0}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 14
+Execution Stack = {v = v SUBTRACT 1}
+SymTable = {v-> 1}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 14
+Execution Stack = {v = v SUBTRACT 1}
+SymTable = {v-> 1}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1|Fork((print(v);v = v SUBTRACT 1))}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 14
+Execution Stack = {}
+SymTable = {v-> 0}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1|Fork((print(v);v = v SUBTRACT 1))}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 15
+Execution Stack = {(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}|v = v ADD 1}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 15
+Execution Stack = {(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}}
+SymTable = {v-> 3}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 15
+Execution Stack = {v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))|While(v == 3 NOT v == 3) {(Fork((print(v);v = v SUBTRACT 1));v = v ADD 1)}}
+SymTable = {v-> 3}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 15
+Execution Stack = {v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 2}
+Output List = {0|1}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))}
+SymTable = {v-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 15
+Execution Stack = {v = v SUBTRACT 1}
+SymTable = {v-> 2}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int x;(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))))}
+SymTable = {v-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 15
+Execution Stack = {v = v SUBTRACT 1}
+SymTable = {v-> 2}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))|int x}
+SymTable = {v-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 15
+Execution Stack = {}
+SymTable = {v-> 1}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))|int x}
+SymTable = {v-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))}
+SymTable = {v-> 3 | x-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int y;(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))))}
+SymTable = {v-> 3 | x-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))|int y}
+SymTable = {v-> 3 | x-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))|int y}
+SymTable = {v-> 3 | x-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))}
+SymTable = {v-> 3 | x-> 0 | y-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int z;(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))))}
+SymTable = {v-> 3 | x-> 0 | y-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))|int z}
+SymTable = {v-> 3 | x-> 0 | y-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))|int z}
+SymTable = {v-> 3 | x-> 0 | y-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))}
+SymTable = {v-> 3 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(int w;(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))))}
+SymTable = {v-> 3 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))|int w}
+SymTable = {v-> 3 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))|int w}
+SymTable = {v-> 3 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))}
+SymTable = {v-> 3 | w-> 0 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(x = 1;(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10)))))}
+SymTable = {v-> 3 | w-> 0 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))|x = 1}
+SymTable = {v-> 3 | w-> 0 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))|x = 1}
+SymTable = {v-> 3 | w-> 0 | x-> 0 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(y = 2;(z = 3;(w = 4;print(v MULTIPLY 10))))}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(z = 3;(w = 4;print(v MULTIPLY 10)))|y = 2}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(z = 3;(w = 4;print(v MULTIPLY 10)))|y = 2}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 0 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(z = 3;(w = 4;print(v MULTIPLY 10)))}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(z = 3;(w = 4;print(v MULTIPLY 10)))}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(w = 4;print(v MULTIPLY 10))|z = 3}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(w = 4;print(v MULTIPLY 10))|z = 3}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 0}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(w = 4;print(v MULTIPLY 10))}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {(w = 4;print(v MULTIPLY 10))}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|w = 4}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)|w = 4}
+SymTable = {v-> 3 | w-> 0 | x-> 1 | y-> 2 | z-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)}
+SymTable = {v-> 3 | w-> 4 | x-> 1 | y-> 2 | z-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {print(v MULTIPLY 10)}
+SymTable = {v-> 3 | w-> 4 | x-> 1 | y-> 2 | z-> 3}
+Output List = {0|1|2}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
+ID = 12
+Execution Stack = {}
+SymTable = {v-> 3 | w-> 4 | x-> 1 | y-> 2 | z-> 3}
+Output List = {0|1|2|30}
+File Table = {}
+Heap = 
+Latch Table = ====================>
+
