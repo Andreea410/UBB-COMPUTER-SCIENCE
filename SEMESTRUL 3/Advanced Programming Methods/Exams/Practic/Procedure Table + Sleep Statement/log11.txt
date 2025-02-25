@@ -1,0 +1,720 @@
+ID = 11
+Execution Stack = {(int v;(int w;(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(int w;(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(int w;(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(int w;(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(int w;(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))))|int w}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))))|int w}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))))}
+SymTable = {v-> 0 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(v = 2;(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))))}
+SymTable = {v-> 0 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))|v = 2}
+SymTable = {v-> 0 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))|v = 2}
+SymTable = {v-> 0 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))}
+SymTable = {v-> 2 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(w = 5;(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))))}
+SymTable = {v-> 2 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))|w = 5}
+SymTable = {v-> 2 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))|w = 5}
+SymTable = {v-> 2 | w-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))}
+SymTable = {v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(call sum([v MULTIPLY 10, w]);(print(v);Fork((call product([v, w]);Fork(call sum([v, w]))))))}
+SymTable = {v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|call sum([v MULTIPLY 10, w])}
+SymTable = {v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|call sum([v MULTIPLY 10, w])}
+SymTable = {v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|(int localV;(localV = a ADD b;print(localV)))}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|(int localV;(localV = a ADD b;print(localV)))}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|(localV = a ADD b;print(localV))|int localV}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|(localV = a ADD b;print(localV))|int localV}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|(localV = a ADD b;print(localV))}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|(localV = a ADD b;print(localV))}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|print(localV)|localV = a ADD b}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|print(localV)|localV = a ADD b}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|print(localV)}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return|print(localV)}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))|return}
+SymTable = {a-> 20 | b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {(print(v);Fork((call product([v, w]);Fork(call sum([v, w])))))}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {Fork((call product([v, w]);Fork(call sum([v, w]))))|print(v)}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {Fork((call product([v, w]);Fork(call sum([v, w]))))|print(v)}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {Fork((call product([v, w]);Fork(call sum([v, w]))))}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {Fork((call product([v, w]);Fork(call sum([v, w]))))}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 11
+Execution Stack = {}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {(call product([v, w]);Fork(call sum([v, w])))}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {(call product([v, w]);Fork(call sum([v, w])))}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|call product([v, w])}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|call product([v, w])}
+SymTable = {b-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|(int local-v;(local-v = c MULTIPLY d;print(local-v)))}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|(int local-v;(local-v = c MULTIPLY d;print(local-v)))}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|(local-v = c MULTIPLY d;print(local-v))|int local-v}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|(local-v = c MULTIPLY d;print(local-v))|int local-v}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|(local-v = c MULTIPLY d;print(local-v))}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 0}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|(local-v = c MULTIPLY d;print(local-v))}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 0}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|print(local-v)|local-v = c MULTIPLY d}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 0}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|print(local-v)|local-v = c MULTIPLY d}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 0}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|print(local-v)}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return|print(local-v)}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))|return}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))}
+SymTable = {c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {Fork(call sum([v, w]))}
+SymTable = {c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 13
+Execution Stack = {}
+SymTable = {c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {call sum([v, w])}
+SymTable = {c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {call sum([v, w])}
+SymTable = {c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|(int localV;(localV = a ADD b;print(localV)))}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|(int localV;(localV = a ADD b;print(localV)))}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|(localV = a ADD b;print(localV))|int localV}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|(localV = a ADD b;print(localV))|int localV}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|(localV = a ADD b;print(localV))}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|(localV = a ADD b;print(localV))}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|print(localV)|localV = a ADD b}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|print(localV)|localV = a ADD b}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 25 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|print(localV)}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 7 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return|print(localV)}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 7 | local-v-> 10}
+Output List = {25|2|10}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 7 | local-v-> 10}
+Output List = {25|2|10|7}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {return}
+SymTable = {a-> 2 | b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 7 | local-v-> 10}
+Output List = {25|2|10|7}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+
+ID = 14
+Execution Stack = {}
+SymTable = {b-> 5 | c-> 2 | d-> 5 | v-> 2 | w-> 5 | localV-> 7 | local-v-> 10}
+Output List = {25|2|10|7}
+File Table = {}
+Heap = 
+Procedure Table = product -> ([c, d], (int local-v;(local-v = c MULTIPLY d;print(local-v))))
+sum -> ([a, b], (int localV;(localV = a ADD b;print(localV))))
+====================>
+

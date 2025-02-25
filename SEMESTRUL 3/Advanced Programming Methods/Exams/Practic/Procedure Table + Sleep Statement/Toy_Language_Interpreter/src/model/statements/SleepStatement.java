@@ -1,0 +1,45 @@
+package model.statements;
+
+import exceptions.ADTException;
+import exceptions.EmptyStackException;
+import exceptions.StatementException;
+import model.adt.IMyDictionary;
+import model.adt.IMyStack;
+import model.states.PrgState;
+import model.types.IType;
+
+import java.io.IOException;
+
+public class SleepStatement implements IStmt{
+    private final int value;
+
+    public SleepStatement(int value) {
+        this.value = value;
+    }
+
+    @Override
+    public PrgState execute(PrgState prgState) throws StatementException, ADTException, IOException, EmptyStackException {
+        if(value != 0)
+        {
+            IMyStack<IStmt> exeStack = prgState.getExeStack();
+            exeStack.push(new SleepStatement(value - 1));
+            prgState.setExeStack(exeStack);
+        }
+        return null;
+    }
+
+    @Override
+    public IStmt deepCopy() {
+        return new SleepStatement(value);
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws StatementException {
+        return typeEnv;
+    }
+
+    @Override
+    public String toString() {
+        return "sleep(" + value + ")";
+    }
+}

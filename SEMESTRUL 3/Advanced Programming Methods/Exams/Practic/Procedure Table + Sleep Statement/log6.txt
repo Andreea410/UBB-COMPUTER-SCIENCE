@@ -1,0 +1,396 @@
+ID = 6
+Execution Stack = {(Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))|Ref(int) v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))|Ref(int) v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))|(v 20)}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))|(v 20)}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))|Ref(Ref(int)) a}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))|Ref(Ref(int)) a}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))|(a v)}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))|(a v)}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)|print(HeapRead(v))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)|print(HeapRead(v))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {20}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {20}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {20|25}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 7
+Execution Stack = {(Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 7
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))|Ref(int) v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 7
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))|Ref(int) v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 7
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 7
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))))}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 7
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))|(v 20)}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 7
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))|(v 20)}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 7
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))))}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))|Ref(Ref(int)) a}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))|Ref(Ref(int)) a}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {((a v);(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5)))}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))|(a v)}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))|(a v)}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 7
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 7
+Execution Stack = {(print(HeapRead(v));print(HeapRead(HeapRead(a)) ADD 5))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 7
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)|print(HeapRead(v))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 7
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)|print(HeapRead(v))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 7
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {20}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 7
+Execution Stack = {print(HeapRead(HeapRead(a)) ADD 5)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {20}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 7
+Execution Stack = {}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {20|25}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
