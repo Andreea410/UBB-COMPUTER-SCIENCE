@@ -1,0 +1,218 @@
+ID = 1
+Execution Stack = {print(a)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {(1 int)}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 1
+Execution Stack = {}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {(1 int)|(2 Ref(int))}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {(Ref(int) v;((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))|Ref(int) v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))|Ref(int) v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {((v 20);(Ref(Ref(int)) a;((a v);(print(v);print(a)))))}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(v);print(a))))|(v 20)}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(v);print(a))))|(v 20)}
+SymTable = {v-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(v);print(a))))}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(Ref(Ref(int)) a;((a v);(print(v);print(a))))}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(v);print(a)))|Ref(Ref(int)) a}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(v);print(a)))|Ref(Ref(int)) a}
+SymTable = {v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(v);print(a)))}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {((a v);(print(v);print(a)))}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(print(v);print(a))|(a v)}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(print(v);print(a))|(a v)}
+SymTable = {a-> (0 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 6
+Execution Stack = {(print(v);print(a))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {(print(v);print(a))}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(a)|print(v)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(a)|print(v)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(a)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {(1 int)}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {print(a)}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {(1 int)}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+
+ID = 6
+Execution Stack = {}
+SymTable = {a-> (2 Ref(int)) | v-> (1 int)}
+Output List = {(1 int)|(2 Ref(int))}
+File Table = {}
+Heap = 1(int):-> 20
+2(Ref(int)):-> (1 int)
+
+====================>
+

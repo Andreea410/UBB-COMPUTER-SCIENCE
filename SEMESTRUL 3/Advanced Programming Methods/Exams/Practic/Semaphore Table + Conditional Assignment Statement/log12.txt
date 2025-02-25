@@ -1,0 +1,620 @@
+ID = 12
+Execution Stack = {(bool b;(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))|bool b}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))|bool b}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))|int c}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))|int c}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))|b = true}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))|b = true}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c=(b)?100:200}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c=(b)?100:200}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|if(b){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|if(b){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c = 100}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c = 100}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(false)?100:200;print(c))|print(c)}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(false)?100:200;print(c))|print(c)}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(false)?100:200;print(c))}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {(c=(false)?100:200;print(c))}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)|c=(false)?100:200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)|c=(false)?100:200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)|if(false){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)|if(false){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)|c = 200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)|c = 200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)}
+SymTable = {b-> true | c-> 200}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {print(c)}
+SymTable = {b-> true | c-> 200}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 12
+Execution Stack = {}
+SymTable = {b-> true | c-> 200}
+Output List = {100|200}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(bool b;(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))|bool b}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))|bool b}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(int c;(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))))}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))|int c}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))|int c}
+SymTable = {b-> false}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(b = true;(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c)))))}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))|b = true}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))|b = true}
+SymTable = {b-> false | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(b)?100:200;(print(c);(c=(false)?100:200;print(c))))}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c=(b)?100:200}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c=(b)?100:200}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|if(b){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|if(b){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c = 100}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))|c = 100}
+SymTable = {b-> true | c-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(print(c);(c=(false)?100:200;print(c)))}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(false)?100:200;print(c))|print(c)}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(false)?100:200;print(c))|print(c)}
+SymTable = {b-> true | c-> 100}
+Output List = {}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(false)?100:200;print(c))}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {(c=(false)?100:200;print(c))}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)|c=(false)?100:200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)|c=(false)?100:200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)|if(false){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)|if(false){c = 100}else{c = 200}
+}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)|c = 200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)|c = 200}
+SymTable = {b-> true | c-> 100}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)}
+SymTable = {b-> true | c-> 200}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {print(c)}
+SymTable = {b-> true | c-> 200}
+Output List = {100}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
+ID = 1
+Execution Stack = {}
+SymTable = {b-> true | c-> 200}
+Output List = {100|200}
+File Table = {}
+Heap = 
+Semaphore Table = 
+====================>
+
