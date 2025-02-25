@@ -1,0 +1,655 @@
+ID = 12
+Execution Stack = {(Ref(int) v1;(int cnt;((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(int cnt;((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))))|Ref(int) v1}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(int cnt;((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))))|Ref(int) v1}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(int cnt;((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))))}
+SymTable = {v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(int cnt;((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))))}
+SymTable = {v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))))|int cnt}
+SymTable = {v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))))|int cnt}
+SymTable = {v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))))}
+SymTable = {cnt-> 0 | v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {((v1 2);(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))))}
+SymTable = {cnt-> 0 | v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))|(v1 2)}
+SymTable = {cnt-> 0 | v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))|(v1 2)}
+SymTable = {cnt-> 0 | v1-> (0 int)}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 12
+Execution Stack = {(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))}
+SymTable = {cnt-> 0 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(createSemaphore(cnt, HeapRead(v1));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))))}
+SymTable = {cnt-> 0 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))|createSemaphore(cnt, HeapRead(v1))}
+SymTable = {cnt-> 0 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))|createSemaphore(cnt, HeapRead(v1))}
+SymTable = {cnt-> 0 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))));(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))|Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))|Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))));(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))|Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))|Fork((acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 14
+Execution Stack = {(acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt)))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(acquire(cnt);(print(HeapRead(v1) SUBTRACT 1);release(cnt)))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(print(HeapRead(v1));release(cnt)))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 14
+Execution Stack = {(acquire(cnt);(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt)))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(print(HeapRead(v1) SUBTRACT 1);release(cnt))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(print(HeapRead(v1));release(cnt))|WriteHeap( v1, HeapRead(v1) MULTIPLY 10)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(print(HeapRead(v1) SUBTRACT 1);release(cnt))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 13
+Execution Stack = {(print(HeapRead(v1));release(cnt))|WriteHeap( v1, HeapRead(v1) MULTIPLY 10)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 2
+
+====================>
+
+ID = 12
+Execution Stack = {(print(HeapRead(v1) SUBTRACT 1);release(cnt))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 13
+Execution Stack = {(print(HeapRead(v1));release(cnt))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 12
+Execution Stack = {(print(HeapRead(v1) SUBTRACT 1);release(cnt))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 13
+Execution Stack = {(print(HeapRead(v1));release(cnt))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 12
+Execution Stack = {release(cnt)|print(HeapRead(v1) SUBTRACT 1)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 13
+Execution Stack = {release(cnt)|print(HeapRead(v1))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 12
+Execution Stack = {release(cnt)|print(HeapRead(v1) SUBTRACT 1)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 13
+Execution Stack = {release(cnt)|print(HeapRead(v1))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 12
+Execution Stack = {release(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 13
+Execution Stack = {release(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 12
+Execution Stack = {release(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 13
+Execution Stack = {release(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))|acquire(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 12
+Execution Stack = {}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 13
+Execution Stack = {}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 10);(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt))))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt)))|WriteHeap( v1, HeapRead(v1) MULTIPLY 10)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt)))|WriteHeap( v1, HeapRead(v1) MULTIPLY 10)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 20
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt)))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 200
+
+====================>
+
+ID = 14
+Execution Stack = {(WriteHeap( v1, HeapRead(v1) MULTIPLY 2);(print(HeapRead(v1));release(cnt)))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 200
+
+====================>
+
+ID = 14
+Execution Stack = {(print(HeapRead(v1));release(cnt))|WriteHeap( v1, HeapRead(v1) MULTIPLY 2)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 200
+
+====================>
+
+ID = 14
+Execution Stack = {(print(HeapRead(v1));release(cnt))|WriteHeap( v1, HeapRead(v1) MULTIPLY 2)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 200
+
+====================>
+
+ID = 14
+Execution Stack = {(print(HeapRead(v1));release(cnt))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 400
+
+====================>
+
+ID = 14
+Execution Stack = {(print(HeapRead(v1));release(cnt))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 400
+
+====================>
+
+ID = 14
+Execution Stack = {release(cnt)|print(HeapRead(v1))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 400
+
+====================>
+
+ID = 14
+Execution Stack = {release(cnt)|print(HeapRead(v1))}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20}
+File Table = {}
+Heap = 1(int):-> 400
+
+====================>
+
+ID = 14
+Execution Stack = {release(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20|400}
+File Table = {}
+Heap = 1(int):-> 400
+
+====================>
+
+ID = 14
+Execution Stack = {release(cnt)}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20|400}
+File Table = {}
+Heap = 1(int):-> 400
+
+====================>
+
+ID = 14
+Execution Stack = {}
+SymTable = {cnt-> 1 | v1-> (1 int)}
+Output List = {19|20|400}
+File Table = {}
+Heap = 1(int):-> 400
+
+====================>
+
