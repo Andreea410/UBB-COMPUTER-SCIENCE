@@ -1,0 +1,386 @@
+ID = 2
+Execution Stack = {print(HeapRead(a))}
+SymTable = {a-> (1 int) | v-> 32}
+Output List = {10|30|32}
+File Table = {}
+Heap = 1(int):-> 30
+
+====================>
+
+ID = 2
+Execution Stack = {}
+SymTable = {a-> (1 int) | v-> 32}
+Output List = {10|30|32|30}
+File Table = {}
+Heap = 1(int):-> 30
+
+====================>
+
+ID = 10
+Execution Stack = {(int v;(v = 4;(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(v = 4;(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v)))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(v = 4;(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v)))|int v}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(v = 4;(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v)))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(v = 4;(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v)))}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v))|v = 4}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v))|v = 4}
+SymTable = {v-> 0}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v))}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {(While(v > 0) {(print(v);v = v SUBTRACT 1)};print(v))}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 4}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 4}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 4}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 3}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 3}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 3}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 3}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 3}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 3}
+Output List = {4}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 3}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 3}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 2}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 2}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 2}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 2}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 2}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 2}
+Output List = {4|3}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 2}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 2}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 1}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 1}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 1}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|(print(v);v = v SUBTRACT 1)}
+SymTable = {v-> 1}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 1}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1|print(v)}
+SymTable = {v-> 1}
+Output List = {4|3|2}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 1}
+Output List = {4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}|v = v SUBTRACT 1}
+SymTable = {v-> 1}
+Output List = {4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 0}
+Output List = {4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)|While(v > 0) {(print(v);v = v SUBTRACT 1)}}
+SymTable = {v-> 0}
+Output List = {4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)}
+SymTable = {v-> 0}
+Output List = {4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {print(v)}
+SymTable = {v-> 0}
+Output List = {4|3|2|1}
+File Table = {}
+Heap = 
+====================>
+
+ID = 10
+Execution Stack = {}
+SymTable = {v-> 0}
+Output List = {4|3|2|1|0}
+File Table = {}
+Heap = 
+====================>
+

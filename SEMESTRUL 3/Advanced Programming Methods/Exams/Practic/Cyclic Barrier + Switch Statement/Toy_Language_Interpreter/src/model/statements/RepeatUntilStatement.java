@@ -1,0 +1,113 @@
+package model.statements;
+
+import exceptions.ADTException;
+import exceptions.StatementException;
+import model.adt.IMyDictionary;
+import model.adt.IMyStack;
+import model.expressions.IExp;
+import model.states.PrgState;
+import model.types.IType;
+import
+import java.io.IOException;
+
+public class RepeatUntilStatement implements IStmt{
+    private final IStmt statement;
+    private final IExp condition;
+
+    public RepeatUntilStatement(IStmt statement , IExp exp)
+    {
+        this.statement = statement;
+        this.condition = exp;
+    }
+
+    @Override
+    public PrgState execute(PrgState prgState) throws StatementException, ADTException, IOException {
+        IMyStack<IStmt> stack = prgState.getExeStack();
+        IStmt whileStatement = new CompStmt(statement, new WhileStatement(new LogicalExpression(condition, LogicalOperator.NOT, condition), statement));
+
+        stack.push(whileStatement);
+        prgState.setExeStack(stack);
+        return null;
+    }
+
+    @Override
+    public IStmt deepCopy() {
+        return new RepeatUntilStatement(this.statement , this.expression);
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws StatementException {
+        return null;
+    }
+}
+
+package model.statements;
+
+import exceptions.ADTException;
+import exceptions.StatementException;
+import model.adt.IMyDictionary;
+import model.adt.IMyStack;
+import model.expressions.IExp;
+import model.expressions.LogicalExpression;
+import model.expressions.LogicalOperator;
+import model.states.PrgState;
+import model.types.IType;
+
+import java.io.IOException;
+
+public class RepeatUntilStatement implements IStmt{
+
+    private final IStmt statement;
+    private final IExp condition;
+
+    public RepeatUntilStatement( IExp cond,IStmt stmt) {
+        this.statement = stmt;
+        this.condition = cond;
+    }
+
+    @Override
+    public PrgState execute(PrgState prgState) throws StatementException, ADTException, IOException {
+        IMyStack<IStmt> stack = prgState.getExeStack();
+        IStmt whileStatement = new CompStmt(statement, new WhileStatement(new LogicalExpression(condition, LogicalOperator.NOT, condition), statement));
+
+        stack.push(whileStatement);
+        prgState.setExeStack(stack);
+        return null;
+    }
+
+    @Override
+    public IStmt deepCopy() {
+        return new RepeatUntilStatement( condition.deepCopy(),statement.deepCopy());
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws StatementException {
+        if(!condition.typecheck(typeEnv).equals(new model.types.BoolIType()))
+            throw new StatementException("The condition of RepeatUntil is not a boolean");
+        statement.typeCheck(typeEnv.deepCopy());
+        return typeEnv;
+    }
+
+    @Override
+    public String toString() {
+        return "repeat " + statement.toString() + " until " + condition.toString();
+    }
+}
+
+//int v = 0; (repeat(fork(print(v)); v= v-1) until v == -3); int x = 1; int y = 2; int z = 3; int w = 4; print(v*10)
+IStmt statement12 = new CompStmt(new VariablesDeclarationStmt("v", new IntIType()),
+        new CompStmt(new AssignStmt("v", new ValueExpression(new IntIValue(0))),
+                new CompStmt(new RepeatUntilStatement(new RelationalExpression(new VariableExpression("v"), "==", new ValueExpression(new IntIValue(3))),
+                        new CompStmt(new ForkStatement(
+                                new CompStmt(new PrintStm(new VariableExpression("v")), new AssignStmt("v", new ArithmeticalExpression( new VariableExpression("v"), ArithmeticalOperator.SUBTRACT,new ValueExpression(new IntIValue(1)))))), new AssignStmt("v", new ArithmeticalExpression(new VariableExpression("v"), ArithmeticalOperator.ADD,new ValueExpression(new IntIValue(1)))))),
+                        new CompStmt(new VariablesDeclarationStmt("x", new IntIType()),
+                                new CompStmt(new VariablesDeclarationStmt("y", new IntIType()),
+                                        new CompStmt(new VariablesDeclarationStmt("z", new IntIType()),
+                                                new CompStmt(new VariablesDeclarationStmt("w", new IntIType()),
+                                                        new CompStmt(new AssignStmt("x", new ValueExpression(new IntIValue(1))),
+                                                                new CompStmt(new AssignStmt("y", new ValueExpression(new IntIValue(2))),
+                                                                        new CompStmt(new AssignStmt("z", new ValueExpression(new IntIValue(3))),
+                                                                                new CompStmt(new AssignStmt("w", new ValueExpression(new IntIValue(4))),
+                                                                                        new PrintStm(new ArithmeticalExpression(new VariableExpression("v"), ArithmeticalOperator.MULTIPLY,new ValueExpression(new IntIValue(10)))))))))))))));
+
+
