@@ -1,0 +1,816 @@
+ID = 4
+Execution Stack = {(String varf;(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))|String varf}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))|String varf}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))|varf = test.in}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))|varf = test.in}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))|OpenReadFile(varf)}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))|OpenReadFile(varf)}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))|int varc}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))|int varc}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))|print(varc)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))|print(varc)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);CloseReadFile(varf))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);CloseReadFile(varf))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);CloseReadFile(varf))}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);CloseReadFile(varf))}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {CloseReadFile(varf)|print(varc)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {CloseReadFile(varf)|print(varc)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {CloseReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {CloseReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {test.in-> java.io.BufferedReader@2328c243}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))|String varf}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))|varf = test.in}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))|OpenReadFile(varf)}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))|int varc}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))|print(varc)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(print(varc);CloseReadFile(varf))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {(print(varc);CloseReadFile(varf))}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {CloseReadFile(varf)|print(varc)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {CloseReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {test.in-> java.io.BufferedReader@19323bd7}
+Heap = 
+====================>
+
+ID = 3
+Execution Stack = {}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))|String varf}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))|varf = test.in}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))|OpenReadFile(varf)}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))|int varc}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))|print(varc)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);CloseReadFile(varf))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {(print(varc);CloseReadFile(varf))}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {CloseReadFile(varf)|print(varc)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {CloseReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {test.in-> java.io.BufferedReader@48525175}
+Heap = 
+====================>
+
+ID = 4
+Execution Stack = {}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(String varf;(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))))}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))|String varf}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))|String varf}
+SymTable = {}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(varf = test.in;(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))))}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))|varf = test.in}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))|varf = test.in}
+SymTable = {varf-> }
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(OpenReadFile(varf);(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))|OpenReadFile(varf)}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))|OpenReadFile(varf)}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(int varc;(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))))}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))|int varc}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))|int varc}
+SymTable = {varf-> test.in}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf)))))}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 0}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);(ReadFile(varf);(print(varc);CloseReadFile(varf))))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))|print(varc)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))|print(varc)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(ReadFile(varf);(print(varc);CloseReadFile(varf)))}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);CloseReadFile(varf))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);CloseReadFile(varf))|ReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 15}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);CloseReadFile(varf))}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {(print(varc);CloseReadFile(varf))}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {CloseReadFile(varf)|print(varc)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {CloseReadFile(varf)|print(varc)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {CloseReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {CloseReadFile(varf)}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {test.in-> java.io.BufferedReader@71204b09}
+Heap = 
+====================>
+
+ID = 5
+Execution Stack = {}
+SymTable = {varf-> test.in | varc-> 50}
+Output List = {15|50}
+File Table = {}
+Heap = 
+====================>
+
