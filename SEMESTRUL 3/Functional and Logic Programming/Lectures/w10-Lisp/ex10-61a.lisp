@@ -1,0 +1,11 @@
+(defun g (l)
+  (cond
+    ((null l) nil)
+    (t ((lambda (v)
+          (cons (car v) (cadr v))
+        )
+        (f l)
+       )
+    )
+  )
+)
