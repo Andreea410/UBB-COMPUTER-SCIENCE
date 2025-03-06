@@ -1,0 +1,567 @@
+Java Servlets and JSP (Java Server Pages)
+Server-side Java for the web
+A servlet is a Java program which outputs an html page. It is a server-side technology. The architecture of java servlets web communication is depicted in the following image.
+
+
+Java servlets
+
+import java.io.*;
+import java.util.*;
+   import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class FirstServlet extends HttpServlet {
+   public void doGet(HttpServletRequest request, HttpServletResponse response)
+                                                    throws IOException, ServletException {
+       response.setContentType("text/html");
+       PrintWriter out = response.getWriter();
+       out.println("<html>");
+       out.println("<head>");
+       out.println("<title>First servlet</title>");
+       out.println("</head>");
+       out.println("<body>");
+       out.println("It works...<hr>");
+       out.println("</body>");
+       out.println("</html>");
+   }
+}
+
+       
+What is a java servlet ? A Java servlet is a java class extending HTTPServlet class. A java servlet class overrides the doGet(), doPost() or other equivalent HTTP method and (usually) prints at the standard output an html file. A java servlet class can contain any kind of java code the JDK can compile. A java servlet class needs to be compiled prior to using it; it must use servlet-api.jar.
+Apache Tomcat
+Apache Tomcat is the most well known servlet/jsp container. It is a web server plus implementation of Java Servlet and JSP (Java Server Pages) APIs. Tomcat is developed by Apache Software Foundation and it is available at http://tomcat.apache.org/ under Apache Software License.
+Installing Tomcat
+Download the binary zip distribution (e.g. apache- tomcat-6.0.20.zip) in a local folder (we will use c:\temp in the rest of the guide)
+Set the environment variables JAVA_HOME=path_to_JDK_installation_folder CATALINA_HOME=path_to_tomcat_installation_folder
+either as Windows system variables or in the files startup.bat and shutdown.bat from the bin directory
+
+E.g. place the following lines in the beginning of startup.bat and shutdown.bat:
+
+set JAVA_HOME=c:\progra~1\java\jdk1.6.0
+set CATALINA_HOME=c:\temp\apache-tomcat-6.0.20
+               
+Starting/shutting down Tomcat
+Tomcat can be started from a cmd prompter (window) like this:
+
+c:\temp\apache-tomcat-6.0.20\bin\startup.bat
+            
+Then, we should verify the Tomcat startup by pointing a browser to the url: http://localhost:8080
+Shutting down Tomcat is performed from a cmd prompter (window):
+
+c:\temp\apache-tomcat-6.0.20\bin\shutdown.bat
+            
+Tomcat standard folders
+The Tomcat distribution contains the following directory structure.
+bin - contains executable files for controlling the server (start, shut down etc.)
+conf - contains configuration files; most important server.xml for configuring the server and web.xml a general configuration file for web applications
+lib - libraries (jars) used by tomcat and deployed web applications
+logs - log files
+temp - temporary files
+webapps - contains the web applications deployed
+work - contains files created by tomcat during running (e.g. it crates a servlet from each jsp file)
+Format of a web application
+The format of a web application suitable for deployment on the Tomcat server is the following.
+web applications are stored in the webapps folder, either as a folder or as a .war archive
+a web application (either a folder or a .war archive) must contain the following:
+WEB-INF folder
+WEB-INF\web.xml: a configuration file
+optionally the WEB-INF folder can contain the following subfolders:
+classes: which contain servlets
+lib: which contains jars used by the web application
+html, jsp and resource files can be placed anywhere in the web application home folder
+servlets must be placed in the folder or subfolders of WEB-INF\classes
+A very simple web.xml example
+The WEB-INF\web.xml file is the main configuration file of a web application. Here we can map servlets to URLs, we can create servlet filters etc. The simplest (empty) web.xml file is shown in the lines below.
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation=http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd version="2.5">
+
+</web-app>
+    
+Configuring servlets
+For JSPs (Java Server Pages) no additional configuration needs to be done. For java servlets additional lines must be placed in the web.xml file:
+
+<servlet>
+<servlet-name>ServletsName</servlet-name>
+<servlet-class>The_Class_Name_of_the_Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ServletsName</servlet-name>
+    <url-pattern>/URL_of_the_servlet</url-pattern>
+</servlet-mapping>
+
+            
+What is a Java Server Page (JSP)
+A Java Server Page (JSP) is an html file containing parts of java code. The java code is placed inside the "<% ... %>" tags or some other related tags. Tomcat will create a servlet from the jsp file (which will be saved in the work folder). When the jsp is requested the servlet is executed and the output of the server is sent back to the client.
+First JSP file
+
+<html>
+<body>
+<%
+    out.println("First JSP... It works<br/>");
+%>
+</body>
+</html>
+
+    
+A Model-View-Controller web application build using JSP and Java servlets
+In this section we list the source code of a Model-View-Controller web application build using JSP and Java servlets. It also uses AJAX with JSON. It is developed in IntelliJ Ideea Ultimate 2020. It produces an artifact (i.e. .war file that is deployable on Tomcat 9.x). The application is very simple and it has the following directory structure:
+lib
+json-simple-1.1.1.jar
+mysql-connector-java-5.1.34-bin.jar
+servlet-api.jar
+out
+src
+webubb
+controller
+AssetsController.java
+LoginController.java
+domain
+Asset.java
+User.java
+model
+DBManager.java
+web
+js
+ajax-utils.js
+jquery-2.0.3.js
+WEB-INF
+web.xml
+index.html
+success.jsp
+error.jsp
+The source code of webubb.controller.AssetsController.java is:
+
+package webubb.controller;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import webubb.domain.Asset;
+import webubb.model.DBManager;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+
+public class AssetsController extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+
+        if ((action != null) && action.equals("update")) {
+            // We update an asset
+            Asset asset = new Asset(Integer.parseInt(request.getParameter("id")),
+                    Integer.parseInt(request.getParameter("userid")),
+                    request.getParameter("description"),
+                    Integer.parseInt(request.getParameter("value")));
+            DBManager dbmanager = new DBManager();
+            Boolean result = dbmanager.updateAsset(asset);
+            PrintWriter out = new PrintWriter(response.getOutputStream());
+            if (result == true) {
+                out.println("Update asset succesfully.");
+            } else {
+                out.println("Error updating asset!");
+            }
+            out.flush();
+        } else if ((action != null) && action.equals("getAll")) {
+            int userid = Integer.parseInt(request.getParameter("userid"));
+
+            response.setContentType("application/json");
+            DBManager dbmanager = new DBManager();
+            ArrayList assets = dbmanager.getUserAssets(userid);
+            JSONArray jsonAssets = new JSONArray();
+            for (int i = 0; i < assets.size(); i++) {
+                JSONObject jObj = new JSONObject();
+                jObj.put("id", assets.get(i).getId());
+                jObj.put("userid", assets.get(i).getUserid());
+                jObj.put("description", assets.get(i).getDescription());
+                jObj.put("value", assets.get(i).getValue());
+                jsonAssets.add(jObj);
+            }
+            PrintWriter out = new PrintWriter(response.getOutputStream());
+            out.println(jsonAssets.toJSONString());
+            out.flush();
+        }
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
+}
+    
+The source code of webubb.controller.LoginController.java is:
+
+package webubb.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import webubb.model.DBManager;
+import webubb.domain.User;
+
+
+
+public class LoginController extends HttpServlet {
+
+    public LoginController() {
+        super();
+    }
+
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        RequestDispatcher rd = null;
+
+        DBManager dbmanager = new DBManager();
+        User user = dbmanager.authenticate(username, password);
+        if (user != null) {
+            rd = request.getRequestDispatcher("/succes.jsp");
+            //request.setAttribute("user", user);
+            // Here we should set the "user" attribute on the session like this:
+            HttpSession session = request.getSession();
+            session.setAttribute("user", user);
+            // .. and then, in all JSP/Servlet pages we should check if the "user" attribute exists in the session
+            // and if not, we should return/exit the method:
+            // HttpSession session = request.getSession();
+            // String user = session.getAttribute("user");
+            // if (user==null || user.equals("")) {
+            //        return;
+            // }
+        } else {
+            rd = request.getRequestDispatcher("/error.jsp");
+        }
+        rd.forward(request, response);
+    }
+    
+The source code of webubb.domain.Asset.java is:
+
+package webubb.domain;
+
+public class Asset {
+    private int id;
+    private int userid;
+    private String description;
+    private int value;
+
+    public Asset(int id, int userid, String description, int value) {
+        this.id = id;
+        this.userid = userid;
+        this.description = description;
+        this.value = value;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public int getUserid() {
+        return userid;
+    }
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    public int getValue() {
+        return value;
+    }
+    public void setValue(int value) {
+        this.value = value;
+    }
+}
+    
+The source code of webubb.domain.User.java is:
+
+package webubb.domain;
+
+public class User {
+    private int id;
+    private String username;
+    private String password;
+
+    public User(int id, String username, String password){
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
+    public int getId() { return id; }
+    public void setId(int id) { this.id=id; }
+    public String getUsername() {
+        return username;
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+    
+The source code of webubb.model.DBManager.java is:
+
+package webubb.model;
+
+import webubb.domain.Asset;
+import webubb.domain.User;
+import java.sql.*;
+import java.util.ArrayList;
+
+public class DBManager {
+    private Statement stmt;
+
+    public DBManager() {
+        connect();
+    }
+
+    public void connect() {
+        try {
+            Class.forName("org.gjt.mm.mysql.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/wp", "root", "");
+            stmt = con.createStatement();
+        } catch(Exception ex) {
+            System.out.println("eroare la connect:"+ex.getMessage());
+            ex.printStackTrace();
+        }
+    }
+
+    public User authenticate(String username, String password) {
+        ResultSet rs;
+        User u = null;
+        System.out.println(username+" "+password);
+        try {
+            rs = stmt.executeQuery("select * from users where user='"+username+"' and password='"+password+"'");
+            if (rs.next()) {
+                u = new User(rs.getInt("id"), rs.getString("user"), rs.getString("password"));
+            }
+            rs.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return u;
+    }
+
+    public ArrayList getUserAssets(int userid) {
+        ArrayList assets = new ArrayList();
+        ResultSet rs;
+        try {
+            rs = stmt.executeQuery("select * from assets where userid="+userid);
+            while (rs.next()) {
+                assets.add(new Asset(
+                        rs.getInt("id"),
+                        rs.getInt("userid"),
+                        rs.getString("description"),
+                        rs.getInt("value")
+                ));
+            }
+            rs.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return assets;
+    }
+
+    public boolean updateAsset(Asset asset) {
+        int r = 0;
+        try {
+            r = stmt.executeUpdate("update assets set description='"+asset.getDescription()+"', value="+asset.getValue()+
+                    " where id="+asset.getId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        if (r>0) return true;
+        else return false;
+    }
+
+}
+    
+All the above code was the java code. Now, we move to html, js and jsp files. The content of the ajax-utils.js file is:
+
+function getUserAssets(userid, callbackFunction) {
+    $.getJSON(
+        "AssetsController",
+        { action: 'getAll', userid: userid },
+        callbackFunction
+    );
+}
+
+function updateAsset(id, userid, description, value, callbackFunction) {
+    $.get("AssetsController",
+        { action: "update",
+            id: id,
+            userid: userid,
+            description: description,
+            value: value
+        },
+        callbackFunction
+    );
+}        
+    
+The contents of the error.jsp file is:
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+Login failed!
+</body>
+</html>        
+    
+The contents of the success.jsp file is:
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <style>
+        .asset-name {
+            background-color: cornflowerblue;
+            border-right: solid 1px black;
+        }
+    </style>
+    <script src="js/jquery-2.0.3.js"></script>
+    <script src="js/ajax-utils.js"></script>
+</head>
+<body>
+<%! User user; %>
+<%  user = (User) session.getAttribute("user");
+    if (user != null) {
+        out.println("Welcome "+user.getUsername());
+%>
+        <br/>
+        <p><button id="getAssetsbtn" type="button">Get Assets</button></p>
+        <section><table id="asset-table"></table></section>
+        <p style="height: 50px;"></p>
+        <section id="update-section">
+            <span style="font-weight: bold; background-color: mediumseagreen">Update asset</span><br/>
+            <table>
+                <tr><td>ID asset: </td><td><input type="text" id="asset-id"></td></tr>
+                <tr><td>Asset userid: </td><td><input type="text" id="asset-userid"></td></tr>
+                <tr><td>Asset description: </td><td><input type="text" id="asset-description"></td></tr>
+                <tr><td>Asset value: </td><td><input type="text" id="asset-value"></td></tr>
+                <tr><td><button type="button" id="update-asset-btn">Update asset</button></td><td></td></tr>
+            </table>
+        </section>
+        <section id="update-result-section"></section>
+
+
+        <script>
+            $(document).ready(function(){
+                $("#getAssetsbtn").click(function() {
+                    getUserAssets(<%= user.getId() %>, function(assets) {
+                        console.log(assets);
+                        $("#asset-table").html("");
+                        $("#asset-table").append("<tr style='background-color: mediumseagreen'><td>Id</td><td>Userid</td><td>Description</td><td>Value</td></tr>");
+                        for(var name in assets) {
+                            //console.log(assets[name].description);
+                            $("#asset-table").append("<tr><td class='asset-name'>"+assets[name].id+"</td>" +
+                                "<td>"+assets[name].userid+"</td>" +
+                                "<td>"+assets[name].description+"</td>" +
+                                "<td>"+assets[name].value+"</td></tr>");
+                        }
+                    })
+                })
+
+                $("#update-asset-btn").click(function() {
+                    updateAsset($("#asset-id").val(),
+                        $("#asset-userid").val(),
+                        $("#asset-description").val(),
+                        $("#asset-value").val(),
+                        function(response) {
+                            $("#update-result-section").html(response);
+                        }
+                    )
+                })
+
+            });
+        </script>
+<%
+    }
+%>
+
+</body>
+</html>
+    
+The contents of the index.html file is:
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <style>
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+<form action="LoginController" method="post">
+    Enter username : <input type="text" name="username"> <BR>
+    Enter password : <input type="password" name="password"> <BR>
+    <input type="submit" value="Login"/>
+</form>
+</body></html>
+    
+The contents of the web.xml file is:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>webubb.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AssetsController</servlet-name>
+        <servlet-class>webubb.controller.AssetsController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AssetsController</servlet-name>
+        <url-pattern>/AssetsController</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+    
+Additional documentation
+Examples of Servlets and JSP:
+http://www.cs.ubbcluj.ro/~forest/wp/JSP%20Servlet%20examples
+
