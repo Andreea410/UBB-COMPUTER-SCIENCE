@@ -1,0 +1,181 @@
+The complete source code for this project (the tutorial only discusses a part of this code) is available here.
+
+Simple ASP.Net MVC tutorial (using MS Visual Studio 2017 Enterprise ed.)
+Step 1. Create the MVC project
+First, we create the MVC project:
+
+We choose a ASP.NET web project in C#:
+
+Then, we choose a MVC project:
+
+Step 2. Create the Controller
+First, we create our first Controller (there is already a HomeController predefined by Visual Studio):
+
+Let's call our new Controller, "MainController" (we will choose a "MVC5 Controller -Empty" type):
+
+
+
+In order to test our new controller, add the following code to the MainController class in MainController.cs:
+     
+    		public string Test()
+        	{
+                    return "It's working";
+        	}
+    		
+And then run the project and write this URL in the browser: http://localhost:<port>/Main/Test. The port number on which the embedded IIS server is run by Visual Studio is generated dynamically for each run. Replace <port> with the correct value.
+Step 3. Create a view for making an Ajax call for all students from a specific group
+Add a new view "FilterStudents" to the MainController. Open the code file of the MainController, click anywhere on the code and choose "Add View":
+
+
+
+Replace the code from the FilterStudents.cshtml file with the following:
+            @{
+                Layout = null;
+            }
+
+            <!DOCTYPE html>
+
+            <html>
+            <head>
+                <meta name="viewport" content="width=device-width" />
+                <title>FilterStudents</title>
+                <script src="~/Scripts/jquery-1.10.2.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $("#button").click(function() {
+                            $.get("/Main/GetStudentsFromGroup", {group_id : $("#group_id").val()},
+                                function(data,status) {
+                                    $("#maindiv").html(data);
+                            });
+                        });
+                    });
+                </script>
+            </head>
+            <body>
+                GroupID: <input type="text" id="group_id" /><br />
+                <input id="button" type="button" value="get students" />
+                Lista studentilor din grupa:
+                <div id="maindiv"></div><br />
+            </body>
+            </html>
+        
+This html page contains an AJAX jquery script (the jQuery-1.10.2 library is already included into the project by default by Visual Studio; it's in the Scripts folder; off course, you can add a newer version of jQuery to this folder) that submits a group_id to the GetStudentsFromGroup() method of the Main controller (this is where the URL /Main/GetStudentsFromGroup is routed to).
+Step 4. Add the code for the GetStudentsFromGroup() method in the MainController.
+Add the following code to the MainController:
+        public string GetStudentsFromGroup()
+        {
+            int group_id = int.Parse(Request.Params["group_id"]);
+            DAL dal = new DAL();
+            List<Student> slist = dal.GetStudentsFromGroup(group_id);
+            ViewData["studentList"] = slist;
+
+            string result = "<table><thead><th>Id</th><th>Nume</th><th>Password</th><th>Group_Id</th></thead>";
+
+            foreach (Student stud in slist)
+            {
+                result += "<tr><td>" + stud.Id + "</td><td>" + stud.Nume + "</td><td>" + stud.Password + "</td><td>" + stud.Group_id + "</td><td></tr>";
+            }
+
+            result += "</table>";
+            return result;
+        }
+        
+Step 5. Add a new folder "DataAbstractionLayer" to the project and add a new class "DAL.cs" to this folder.
+
+
+
+
+
+
+Paste the following code into the DAL.cs file:
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Web;
+
+            using ASPX_mvc_example.Models;
+            using MySql.Data.MySqlClient;
+
+            namespace ASPX_mvc_example.DataAbstractionLayer
+            {
+                public class DAL
+                {
+                    public List<Student> GetStudentsFromGroup(int group_id)
+                    {
+                        MySql.Data.MySqlClient.MySqlConnection conn;
+                        string myConnectionString;
+
+                        myConnectionString = "server=localhost;uid=root;pwd=;database=wp;";
+                        List<Student> slist = new List<Student>();
+
+                    try
+                    {
+                        conn = new MySql.Data.MySqlClient.MySqlConnection();
+                        conn.ConnectionString = myConnectionString;
+                        conn.Open();
+
+                        MySqlCommand cmd = new MySqlCommand();
+                        cmd.Connection = conn;
+                        cmd.CommandText = "select * from students where group_id=" + group_id;
+                        MySqlDataReader myreader = cmd.ExecuteReader();
+
+                        while (myreader.Read())
+                        {
+                            Student stud = new Student();
+                            stud.Id = myreader.GetInt32("id");
+                            stud.Nume = myreader.GetString("name");
+                            stud.Password = myreader.GetString("password");
+                            stud.Group_id = myreader.GetInt32("group_id");
+                            slist.Add(stud);
+                        }
+                        myreader.Close();
+                    }
+                    catch (MySql.Data.MySqlClient.MySqlException ex)
+                    {
+                        Console.Write(ex.Message);
+                    }
+                    return slist;
+                }
+            }
+        
+Step 6. Add the Mysql.Data.dll reference to the project.
+In order to connect to the MySQL database, we need to add the mysql driver to the project. If you haven't already installed it on the computer, download it from here and install it. It will usually create in "C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies" a subfolder for each .NET framework you can use with this driver with (but this path may differ on your local computer).
+Then add the reference C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\Mysql.Data.dll to the project (I'm using .NET framework version 4.5 for my project): 
+
+
+
+Step 7. Add the model class "Student" to the project.
+
+
+
+
+Paste the following code into the Student.cs file:
+            using System;
+            using System.Collections.Generic;
+            using System.Linq;
+            using System.Web;
+
+            namespace ASPX_mvc_example.Models
+            {
+                public class Student
+                {
+                    public int Id { get; set; }
+                    public string Nume { get; set; }
+                    public string Password { get; set; }
+                    public int Group_id { get; set; }
+                }
+            }
+        
+Step 8. Import Models and DataAbstractionLayer packages into MainController.
+Add the following import statements to MainController:
+            using ASPX_mvc_example.Models;
+            using ASPX_mvc_example.DataAbstractionLayer;
+        
+Step 9. Run the application.
+Replace the body of the Index() method in the MainController with the following:
+        public ActionResult Index()
+        {
+            return View("FilterStudents");
+        }
+        
+Run the application and write the URL in the browser: http://localhost:<port>/Main
