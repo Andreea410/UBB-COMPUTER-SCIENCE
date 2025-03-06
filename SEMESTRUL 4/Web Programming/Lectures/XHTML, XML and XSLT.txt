@@ -1,0 +1,359 @@
+XHTML, XML and XSLT
+XHTML – EXtensible HyperText Markup Language
+What is XHTML
+It is HTML defined as an XML application. It is a stricter and cleaner HTML. It is compatible to HTML 4.01 and supported by all browsers. It is a W3C recommendation. Why XHTML ? The reason is the following. The below "bad" html document will work fine in most browser even if it does not follow HTML rules:
+
+<html>
+<head>
+<body>
+<p>a paragraph...<br>
+<a href="#">test
+</html>
+But browsers running on hand-held devices (e.g. mobile phones) have small computing power and can not interpret "bad" markup language. HTML is designed to structure (and display) data and XML is designed to describe and structure data. XHTML specifies that everything must be marked up correctly. In other words, XHTML is just HTML with stricter syntactic rules.
+XHTML – base syntactic rules
+The base syntactic rules of XHTML are the folowing:
+XHTML elements must be properly nested (red is bad, black is good):
+<b><i> Italic and bold text </b></i>
+<b><i> Italic and bold text </i></b>
+XHTML elements must always be closed (red is bad, black is good):
+<p> A paragraph...
+<br>
+<img src="foo.jpg">
+<p> A paragraph...</p>
+<br />
+<img src="foo.jpg" />
+XHTML elements must be in lowercase
+XHTML elements must have one <html> root element (which contains a <head> and a <body>)
+attribute names must be in lower case
+attribute values must be quoted (red is bad, black is good):
+<table width=300px>
+<table width="300px">
+the "id" attribute replaces the "name" attribute
+XHTML DTD defines mandatory elements
+attribute minimization is forbidden (red is bad, black is good):
+<input checked>
+<input disabled>
+<input checked="checked" />
+<input disabled="disabled" />
+General format of an XHTML document
+The general format of an XHTML document is the following - notice it is very similar to HTML.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>…</title>
+</head>
+<body>
+…
+</body>
+</html> 
+<!Doctype>,<html>,<head>,<title>,<body> are mandatory.
+DTD – Document Type Definition
+A DTD specifies the syntax of a document written in a SGML language (HTML, XHTML, XML). It specifies:
+the hierarchical structure of the document
+element names and types
+element content type
+and attributes names and values
+XML 1.0 has 3 DTDs: Strict, Transitional and Frameset.
+The following is a DTD example for an XHTML file.
+
+<!DOCTYPE course [
+<!ELEMENT course (lecture+)>
+<!ELEMENT lecture (title,bibliography,notes,examples)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT bibliography (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+<!ELEMENT examples (#PCDATA)>
+
+<!ATTLIST course professor CDATA #REQUIRED>
+<!ATTLIST course title CDATA #REQUIRED>
+<!ATTLIST course yearofstudy CDATA #REQUIRED>
+<!ATTLIST course date CDATA #IMPLIED>
+]> 
+A valid XHTML document is an XHTML document which obeys the rules of the DTD specified by the <!Doctype> tag. The official W3C XHTML validator is : http://validator.w3.org/check/referer
+The XHTML DTD is split in 28 modules.
+XML – eXtensible Markup Language
+Description of XML
+It is a markup language designed for storage and transport of data. It describes syntax and semantics of data, while HTML/XHTML describes only syntax of data. It is a markup language for structuring and self-describing data (not for formatting data); HTML/XHTML is for structuring and formatting/displaying data. It is a meta-language, a language used to create other markup languages (XHTML, XSLT, RDF, SMIL etc.). It does not have predefined tags; these are defined by users. It is easy readable by both humans and machines. It is plain text, software and hardware independent. It is a W3C recommendation.
+An XML Document example is the following.
+
+<?xml version="1.0"?>
+<collection>
+<book category="Networking">
+<title>High Performance TCP Networking</title>
+<author>Raj Jain</author>
+<isbn>567-78960</isbn>
+<editor>Prentice Hall</editor>
+</book>
+<book category="Databases">
+<title>Transactional Information Systems</title>
+<author>Gottfried Vossen</author>
+<author>Gerhard Weikum</author>
+<isbn>680-71060</isbn>
+<editor>Morkan Kaufman Publishing</editor>
+</book>
+<book category="Mathematics">
+<title>Mathematical Encyclopedia</title>
+<author>Eric Weistein</author>
+<isbn>545-678450</isbn>
+<editor>Addison Wesley</editor>
+</book>
+</collection>
+XML's popularity as a format for storing and interchanging data is high and increasing on the web. This is because it is self-describing, so it is more easily understood by different incompatible systems which interchange data and also reduces complexity of parsing it by different machines (computers, hand-held devices, news readers etc.). Because it is plain text it copes very well with platform upgrades (e.g. hardware, operating system, application, framework). It may be a competitor of relational databases for storing data on the web => semi-structured databases (more structured than plain text, but less structured than relational databases).
+The tree structure of an XML document
+An XML document has a tree structure which is implicitly displayed in the browser viewing the document:
+
+
+XML – syntactic rules
+Just like XHTML has syntactic rules, these are the syntactic rules of XML:
+all XML elements must have a closing tag
+XML elements are case-sensitive
+XML elements must be properly nested, not overlap
+XML documents must have only one root element which is the parent of all elements; "<?xml?>" is not part of the document itself
+values of XML attributes must be quoted
+characters "<" and "&" are illegal in XML; use predefined entity references ("&lt;" – "<", "&gt;" – ">", "&amp;" – &, "&apos;" – " ' ", "&quot;" – " " ")
+comments in XML: <!-- … -->
+white-space is preserved in XML (not like HTML)
+XML stores newline as LF (Line Feed)
+XML elements
+XML does not have predefined tags. An XML tag can have any name respecting the following rules:
+can contain letters, numbers and other characters
+can not start with a number or punctuation character
+can not start with the letters xml (or XML or Xml etc.)
+can not contain spaces
+An XML tag can contain text and other nested tags. An XML tag can also have attributes.
+XML well-formedness and validation
+A well-formed XML document is an XML document compliant to XML syntactic rules. A valid XML document is an XML document compliant to a DTD or XML Schema. A DTD can be specified inside the XML document after the "<?xml?>" tag or it can be specified in a separate file and referenced in the XML file by:
+<!DOCTYPE collection SYSTEM "collection.dtd">
+An XML Schema is an alternative to a DTD and can be referenced in the XML file using attributes of the root tag:
+<collection xmlns=http://www.cs.ubbcluj.ro
+xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance
+xsi:schemaLocation="http://www.cs.ubbcluj.ro collection.xsd">
+
+A DTD document for the collection.xml document is presented below.
+
+<!ELEMENT collection (book+)>
+<!ELEMENT book (title,author+,isbn,editor)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT editor (#PCDATA)>
+
+<!ATTLIST book category CDATA #REQUIRED>
+An equivalent XML schema for the collection.xml document is shown below.
+
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="collection">
+<xs:complexType>
+<xs:sequence>
+   <xs:element name="book">
+        <xs:complexType>
+			   <xs:attribute name="category" type="xs:string" />
+           <xs:sequence>
+               <xs:element name="title" type="xs:string"/>
+               <xs:element name="author" type="xs:string"
+						minOccurs="1" maxOccurs="10" />
+               <xs:element name="isbn" type="xs:string"/>
+               <xs:element name="editor" type="xs:string"/>
+           </xs:sequence>
+        </xs:complexType>
+   </xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema> 
+XML Schema
+XML Schema Definition (XSD) is the successor of DTDs. Like a DTD, an XSD defines:
+the elements which appear in the XML doc and their attributes
+the order/hierarchical structure of these elements
+the number of child elements of a specific type
+whether the element is empty or it has content
+default and fixed values for elements and attributes
+In addition to DTDs, XSDs:
+support basic data types (e.g. numerical, date, string etc.)
+support namespaces (for solving collisions)
+use XML syntax
+XML Namespaces
+In XML, users define tags. When integrating two different xml applications, tag conflicts can appear. XML Namespaces try to solve name conflicts. Example of an XML document with name conflicts:
+
+<document>
+<studies>
+<year_of_study name="1"> 
+	<group>211</group>
+	<group>212</group>			
+</year_of_study>
+<year_of_study name="2">
+	…
+</year_o_study>			
+</studies>
+<courses>
+<group name="Databases">
+	<course>Relational Databases</course>
+	<course>Database Systems Fundamentals</course>
+</group>
+<group name="Operating Systems">
+	…
+</group>
+</courses>
+</document>
+An Xml document with prefix namespaces solves the name clash (because now names belong to different namespaces):
+
+<document>
+<st:studies  xmlns:st="http://www.cs.ubbcluj.ro/studies">
+<st:year_of_study name="1"> 
+	<st:group>211</st:group>
+	<st:group>212</st:group>			
+</st:year_of_study>
+<st:year_of_study name="2">
+	...
+</st:year_o_study>			
+</st:studies>
+<co:courses  xmlns:co="http://www.cs.ubbcluj.ro/courses">
+<co:group name="Databases">
+	<co:course>Relational Databases</co:course>
+	<co:course>Database Systems Fundamentals</co:course>
+</co:group>
+<co:group name="Operating Systems">
+	...
+</co:group>
+</co:courses>
+</document>
+The namespace for a prefix must be defined using the xmlns attribute. The xmlns attribute can be placed in any tag (and it will be valid for that tag and all its children) or in the root tag like this:
+<document xmlns:st=http://www.cs.ubbcluj.ro/studies
+xmlns:co="http://www.cs.ubbcluj.ro/courses">
+Each namespace URI should be unique and should not necessary point to a page containing namespace information. The default namespace for the document is introduced by the xmlns attribute:
+<document xmlns="http://www.cs.ubbcluj.ro">
+XML Viewing
+If an XML document has errors (i.e. it is not well-formed), it will not be displayed in a browser as opposed to HTML which will be displayed if it has errors (the XML W3C standard specifies that an XML parser should stop when an error is found). The default display of an XML browser is its tree structure, because XML does not contain display/formatting information. An XML can be displayed differently (formatted) using CSS or XSLT.
+
+Formatting XML with CSS
+CSS files are referenced in an XML file using the tag:
+<?xml-stylesheet type="text/css" href="book.css"?>
+The book.css file may be:
+
+book {                         title {
+display: block;                     display: inline-block;
+border-bottom-style: solid;         width: 30%;
+border-bottom-width: 1px;           background-color: #ccefef;
+width: 80%;	                        padding-right: 5px;
+margin-left: auto;              }
+margin-right: auto;
+}                               isbn {							
+                                    display: inline-block;
+author {                            width: 15%;
+display: inline-block;              border-left-style: solid;
+width: 15%;                         border-left-width: 1px;
+border-left-style: solid;           padding-left: 5px;
+border-left-width: 1px;         }
+padding-left: 5px;
+}
+editor {
+display: inline-block;
+width: 20%;
+border-left-style: solid;
+border-left-width: 1px;	
+padding-left: 5px;
+}
+XPointer and XLink
+XPointer defines a standard way of referencing various objects inside an xml document.
+
+href="http://www.example.com/cdlist.xml#id('rock').child(5,item)" 
+XLink defines a standard way of creating hyperlinks in XML documents.
+
+<homepage xlink:type="simple"
+xlink:href="http://www.w3schools.com">Visit W3Schools</homepage> 
+XSLT – eXtensible Stylesheet Language Transformations
+What is XSL?
+XSL (eXtensible Stylesheet Language) was developed by the W3C because of a need for an XML-based stylesheet language. In HTML each tag is predefined and it already contains some default display information in its name, so it is easy to format it using CSS; in XML each tag can mean anything, so it is harder for XSL to format a tag. XSL consists of:
+XSLT – language for transforming XML documents
+XPath – language for navigating inside XML documents
+XSL-FO – language for formatting XML documents
+What is XSLT?
+XSLT if used for transforming an XML document in another XML document. XSLT is the most important part of XSL. XSLT can add/remove elements and attributes to an XML document, can rearrange and sort them, can hide or display elements. XSLT uses XPath for parsing the XML document. An XSLT example that transforms an XML book collection intro an HTML file is the following:
+
+<?xml version="1.0"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+<h2>A Book Collection</h2>
+<table border="1">
+<xsl:for-each select="collection/book">
+	<tr>
+	         <td><xsl:value-of select="title"/></td>
+     	 <td><xsl:value-of select="author"/></td>
+         <td><xsl:value-of select="isbn"/></td>
+     	 <td><xsl:value-of select="editor"/></td>
+	</tr>
+</xsl:for-each>
+</table>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+An XML file can be linked to an XSLT by specifying:
+
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
+<xsl:template>
+The syntax is the following:
+
+<xsl:template match="XPath expression">...</xsl:template> 
+It builds a template and associates this template with an XML element/tag. The match attribute associates the template with a specific XML element. <xsl:template match="/"> matches the root element of the XML document.
+<xsl:value-of>
+The syntax is the following:
+
+<xsl:value-of select="XPath expression" /> 
+It extracts the value (content) of the selected node (specified by the select attribute). Example:
+
+<xsl:value-of select="collection/book/title" /> 
+The above example selects the value of the current "title" element, which is a child of "book", which is a child of "collection".
+<xsl:for-each>
+The syntax is the following:
+
+<xsl:for-each select="XPath expression">...</xsl:for-each> 
+It selects each XML child node of the node specified by the select attribute/ Examples:
+
+1) <xsl:for-each select="collection/book">
+<xsl:value-of select="title" />
+<xsl:value-of select="author" />
+</xsl:for-each>
+The above example selects the "title" and "author" nodes which are children of all "book" nodes from a "collection" node.
+
+2) <xsl:for-each select="collection/book[title="Operating Systems"]>
+The above example filters the selection using a value for the content of a book node.
+<xsl:sort>
+The syntax the following:
+
+<xsl:sort select="XPath expression" /> 
+It sorts the output inside a <xsl:for-each> element on the value specified by the select attribute. Example:
+
+<xsl:sort select="title" />
+<xsl:if>
+The syntax the following:
+
+<xsl:if test="expression"> 
+	... output in case the expression is true ...
+</xsl:if>
+It adds a conditional test in the processing flow. The expression can contain the operators:
+= (equal)
+!= (not equal)
+< (little than)
+> (greater than)
+Example:
+
+<xsl:if test="title='Operating Systems'">…</xsl;if>
+<xsl:choose>
+The syntax the following:
+
+<xsl:choose>
+<xsl:when test="expression">
+	... some output ...
+</xsl:when>
+<xsl:otherwise>
+	... some output ....
+</xsl:otherwise>
+</xsl:choose>
+This tag is used for multiple conditional testing.
+
