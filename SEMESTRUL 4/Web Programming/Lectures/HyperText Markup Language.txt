@@ -1,0 +1,343 @@
+HTML. The HyperText Markup Language
+What is HTML ?
+The HyperText Markup Language (HTML) is the publishing language of the World Wide Web (WWW). WWW is a system of interlinked hypertext documents accessed via the Internet (i.e. it is an overlay network on top of the Internet). Actually there are two fundamental building blocks of the World Wide Web space, although nowadays the WWW is formed by a set of multiple technologies. And these two fundamental buildink blocks are: the HTML language for formatting and linking documents, and HTTP (HyperText Tranfer Protocol) for transporting these documents over the Internet (although HTTP is nowadays used to many more resources than HTML documents). HTML is actually a mark-up language (i.e. its elements, HTML tags, "mark" text, instruct the interpreter how to display text and also, "hyper-links" one document to another). HTML, as HTTP, was the work of a single man, Tim Berners-Lee from CERN in 1990. The HTML specification is standardized and maintained by the World Wide Web Consortium (W3C, w3c.org) which maintains all the other WWW standards.
+
+Let's now briefly talk about the history of HTML (WWW). The ideea of the HTML emerged in 1980 with Tim Berners-Lee proposing ENQUIRE at CERN which is a system for sharing documents. Following, in 1991, Tim Berners-Lee released the first publicly available description of HTML; it only had 20 elements/tags. In 1993, Tim Berners-Lee and Dan Connolly wrote the Internet draft of first HTML specification. In 1995, RFC 1866 was produced which describes HTML 2.0. Following, in January 1997, HTML 3.2 was standardized by the W3C. Actually, the W3C standards are called "W3C recommendations". Next, in December 1997, HTML 4.0 was standardized by W3C. In 1999, HTML 4.01 got standardized by W3C. HTML 5 was working draft in 2008 and in October 2014 HTML 5 was published as W3C Recommendation. In November 2016 HTML 5.1 was published as W3C Recommendation. In December 2017 HTML 5.2 was published as W3C Recommendation.
+Elements of HTML. Tags
+The elements of the HTML are also called tags. The general form of an HTML tag is the following:
+<tag-name attribute="val" ... attribute="val" event="..function..">
+      ... text content ...
+</tag-name>
+
+Tags tell the browser how the "content text" of the tag should be displayed in the web document. Attributes of a tag specify characteristics of the tags. There are some global attributes that every tag has, but besides these specific tags may have specific attributes. Events add interactivity to our HTML document and they are usable in Javascript (you will see later, in the Javascript chapter). In HTML tag names are not case sensitive. In HTML <!-- ... --> defines a comment (it is ignored and not rendered by the browser). Starting with the HTML 5 standard, the tag names are not restrictive (meaning you can specify your own tags in an HTML document), but standardized tags have specific default styles when rendered by the browser. So, in the remaining sections, we will presents the main tags of the HTML 5+ standard.
+
+The first, "Hello world", HTML document is depicted below:
+					
+<!doctype html> 
+<html> 
+	<head>
+		<title>Hello world page</title>
+	</head>
+	<body>
+		Hello World!
+	</body>
+</html>
+As you can see in the above example, an HTML document has an hierarchical structure. The main HTML tags are:
+<html> - is the root of the html document
+<head> - contains metadata about the document, action-scripting (see javascript), styles (see CSS) and general information referenced in the whole document
+<body> - contains the actual text of the document All standard HTML tags have a set of global attributes. These global attributes do not need to be specified in every HTML document, only the one that are needed. Besides these global attributes, specific tags have additional specific attributes. The global attributes that all tags have are:
+Core attributes:
+class – specifies a classname for the element (used with Cascading Style Sheets)
+id – specifies an ID for the element
+style – specifies an inline style for the element (Cascading Style Sheets)
+title – specifies extra information for the element (tooltip text)
+contenteditable – specifies if content is editable(true/false)
+draggable – if element can be dragged and dropped (true/false)
+hidden – if element is hidden
+Language attributes:
+dir="ltr | rtl" – specifies text direction for the contents of the element
+lang – specifies a language code for the contents of the element
+translate –specify whether content should be translated if page is localized
+Keybord attributes:
+accesskey – specifies a keyboard shortcut to access the elem.
+tabindex – specifies the taborder of the element
+In HTML there are several types of tags: metadata tags, section tags, text-level appearance tags, grouping tags, image tag, anchor tag, table tag, script tag and embeded content tags. In the following sections, we will take each of these categories and discuss the main tags from the category.
+Metadata tags
+The following are metadata tags. They usually appear inside the <head> and they specify information about the current document like the title of the document, author, the encoding of the document, keywords etc.
+<title> - specifies the title for the document
+Ex.:
+
+<head>
+	<title>My title</title>
+</head>
+...
+	
+<base> - specifies a default URL (Uniform Resource Locator) and a default target for all the links on a page; the syntax of the tag is the following:
+<base href="..URL.." target="_blank | _parent | _self | _top | framename">
+Ex.:
+ 
+<head>
+	<base href=http://www.cs.ubbcluj.ro/~forest>
+	<base target="_blank">
+</head>
+	
+<link> - defines the relationship between a document and an external resource; appears in the head section, any number of times (it is used usually to specify an external CSS document linked to this document); the link tag has the following attributes:
+href - location of the linked document
+rel – relationship between current document and linked document: alternate, appendix, bookmark, chapter, contents, copyright, glossary, help, home, index, next, prev, section, start, stylesheet, subsection
+rev - relationship between linked document and current document; values the same as above
+type – MIME type of the linked document
+target – where the document is to be loaded
+Ex.: for including a stylesheet
+ 
+<link rel="stylesheet" type="text/css" href="theme.css">
+	
+<meta> - describes information about the html document; it is not displayed, it is machine parsable; it appears in the head section
+Ex.:
+ 
+<meta name="description" content="Simple html page">
+<meta name="author" content="Adrian Sterca">
+<meta name="keywords" content="html, www">
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> 
+	
+<style> - defines style information in an html document (see CSS)
+Ex.:
+ 
+<style type="text/css">
+h1 {color:red}
+p {color:blue}
+</style> 
+	
+Section tags
+Section tags are tags that define sections of the document. In the current section of text we discuss classical section tags (prior to HTML 5). In a later section, we discuss the new structural elements introduced by version 5 of the HTML. The classical section tags in HTML are:
+<body> - defines the document body which contains all the text, hyperlinks, tables, images etc.
+The body tag has some attributes, but most of them are deprecated in the current version of HTML, in favour of stylesheets:
+alink – color of an active link; rgb(x,x,x), #xxxxxx, colorname
+bgcolor – background color; values are the same as above
+link – default color for unvisited link; values are the same as above
+text – color of the text; values are the same as above
+vlink – color of visited links; values are the same as above
+background = URL – background image
+<head> - defines the head section of the document; can contain the tags: <base>, <link>, <meta>,<script>,<style>,<title>
+<div> - defines a section in an HTML file; it groups together elements which will be formatted using the same style (in HTML5, it has no special meaning at all)
+<frameset> - defines a set of frames; it is mutually exclusive with <body>
+Frameset has the following attributes:
+cols = pixels | % | * - the number and size of columns in a frameset
+rows = pixels | % | * - the number and size of rows in a frameset
+Ex.:
+ 
+<frameset cols="25%,*,25%">
+  <frame src="frame_a.htm">
+  <frame src="frame_b.htm">
+  <frame src="frame_c.htm">
+</frameset> 
+	
+<frame> - a frame (window) within a frameset
+Attributes:
+frameboder = 0 | 1
+marginheight = pixels (top and bottom margins of a frame)
+marginwidth = pixels (left and right margins of a frame)
+name – name of a frame
+noresize = "noresize"
+scrolling = "yes | no | auto"
+src = "URL" - URL of the document to show in a frame
+<iframe> - an inline frame that contains another document within the current document. It can have the following attributes: align, frameborder, height, width, marginwidth, marginheight, name, scrolling, src
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6> - defines headings; headings are titles of sections; search engines use headings to index the structure of a web page; browsers automatically add an empty line before and after a heading
+<p> - defines a paragraph; browsers automatically add an empty line before and after a paragraph. Ex.:
+ 
+<p>This is a paragraph</p>
+	
+Text-level appearance tags
+These are tags useful for altering the appearance of text, making text bold, italic etc. They were used in the initial versions of HTML, but became deprecated in subsequent versions, favouring the CSS alternatives of these tags. This is because modern versions of HTML contain constructs/elements that provide structure of the text and left the visual formatting elements for a new language, Cascading Style Sheets. The text appearance tags are:
+<b> - makes bold text
+<i> - makes italic text
+<em> - makes emphasized text
+<strong> - makes strong text
+<s> - makes strikethrough text
+<u> - makes underlined text
+<del> - makes deleted text
+<sub> and <sup> - makes subscript and superscript text
+<pre> - makes preformatted text (text is displayed exactly as is written)
+<small> - makes small text
+<big> - makes big text
+Grouping tags
+One type of grouping tags is definition lists which are formatted using the HTML tags: <dl>, <dd>, <dt>. A definition list is just a list of terms-description pairs. Ex.:
+ 
+<dl>
+	<dt>Name1</dt>
+	<dd>Name1 is something1</dd> 
+	<dt>Name2</dt>
+	<dd>Name2 is something2</dd> 
+	<dt>Name3</dt>
+	<dd>Name3 is something3</dd> 
+</dl>
+	
+Another grouping tag is ordered list defined using the tags: <ol>, <li>. An ordered list appears in the browser as a list of numbered items. The numbers used for items are customizable through CSS rules. Ex.:
+ 
+<ol>
+    <li>Ferrari</li>
+    <li>Audi</li>
+    <li>BMW</li>
+    <li>Ford</li>
+</ol>
+	
+Another grouping tag is unordered list defined using the tags: <ul>, <li>. An unordered list is similar to an ordered list and it appears in the browser as a list of unnumbered items. Each item is preceeded by a bullet, icon, circle. The bullets used for items are customizable through CSS rules. Ex.:
+ 
+<ul>
+	 <li>Ferrari</li>
+	 <li>Audi</li>
+	 <li>BMW</li>
+	 <li>Ford</li>
+</ul>
+	
+A fourth type of grouping tags are drop-down lists constructed using the tags: <select>, <option> The appear in the browser as a drop-down list of options. Ex.:
+ 
+<select>
+    <option value="ferrari">Ferrari</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="ford">Ford</option>
+</select>
+	
+Image tag
+The <img> tag embeds an image into html document.
+Ex.:
+  
+<img src="z.jpg" alt="Alternative Text">
+<img src=http://www.google.com/t.jpg>
+	
+The src specifies the image stored locally or remote (through an URL) used. The required attributes for an img tag are : src and alt (alt is for browsers that can not display images, e.g. lynx). Optional attributes are:
+align = top | bottom | middle | left | right
+border = pixels
+height = pixels | %
+width = pixels | %
+hspace = pixels
+vspace = pixels
+Anchor tag
+The anchor tag, <a>, is a very important tag in HTML because it links current document to another document or a section from the current document. Ex.:
+ 
+1) <a href=http://www.google.com>google</a> 
+2) <a name="test">some text</a>
+	
+The first example links this html document to an external document (e.g. www.google.com). The second example creates a bookmark inside the document; it is not displayed by the browser, it is invisible; this bookmark can be referenced by:
+URL_of_this_document#test
+ex: http://www.google.com/index.html#test
+The attributes of an anchor tag are:
+href: the URL of the destination of the link
+name: the name of the anchor (bookmark)
+rel: relationship between the current document and the linked document
+rev: relationship between the linked document and the current document
+shape: the shape of the link (default, rect, circle, poly)
+target: where to open the linked document (_blank, _parent, _self, _top, framename)
+Table tag
+The table tag displays text in rows and in table cells inside rows. Table rows are defined with <tr> and table cells are defined using <td>. The <table> tag defines a table. <th> defines a table header cell (bold and centered). Ex.
+ 
+<table border="1">
+<tr>
+	<th>Professor</th>
+	<th>Course</th>
+	<th>Year of study</th>
+</tr>
+<tr>	
+	<td>John Boyd</td>
+	<td>Operating Systems</td>
+	<td>2</td>
+</tr>
+<tr>	
+	<td rowspan="2">Frank Black</td>
+	<td>Web Programming</td>
+	<td>3</td>
+</tr>
+<tr>	
+	<td>Computer Networks</td>
+	<td>3</td>
+</tr>
+<tr>	
+	<td>Jack O'Neil</td>
+	<td>Satellite Communications</td>
+	<td>3</td>
+</tr>
+</table>
+	
+The list of attributes:
+for <table>: border (pixels), cellpading (pixels), cellspacing (pixels), frame, rules, summary (text), width (pixels,%)
+for <th> and <td>: abbr (text), align (left,right,center,justify,char), axis, bgcolor - deprecated, char (character), charoff (number), colspan (number), headers, rowspan (number), height – deprecated, width – deprecated, scope (row,rowgroup,col,colgroup), valign (top,middle,bottom,baseline)
+for <tr>: align, bgcolor - deprecated, char, charoff, valign
+Script tag
+The <script> tag is used for inserting action scripting (see javascript) into the current HTML document. Javascript adds interactivity to the current website. Ex.:
+ 
+<script type="text/javascript">
+	... javascript code ...
+</script>
+	
+The list of attributes of the <script> tag are:
+src: URL of the script
+defer: execution of the script should be delayed until the page has loaded
+charset: specifies encoding used in an external file
+Embedded content tags
+The <object> tag includs objects like images, audio, video, Java applets, ActiveX, pdf, flash. It is not used much nowadays. Ex.:
+ 
+<object classid="clsid:F08DF954-8592-11D1-B16A-00C0F0283628" id="Slider1" width="100" height="50">
+		<param name="BorderStyle" value="1" />
+		<param name="MousePointer" value="0" />
+		<param name="Enabled" value="1" />
+		<param name="Min" value="0" />
+		<param name="Max" value="10" />
+</object>  
+	
+Other tags are <br> which moves to the beginning next line and <hr> which draws a horizontal row
+New structural tags in HTML 5
+HTML 5 came with big changes compared to previous versions of HTML. One of these big changes is to deprecate many standard visual formating attributes in favour of CSS and another one is to focus on semantics of elements. This means that it introduced more tags that should help in structuring the text. HTML 5 assumes that <div> should be used as the last resort, if no other structural element is suitable. The new structural elements introduced by HTML 5 are : <main>, <section>, <article>, <footer>, <header>, <aside>, <nav>. The <main> tag represents the main content of the <body> of the document. This tag includes content that is unique to that document and excludes data that is repeated across a set of documents (e.g. header, footer, navigational links, copyright). Main is no sectioning element. There should be one visible main element in the document.
+
+The <section> tag represents a generic section of a document. It groups thematic content.
+Ex:
+ 
+<section>
+	<p>Web programming studies html, css and js</p>
+	<p>Tim Berners-Lee invented the www</p>
+</section>
+<section>
+	<p>Operating systems are essential software for computers</p>
+	<p>OS example: Unix, Linux, MacOS</p>
+</section>
+	
+
+
+An <article> tag represents complete, or self-contained, composition in a document. The HTML 5 recommendation doesn't specify which is a higher-level tag, section or article, or in other words, do sections contain articles or articles contain sections. Instead this is left at the choice of the document writer.
+Ex.:
+ 
+<article>
+	HTML 5 was standardized in late 2014. It includes new structural-semantic elements like 'article' and 'section'
+	...
+</article>
+
+
+The <aside> tag represents content that is not in the main flow of the document.
+
+The <footer> and <header> tags contain text that should appear as header and respectively, footer on all documents from a website. They should contain things that are in common to all these documents like copyright, author, navigational map etc.
+Ex.:
+ 						
+<header>
+	Welcome to the page of A. Sterca.
+</header>
+
+
+<footer>
+	<a href="../">Back to index...</a>
+</footer>
+
+
+The <nav> tag is a section with navigational links.
+Ex.
+ 
+<nav>
+	<a href="#">Home</a>
+	<a href="#">Users</a>
+	<a href="#">Actions</a>		
+</nav>
+
+
+The <svg> tag is used to render vector graphics in the current document.
+Ex.:
+ 
+<svg width="200" height="250"> 
+	<rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+</svg>
+The <audio> and <video> tags are tags used for adding video and audio content to the current html document.
+Ex.:
+ 
+ <video width="320" height="240" controls>
+  	<source src="movie.mp4" type="video/mp4">
+  	<source src="movie.ogg" type="video/ogg">
+ </video>
+ 
+
+
+The <figure> and <figurecaption> tags are useful for adding figures to the current html document.
+Ex.:
+ 	
+<figure> 
+	<img src="bubbles-work.jpg"> 	<figcaption>Bubbles at work</figcaption>
+</figure>
+References
+http://www.w3schools.com
+http://www.w3c.org
