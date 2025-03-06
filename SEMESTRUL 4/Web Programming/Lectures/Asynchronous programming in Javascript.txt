@@ -1,0 +1,160 @@
+Asynchronous programming in Javascript
+Async programming
+The start of the discussion is the Java execution engine from inside the browser. The Javascript engine is single-threaded (every javascript code gets executed on the main thread). Can we do parallel tasks then ? The answer is yes, because the browser has several threads. The difference between asynchronous and synchronous programming is the following:
+asynchronous programming is a form of parallel programming in which a task is executed on a separate thread and when it completes it notifies the main thread (which can execute other things meanwhile)
+synchronous programming is the sequential programming where while a task is executed, any other code must wait for the task to finish before it can get executed
+Event handling - the simplest form of async programming in JS
+
+let elem = document.querySelector("#button");
+elem.addEventListener("click", function() {
+var newDiv = document.createElement("div"); 
+var newContent = document.createTextNode("Text.."); 
+newDiv.appendChild(newContent);
+document.body.appendChild(newDiv);  
+});
+window.setTimeout()
+window.setTimeout() is another simple form of async programming in Javascript.
+
+var timeoutID = window.setTimeout(func, delay, [param1, param2, ...])
+The above code calls function "func" with the specified parameters after "delay" miliseconds have passed. We can also clear a timeout.
+
+window.clearTimeout(timeoutID);
+The above code clears the timeout (async function is no longer called).
+window.setInterval()
+window.setInterval() is yet another simple form of async programming in Javascript. It just calls window.setTimeout() repeatedly.
+
+var intervalID = window.setInterval(func, [delay, param1, param2, ...]);
+The above code calls function "func" repeatedly with the specified parameters after "delay" miliseconds have passed.
+
+window.clearInterval(intervalID);
+The above code clears the timeout interval (async function is no longer called).
+Javascript execution engine
+Call Stack
+Browser API (DOM, XHR, Fetch, etc.)
+Task queue
+Micro-task queue
+Call stack: JavaScript runtime call stack. Executes the JS commands, functions.
+Task Queue: When the browser internal implementation notices a callback from something like setTimeout or addEventListener should be fired, it creates a Task and enqueues it in the Task Queue
+Micro-task Queue: Promises are special tasks that execute with higher priority than normal tasks, so they have their own special queue
+Event loop: Processes the task queues.
+When the call stack is empty, the event loop pulls the next task from the task queues and puts it on the call stack.
+The Micro-task queue has higher priority than the Task Queue.
+Asynchronous programming (promises)
+
+const myFirstPromise = new Promise(function (resolve, reject) {   	
+// do something asynch which eventually calls either: 
+        // resolve(someValue); // fulfilled 
+        // or 
+        // reject("failure reason"); // rejected 
+});
+The executor function is executed immediately by the Promise implementation, passing resolve and reject functions (the executor is called before the Promise constructor even returns the created object); the resolve and reject functions are provided by the Javascript engine. The resolve and reject functions, when called, resolve or reject the promise, respectively. The executor normally initiates some asynchronous work, and then, once that completes, either calls the resolve function to resolve the promise or else rejects it if an error occurred. If an error is thrown in the executor function, the promise is rejected. The return value of the executor is ignored.
+Getting the returned result from a Promise
+Promises can not return anything, they just pass results to callbacks (which are specified with .then())
+Without .then() you can not get the returned result from the Promise!
+
+const p = new Promise(function(resolve,reject) {
+// the asynchronous work - just a console.log()
+console.log("Doing some work...");
+resolve("Done");
+});
+
+// we assume the Promise p is always resolved
+p.then(function(result) { 
+console.log(result); // just print the returned result of the Promise
+})
+	
+Async and await
+async placed in front of a function makes that function return a promise
+
+async function f(arg) {
+console.log(arg);
+}
+f().then(alert);
+		
+await can be placed in front of any async promise-based function to pause your code on that line until the promise fulfills, then return the resulting value;
+
+async function fetchImage() {
+let img = await fetch('/img/a.jpg');
+...
+}
+		
+await only works in async functions
+Web Workers
+allow running js code in the background threads of the browser
+a worker communicates with the code that created it through message passing
+
+var worker = new Worker('doWork.js');
+
+worker.addEventListener('message', function(e) {
+console.log('Worker said: ', e.data);
+}, false);
+
+worker.postMessage('Hello World'); // Send data to our worker.
+	
+Javascript interpreter in the browser is single-threaded, but it is still capable to run asynchronous code. Synchronous code - piece of code that blocks the execution, nothing gets executed until that piece of code completes. Asynchronous code - piece of code that does not block the execution, i.e. other code can be executed until the asynchronous piece of code completes - this is not necessarily parallelism.
+Concepts:
+Heap - a memory space of the javascript runtime where all javascript objects are created.
+Call Stack - the calling stack for the javascript runtime; whenever a function is called a stack frame is allocated for this function on the stack containing arguments of the function, local variables and the return address.
+Task queue (or message queue) - a queue (First-In-First-Out discipline where tasks are added and are executed one at the time, only when the javascript calling stack is empty.
+Browser API - functions that are outside of the javascript runtime and are executed by other threads of the browser (e.g.: DOM events, local browser storage, AJAX requests, setTimeout(), console.log(), etc.)
+Examples:
+
+ 
+function test() {
+console.log('function test()');
+}
+
+test();
+console.log('end example.');
+/* Will print:
+*	function test()
+*	end example.
+*/
+In the above code example we see a synchronous execution. To get into more details of what is happening, look at the following figure:
+
+The next example shows asynchronous execution.
+ 
+function test() {
+console.log('function test()');
+}
+
+setTimeout(test, 1000);
+console.log('end example.');
+/* Will print:
+*	end example.
+*	function test()
+*/
+To get into more details of what is happening, look at the following figure:
+
+The above example is asynchronous, but not concurrent/parallel (meaning that the function test() is not run in parallel with the code console.log('end example.')), but if instead of the function test() we would have had an AJAX request than this request would be truely parallel because it is executed in a different browser thread.
+Async code example mixing setTimeout and promises :
+
+ 
+function test() {
+console.log('function test()');
+}
+
+window.setTimeout(test, 0);
+// Code in normal notation:
+//var promise = new Promise(function(resolve, reject) {
+//	var i = 0;
+//	resolve('promised resolved.');
+//});
+//promise.then(/*resolve func*/ function(param) {console.log(param)},
+//			 /*reject func*/ function(param) {console.log(param)});
+// Same code as above, but in fat arrow notation:
+var promise = new Promise((resolve, reject) => {
+var i = 0;
+resolve('promised resolved.');
+});
+promise.then(/*resolve func*/ param => console.log(param),
+	 /*reject func*/ param => console.log(param));
+// we could have skipped the reject function argument from above as it is not used.
+
+console.log('end example.');
+// Output:
+//		end example.
+//		promised resolved.
+//		function test()
+Please do note that in the above example the Promise is executed before setTimeout() even though setTimeout() comes before the Promise in the code and the delay of setTimeout() is zero (i.e. no delay).The explaination for this is that promises are not placed on the task queue, but they are placed on another queue (i.e. microtask queue) and are taken from this queue as soon as they are resolved or rejected (the runtime does not wait until the calling stack is empty).
+
