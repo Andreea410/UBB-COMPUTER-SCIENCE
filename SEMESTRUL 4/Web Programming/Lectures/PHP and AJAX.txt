@@ -1,0 +1,541 @@
+PHP and AJAX
+What is PHP ?
+The name comes from a recoursive definition: "PHP: Hypertext Preprocessor". It is a web server-side programming language. PHP is simple and efficient, and it is free and open-source. PHP runs in an interpreter that works on top of Apache web server and IIS (Internet Information Service). PHP can be downloaded here.
+If we go a little bit through PHP history, we notice that the PHP project started in 1995 as PHP/FI – Personal Home Page/Forms Interpreter, a set of CGI scripts written in C by Rasmus Lerdorf for tracking access to a web page; it included database access and server-side functionality. In 1997, PHP/FI reached version 2.0. In the same year, Andi Gutmans and Zev Suraski completely rewrote PHP/FI and released PHP 3.0. Following, PHP 4.0 and the Zend engine was released in 1999-2000. In 2005, we have PHP 5.0 and Zend Engine 2.0 with new Object model and features. In 2015, PHP version 7.0 was released with Zend Engine 3.0; it supported more compact data structures, cache, new language features. The latest version in 2019 is PHP 7.4.
+Php code in HTML files
+A php file is just a regular html document which contains html tags, it has the regular html structure, but it also contains some special tags that contain PHP code within. All regular html tags are left the way they are by the HTTP server, but the PHP special tags are interpreted by the PHP interpreter and replaced with the output of the execution of that PHP code, and then the resulted html document is sent by the HTTP server to the client (i.e. browser). So, the simplest PHP file is just a file with the extension .php which contains just html tags and no PHP, special tag. A first php example is depicted in the following code listing. The <?php ?> tag is replace in this file with the text "first example" which is the output of the command echo "first example";, when this php file is served to the browser.
+
+<html>
+<head> </head>
+<body>
+test... <br/>
+<?php echo "first example.";?>
+</body>
+</html> 
+Generally speaking, there are 4 ways we can add PHP code in an html document.
+
+1. <?php ... code ... ?>
+2. <script language="php">
+... code ...
+</script>
+3. <? ... code ... ?>
+<?= expression ?>
+4. ASP-style tags:
+<% ... code... %>
+Php variables
+Php is a loosely-typed language (i.e. variable is not bound to a specific type). A variable name, when used or defined, is always preceded in Php by $. No type is specified when the variable is defined. Variables are defined once they are initialized with a value. Examples of variables definition in Php:
+
+$text="example";
+$no=4;
+$no1=5.6l;
+$vect=array(1,2,3,4,5);
+$b=TRUE;
+By default, variables are always assigned by value:
+
+$x = "test"; 
+$x1=$x;		// $x1 is initialized with the value of variable $x
+But they can be assigned by reference as in the following example:
+
+$x1 = &$x;
+//$x1 is an alias for $x (when $x1 changes, $x changes too and the reverse is also true) 
+Variables need not be initialized, but this is a good practice. They have a default value depending on the context (FALSE in boolean context, 0 in numeric context) - similar to Javascript, another loosely-typed programming language. An important function in the context of variables is var_dump($var) which prints information about variable $var.
+
+Regular PHP variables have a single scope – the context within the variable is defined (function, file etc.); this scope includes required and include files. A code example showing the scope of a variable is the following.
+
+$n=4;
+include "vars.php"; //$n is visible in "vars.php"
+Local variables from user-defined functions have a local function scope:
+	
+$n=4;
+function foo() { echo $n; } // $n is undefined here
+Static variables have a local function scope, but they exist outside the function and keep their values between calls. For example:
+
+function test() {
+	static $n = 0; 
+	$n++; 
+	echo $n; 
+}
+Variable $n keeps its values between calls to function test().
+
+Global variables or global scope variables declared within a function will refer to the global version of those variables. For example:
+
+$a=2; $b=2;
+function test() {
+	global $a, $b;	// $a and $b are the global variables
+	$c = $a + $b; 	//$c is here 4
+}
+Global variables can be accessed through the $GLOBALS array like in the following code:
+
+$c = $GLOBALS['a'] + $GLOBALS['b'];
+The $GLOBALS array is an associative array with the name of the global variable being the key and the contents of that variable being the value of the array element. $GLOBALS exists in any scope, this is because $GLOBALS is a superglobal variable.
+
+Superglobal variables are available in all scopes throughout the script. There is no need to be declared global in a local function. Superglobal scope was introduced in PHP 4. The list of superglobal variables is predefined and these are:
+$GLOBALS – contains references to all variables defined in the global scope of the script
+$_SERVER - array containing information such as headers, paths, and script locations; built by the web server
+$_GET - array of variables passed to the current script via the URL parameters
+$_POST - array of variables passed to the current script via the HTTP POST method
+$_FILES - array of items uploaded to the current script via the HTTP POST method
+$_COOKIE - array of variables passed to the current script via HTTP Cookies
+$_SESSION - array containing session variables available to the current script
+$_REQUEST - array that by default contains the contents of $_GET, $_POST and $_COOKIE
+$_ENV - array of variables passed to the current script via the environment method
+If the register_global directive is on, the variables from the superglobal arrays become available in the global scope.
+In the following code example, we see the difference between global vs. superglobal scope.
+
+function test_global()
+{
+	// Most predefined variables aren't "super" and require 
+	// 'global' to be available to the functions local scope.
+	global $HTTP_POST_VARS;
+
+	echo $HTTP_POST_VARS['name'];
+
+	// Superglobals are available in any scope and do not 
+	// require 'global'. Superglobals are available as of 
+	// PHP 4.1.0, and HTTP_POST_VARS is now deemed deprecated.
+	echo $_POST['name'];
+} 
+Another code example of using the $GLOBALS superglobal array in order to access global variables is the following:
+
+function test() {
+	$foo = "local variable";
+
+	echo '$foo in global scope: ' . $GLOBALS["foo"] . "\n";
+	echo '$foo in current scope: ' . $foo . "\n";
+}
+$foo = "Example content";
+test(); 
+
+will print:
+$foo in global scope: Example content 
+$foo in current scope: local variable 
+$_SERVER
+The $_SERVER superglobal array holds the following keys (selection):
+'PHP_SELF' – the filename currently executed
+'SERVER_ADDR' – the IP address of the server
+'SERVER_PROTOCOL' – name and version of the protocol via which the page is requested; HTTP/1.1
+'REQUEST_METHOD' – the request method
+'QUERY_STRING' – the query string
+'DOCUMENT_ROOT' – the document root under which the current script is executed
+'REMOTE_ADDR' – the client IP address
+'REMOTE_PORT' – the client port
+'HTTP_ACCEPT' – the HTTP accept field of the HTTP protocol
+$_GET
+The $_GET superglobal array holds data sent by the browser in the query string of an HTTP GET request. All values from the query string of an HTTP GET request have the form "key=value" and we can access them at the server-side using the keys as indexes/keys in the $_GET array. The following listing shown an html document part that submits to the server two input data named "fname" and "age" when the user clicks the form submit button.
+
+<form action="welcome.php" method="get">
+	Name: <input type="text" name="fname" />
+	Age: <input type="text" name="age" />
+	<input type="submit" />
+</form> 
+The above form will be submitted for example to: http://<URL>/welcome.php?fname=John&age=30 if the user input 'John' for the 'fname' input field and '30' for the 'age' input field. The 'welcome.php' file can access the values from the query string using the $_GET array like this:
+
+Welcome <?php echo $_GET["fname"]; ?>.<br />
+You are <?php echo $_GET["age"]; ?> years old! 
+$_POST
+The $_POST superglobal array is similar to $_GET and holds data sent by the browser in the query string of an HTTP POST request this time. The previous html example is now modified to perform HTTP POST request.
+
+<form action="welcome.php" method="post">
+	Name: <input type="text" name="fname" />
+	Age: <input type="text" name="age" />
+	<input type="submit" />
+</form> 
+The above form will be submitted for example to: http://<URL>/welcome.php and the values of the 'fname' input field and 'age' input field are now in the body of the HTTP request (not in the head of the HTTP request). The 'welcome.php' file can access the values from the query string using the $_POST array like this:
+
+Welcome <?php echo $_POST["fname"]; ?>.<br />
+You are <?php echo $_POST["age"]; ?> years old! 
+Functions
+The syntax of defining a function is:
+
+function functionName($param1, $param2, ..., $paramn) {
+	... statements ...
+	return ...;
+}
+An example of a function declared in PHP is the following. Arguments, like local variables need to be preceeded with the $ sign.
+
+<?php
+function add($x,$y) {
+	$total = $x + $y;
+	return $total;
+}
+
+echo "1 + 16 = " . add(1,16);
+?> 
+Classes and Objects
+PHP is a procedural programming language, but also an object-oriented one. You can define classes with public/protected/private class members and methods, you can derive from a base class, overload methods, call parent methods in the derived class etc. You can see a simple code example below with a base class and a derived class.
+
+class SimpleClass {
+	// property declaration
+	public $var = 'a default value';
+	// method declaration
+	public function displayVar() {
+		echo $this->var;
+	}
+} 
+$instance = new SimpleClass();
+class ExtendClass extends SimpleClass {
+	// Redefine the parent method
+	function displayVar() {
+		echo "Extending class\n";
+		parent::displayVar();
+	}
+}
+$extended = new ExtendClass();
+$extended->displayVar(); 
+PHP treats objects are references (i.e. a variable contains the reference of the object, not the entire object). For creating an object, there is the new keyword. Other reserved words are:class for declaring a new class, this for the current object and extends for inheritence. The constructor of a class is always defined using the function __construct(). The destructor is defined using __destruct(). The visibility of a class member or method can be set using the keywords public, protected, private (declaring with var means public visibility). A class visibility example is depicted in the following code lines.
+
+class MyClass
+{
+	public $public = 'Public';
+	protected $protected = 'Protected';
+	private $private = 'Private';
+
+	function printHello()
+	{
+		echo $this->public;
+		echo $this->protected;
+		echo $this->private;
+	}
+}
+Types
+Although PHP is a dynamic programming language and a variable changes its type during the execution of the program, PHP still has types and the value of a variable is automatically converted from on etype to another depending on the context in which the variable is used. The types available in PHP are:
+boolean: a non-zero numeric value or empty string or array, NULL are automatically converted to FALSE; other values are cast to TRUE
+numeric types:integer, float, double; integers are written by default in decimal base, hexadecimal (prefixed by "0x"), and octal (prefixed by "0")
+string
+array
+object: reference type to cast class instances to
+resource: a reference to an external resource(curl session, ftp session, database link, pdf document etc.) created and used by special functions
+NULL: a variable with no value (no value has been set or the variable has been unset() )
+pseudo-types: mixed (e.g. the type parameter of gettype()), callback functions, void (e.g. function returning void)
+The String type
+In PHP a character is just a byte. PHP doesn't have native Unicode support, but allows Unicode char declarations "\u{9999}" and working with Unicode strings through mbstring functions. There are 4 ways of defining a string literal in PHP:
+single quotes: $str = 'this is a string';
+double quotes: $str = "this is a string";
+heredoc syntax: (the closing identifier must be in the beginning of the line and can only be followed by ';')
+
+$str = <<<FOO
+this is
+a string
+FOO;
+		
+nowdoc syntax: (no parsing is done inside a nowdoc; useful for embedding PHP code or large body of text without escaping)
+
+$str = <<<'FOO'
+this is
+a string
+FOO;
+		
+In a double quotes or heredoc string, variables are parsed within it, in a single quotes and nowdoc string, they are not. We can use variables in a string literal and there are 2 possible syntaxes for this. The simple syntax is when the variable is preceded by '$'; ex. echo "some text $var". The complex syntax allows for complex expressions to be enclosed in "{...}"; ex. echo "some text {$ob->vect['foo']->val}". a string can be indexed, e.g. $str[3] – 4th character of str In a string context, all other values are automatically converted to strings (e.g. 23->"23", TRUE->"1"). In numeric context, strings are automatically converted to integer/float; e.g. $n=1+"2 zzz" => $n=3. The "." operator is for string concatenation ('+' is not good).
+
+In PHP there is a plethora of String functions, a selection is outlined below.
+echo(), print(), printf(), sprintf(), fprintf() – for displaying strings
+crypt(), md5(), sha1() – hashing function
+explode(), strtok() – string tokenizer
+ltrim(), rtrim(), str_replace(), str_shuffle(), str_split(), str_word_count(), strchr(), strcmp(), strlen(), strstr(), strpos(), strtolower(), strtoupper(), substr(), substr_compare(), substr_count(), substr_replace() – string manipulation functions
+sscanf() – parsing input
+Arrays
+Arrays in PHP are actually ordered maps (key-value pair sequences), just like Javascript objects. The keys can be only integer or string values. If no key is specified for an element, the value of the previous key plus 1 is used (keys start at 0 if not specified). Some code examples of array declarations are below:
+
+$a = array("a"=>45, 2=>7, 36=>"zzz")
+$b = array(4=>40, 67, 87, "b"=>3) is the same as:
+$b = array(4=>40, 5=>67, 6=>87, "b"=>3)
+$c = array(2=>"zz", 45=>array("a"=>11, 23=>34)) – a multidimensional array
+We can access a component of the array by indexing it:
+
+$v = array(1=>2, 2=>"zz", vect=>array(2, 3, 4));
+$v[2] = 45;
+$v['vect'][1]=4;
+Defining an array can also be done by setting a value for a specific component:
+
+$v[2]=3;
+We can remove a key/pair value or the whole array in the following way:
+
+unset($v[2]);
+unset($v);
+A primary value (i.e. integer, float, string, boolean) can be converted automatically to an array with one component having at index 0 that value. The count($v) function counts the elements of $v and sort($v) sorts the elements of $v. One way of parsing a vector is: foreach($persons as $p) { echo $p; }.
+Functions useful with types
+Since PHP is a loosly-typed language and the type of a variable can change during the execution of the program, PHP provides some useful functions for determining the current type of a variable.
+gettype($var) – return the type of $var
+settype($var,"newtype") – for explicit conversion
+boolean is_array($var)
+boolean is_binary($var)
+boolean is_bool($var)
+boolean is_buffer($var)
+boolean is_callable($var)
+boolean is_double($var)
+boolean is_float($var)
+boolean is_int($var)
+boolean is_integer($var)
+boolean is_long($var)
+boolean is_null($var)
+boolean is_numeric($var)
+boolean is_object($var)
+boolean is_real($var)
+boolean is_resource($var)
+boolean is_scalar($var)
+boolean is_string($var)
+boolean is_unicode($var)
+Operators
+The operators in PHP are similar to operators of other imperative programming languages.
+arithmetic operators: + , - , * , / , % , ++ , --
+assignment operators: = , += , -= , *= , /= , .= , %=
+comparison operators: == , != , <> , > , >= , < , <= , === (identical) , !== (not identical)
+bitwise operators: & , | , ^ , ~ , << , >>
+logical operators: && , || , ! , and , or , xor
+string operators: . (concatenation)
+ternary operator: (expr) ? (exprTrue) : (exprFalse)
+error control operator (@) : when '@' is placed in front of an expression, if that expression generates an error message, that error message will be ignored
+execution operator (`...`) – like in Unix shells, it executes the shell expression between the inverse apostrophes and returns the output of it:
+
+$output = `ls –l `
+cast operators: ex.: (string) $a; (float) $b;
+array operators:
+$a + $b : union of arrays $a and $b (duplicate keys are not overwritten)
+$a == $b : true if $a and $b have the same key/value pairs
+$a === $b : true if $a and $b have the same key/value pairs in the same order and of the same type
+$a!=$b and $a<>$b : true if $a and $b don't have the same key/value pairs
+$a !== $b : true if $a and $b are not identical
+Constants
+The scope of constants is global. Constants are declared using the function define() or using const:
+
+define("const1", "something");
+The constant name is not prepend with '$' when referenced:
+
+echo const1;
+There are some predefined constants PHP offers:
+__LINE__ : the current line number of the file
+__FILE__ : the full path and name of current file
+__DIR__ : the directory of the file
+__FUNCTION__ : the name of the current function
+__CLASS__ : the class name
+__METHOD__ : the class method name
+__NAMESPACE__ : the current namespace
+Instructions
+The following is a list of instructions available in the PHP language:
+if (cond) {...} elseif (cond) {...} ... else {...}
+while (cond) { ... }
+switch($var) { case val1: statements; case val2: statements; ... ; default: statements; }
+do { ... } while(cond)
+break can exit a do-while/while/for/foreach/switch structure
+continue skips the rest of the current iteration and begins a new iteration (if the condition is true) in a do-while/while/for/foreach loop
+for(init ; continue_cond; next) { ... }
+foreach($vector as $val) { ... }
+foreach($vector as $key=>$val) { ... }
+PHP offers an alternative syntax for if, switch, while, for, foreach where the opening brace '{' is changed to ':' and the closing brace '}' is changed to endif;, endswitch;, endwhile;, endfor;, endforeach;. For example :
+
+while($n < 4):
+	$i++;
+	echo $i;
+endwhile;
+The keyword return ends execution of current function and goto jumps the execution to a label in the code:
+
+label:
+$i++;
+...
+goto label;
+include() and require()
+include() and require() include in the current context another PHP file. Example :
+
+include "settings.php";
+require "global.php";
+The code included inherits the variable scope of the line on which the include occurs. Parsing drops out of PHP mode and into HTML mode at the beginning of the included file and resumes again at the end. If allow_url_fopen is enabled, the file to be included can be specified using an URL.
+Predefined Variables (superglobals)
+The superglobal variables are predefined variables that exist in all scopes and accesible in all PHP code. Following is a list of superglobal variables.
+Superglobals — Superglobals are built-in variables that are always available in all scopes
+$GLOBALS — References all variables available in global scope
+$_SERVER — Server and execution environment information
+$_GET — HTTP GET variables
+$_POST — HTTP POST variables
+$_FILES — HTTP File Upload variables
+$_REQUEST — HTTP Request variables
+$_SESSION — Session variables
+$_ENV — Environment variables
+$_COOKIE — HTTP Cookies
+$php_errormsg — The previous error message
+$HTTP_RAW_POST_DATA — Raw POST data
+$http_response_header — HTTP response headers
+$argc — The number of arguments passed to script
+$argv — Array of arguments passed to script
+Cookies
+A cookie is often used to identify a user. A cookie is a small file that the server embeds on the user's computer. Each time the same computer requests a page with a browser, it will send the cookie too. With PHP, you can both create and retrieve cookie values. Creating a cookie happens like this:
+
+<?php
+	$expire=time()+60*60*24*30;
+	setcookie("user", "Alex Porter", $expire);
+?>
+Retrieving a cookie value is done using the $_COOKIE superglobal array:
+
+<?php
+	if (isset($_COOKIE["user"]))
+		echo "Welcome " . $_COOKIE["user"] . "!<br />";
+	else
+		echo "Welcome guest!<br />";
+?>
+We can delete a cookie by assuring the expiration date is in the past:
+
+<?php
+	// set the expiration date to one hour ago
+	setcookie("user", "", time()-3600);
+?> 
+PHP sessions
+A PHP session variable is used to store information about, or change settings for a user session. Session variables hold information about one single user, and are available to all pages in one application. Sessions work by creating a unique id (UID) for each visitor and store variables based on this UID. The UID is either stored in a cookie or is propagated in the URL. We can start a session like this:
+
+<?php session_start(); ?>
+<html>
+<body> </body>
+</html>
+Then, we are ready to store a veriable in the newly created session:
+
+<?php
+session_start();
+
+if(isset($_SESSION['views']))
+	$_SESSION['views']=$_SESSION['views']+1;
+else
+	$_SESSION['views']=1;
+
+echo "Views=". $_SESSION['views'];
+?>
+Freeing a session variable is done in the following way:
+
+<?php
+	unset($_SESSION['views']);
+?>
+Finally, destroying a session is done by calling:
+
+<?php
+	session_destroy();
+?> 
+A session object is actually stored at the server-side and a hash of this session is sent to the client (i.e. browser) as a cookie. This cookie is stored temporarily by the browser and sent by the browser automatically with each HTTP request set to the same HTTP server. This is how the server knows that two different HTTP requests belong to the same user.
+PHP and MySQL
+PHP has native support for Mysql databases. There are three APIs for working with a Mysql database: a deprecated "mysql_" procedural interface, a newer "mysqli_" procedural interface and an object-oriented interface using PDOs. Opening and closing a connection to a Mysql server is done like this:
+
+<?php
+	$con = mysqli_connect("localhost", "user", "pass", "DB");
+	if (!$con) {
+	die('Could not connect: ' . mysqli_error());
+	}
+
+	// some code
+	mysqli_close($con);
+?>
+Querying and displaying the result on a Mysql connection :
+
+<?php
+	$con = mysqli_connect("localhost", "user", "pass", "DB");
+	if (!$con) {
+		die('Could not connect: ' . mysqli_error());
+	}
+
+	$result = mysqli_query($con, "SELECT * FROM Persons");
+
+	echo "<table border='1'> <tr> <th>Firstname</th> <th>Lastname</th> </tr>";
+
+	while($row = mysqli_fetch_array($result)) {
+		echo "<tr>";
+		echo "<td>" . $row['FirstName'] . "</td>";
+		echo "<td>" . $row['LastName'] . "</td>";
+		echo "</tr>";
+	}
+	echo "</table>";
+	mysqli_close($con);
+?> 
+AJAX - Asynchronous JavaScript and XML JSON
+What is AJAX ?
+AJAX is not a new programming language, but a new technique for creating better, faster, and more interactive web applications. With AJAX, a JavaScript can communicate directly with the server, with the XMLHttpRequest object. With this object, a JavaScript can trade data with a web server, without reloading the page. AJAX uses asynchronous data transfer (HTTP requests) between the browser and the web server, allowing web pages to request small bits of information from the server instead of whole pages. The AJAX technique makes Internet applications smaller, faster and more user-friendly. It is the fundament of SPA (Single Page Applications). Initially, an AJAX request returned data in XML format (hence the 'X' in AJAX), but nowadays, the result is usually returned in JSON notation.
+JSON (JavaScript Object Notation)
+JSON is a lightweight data interchange format based on javascript, readable by both humans and machines. It uses 3 data types:
+Simple types: numeric, string, boolean, null
+Array: [ elem1, elem2, elem3 ... ]
+Object: { prop1: value1, prop2: value2, prop3: value3 ... }
+Example of a JSON object having 4 fields, the last one is a sequence:
+
+{"Name": "Adrian Sterca", 
+"Age": 39, 
+"Profession": "teacher", 
+"Courses": [ "Web Programming", "Audio-Video Data Processing" ]
+}
+In Javascript, we can easily convert a JSON string into Js object:
+
+var obj = JSON.parse(' { "name": "forest", "age" : 39, "sex": "M"} ');
+document.write(obj.name);
+obj.age=20;
+We can also do the reverse, convert a Js object to JSON string:
+
+var obj = new Object();
+obj.name="forest";
+obj.age=25;
+obj.sex="M";
+var jsonString = JSON.stringify(obj);
+JSON has a huge support in web programming languages and not only web programming languages. For example, in PHP we can convert a PHP object/associative array to JSON string:
+
+$arr = array("name" => "forest", "age" =>39, "sex" => "M");
+$jsonString = json_encode($arr);
+echo $jsonString;
+Converseley, we can convert a JSON string to PHP object/associative array:
+
+$arr = json_decode($jsonString, true);
+$obj = json_decode($jsonString, false);
+AJAX example – vanilla javascript
+
+var xmlhttp;
+function showHint(str) {
+	if (str.length==0)  {
+		document.getElementById("txtHint").innerHTML="";
+		return;
+	}
+	xmlhttp=GetXmlHttpObject(); 
+	if (xmlhttp==null)  {
+		alert ("Your browser does not support XMLHTTP!");
+		return;
+	}
+	var url="submit.php";
+	url=url+"?q="+str;
+	url=url+"&sid="+Math.random();
+	xmlhttp.onreadystatechange=stateChanged;
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send(null);
+}
+
+function stateChanged() {
+	if (xmlhttp.readyState==4) {
+		document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+	}
+}
+
+function GetXmlHttpObject() {
+	if (window.XMLHttpRequest) {     // code for IE7+, Firefox, Chrome, Opera, Safari
+		return new XMLHttpRequest();
+	}
+	if (window.ActiveXObject) {         // code for IE6, IE5
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	return null;
+} 
+Ajax example – GET request, jQuery
+Since AJAX requests are implemented in the browser itself, we can do AJAX requests in vanilla Js using the browser provided XMLHttpRequest object as you have seen in the above code example, but it is way easier to do it in jQuery.
+
+$.get("showStudentsFromGroup-GET.php", 
+	{groupid : "2" , name : "forest"}, 
+	function(data,status) { 
+		$("#maindiv").html(data); 
+	});
+
+$.ajax({ 
+	type : "GET", 
+	url : "showStudentsFromGroup-GET.php", 
+	data: {groupid : "2" , name : "forest"}, 
+	success: function(data,status) { 
+		$("#maindiv").html(data); 
+	} 
+});
+Ajax example – POST request, jQuery
+
+$.post("showStudentsFromGroup-POST.php", 
+	{groupid : "2" , name : "forest"},
+	function(data,status) { 
+		$("#maindiv").html(data); 
+	});
+	
+PHP the right way (book)..
+http://www.phptherightway.com/
