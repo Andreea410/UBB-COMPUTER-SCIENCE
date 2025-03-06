@@ -1,0 +1,188 @@
+HTTP - HyperText Transfer Protocol
+In this section we mainly dicuss the HyperText Transfer Protocol(HTTP) which is the second main building block of the World Wide Web space, besides HTML. HTTP is a protocol used to transfer HTML documents accros the Internet, but recently is used to transport a wide variety of data, from real-time data like audio and video to binary files. But before we dwelve into HTTP we talk a little bit about HTML form-related tags which are HTML tags used in the browser for data input from the user, data that is submitted/transported to the web server through HTTP requests.
+HTML forms
+HTML forms are useful for getting different kinds of user input and sending this input to the web server. HTML forms are introduced by the <form> tag. The syntax of the <form> tag is:
+
+<form attribute="value" ..>
+		... text content ...
+		... input elements ...
+</form>
+	
+Most input elements/tags are described using the <input> tag. The <form> tag has the following attributes:
+action=URL : specifies where the form-data will be sent when the form is submitted
+accept=MIME type : specifies the types of files that can be submitted through a file upload
+accept-charset=charset : specifies the character-set the server can handle for form-data
+enctype=application/x-www-form-urlencoded, multipart/form-data, text/plain : specifies how form data should be encoded before sending it to the web server
+method=get (form-data is sent to the web server in the header of the HTTP request), post (form-data is sent to the web server in the body of the HTTP request), put, delete, head : specifies how to send form-data to the HTTP server
+name=string : the name of the form
+The <input type="..."> tag
+The <input> is widely used for input various data from the user and what differentiates the kind of data accepted by the tag is the value of the type attribute. The type='text' allows the input of text. The type='password' allows the input of text, but it is not displayed (like a password). The type='button' shows a button that can be clicked. The type='reset' shows a button that when clicked resets all the input tags in the form. The type='submit' shows a button that when clicked submits to the server all the data input so far in the form. The type='radio' allows the user to choose one option from a list of radio buttons. The type='checkbox' allows the user to choose one option from a list of checkbox buttons. The type='file' allows the input of a file. The type='image' just shows an image. The type='hidden' allows the browser to store data in it without being visible to the user. The look in the browser of all these input tags with different values for type is shown in the following image.
+
+The <input> tag is useful for selecting user information. The tag element receives input in various types. Also notable, it has no end tag </input> in HTML. The attributes of the <input> tag are :
+accept=MIME_type : for type="file", it only specifies types of files that can be submitted through a file upload
+alt=text : for type="image", it only specifies an alternate text for an image input
+checked=checked : for type="checkbox | radio", it specifies if the input should be preselected when the page loads
+disabled=disabled : it specifies the input should be disabled when the page loads
+maxlength=number : for type="text | password", it specifies the maximum length in characters of the input field
+name=text : it specifies the name of input element
+readonly=readonly : for type="text | password", it specifies the input field should be read-only
+size=number : the width of the input field
+src=URL : the URL of an image to display as a submit button
+type =button,checkbox,file,hidden,image,password,radio,reset,submit,text
+value=text : the value of the input element
+Other tags useful in <form>s
+There are other tags useful in HTML forms, besides <input> and their look is visible in the following picture.
+
+The <textarea> defines a multi-line text input control. It can hold an unlimited number of characters. The text is rendered in a textarea in a fixed-width font (usually courier). The attributes of textarea are:
+cols=number : visible number of columns in a textarea (required attribute)
+rows=number : visible numbers of rows in a textarea (required attribute)
+disabled=disabled : textarea is disabled
+readonly=readonly : textarea is readonly
+name=text : name of the textarea element
+Example :
+
+<textarea rows="2" cols="20">
+		This is a text area..
+</textarea>
+	
+The <label> tag does not render anything. It just defines a label for an input element. It toggles the control if the user clicks the text within the label. The <button> tag defines a push button which can contain inside text or images (this is a difference from <input type="button">). The attributes for <button> are:
+disabled=disabled : button is disabled
+name=text : name of the button
+type=button | reset | submit : type of the button
+value=text : value of the button
+Example :
+
+<button type="button">Click me!</button>
+	
+The <legend> tag defines a caption for a <fieldset> element. And a <fieldset> tag groups together form elements (it draws a box around them). Example :
+
+<fieldset>
+<legend>Some caption</legend>
+<input type="text"><br>
+<input type="text">
+</fieldset>
+	
+The <optgroup> tag groups together related options in a select list.
+Example:
+
+<select>
+     <optgroup label="Fruits">
+   			<option value="apple">Apple</option>
+			<option value="grapes">Grapes</option>
+     </optgroup>
+     <optgroup label="Sports">
+			<option value="football">Football</option>
+			<option value="basketball">Basketball</option>
+     </optgroup>
+</select>
+	
+Lastly, the <select> and <option> tags are useful for creating a drop-down list. The <select> tag defines the drop-down list and contains several <option> tags which are the items from the list.
+Example:
+
+<select>
+	     <option value="ford">Ford</option>
+   	     <option value="ferrari">Ferrari</option>
+	     <option value="bmw">BMW</option>
+</select>
+	
+The attributes of <select> are:
+disabled=disabled : list is disabled
+multiple=multiple : multiple selections are possible
+name=text : name of the element
+size=number : number of visible options in the list
+And the possible attributes of <option> are:
+disabled=disabled : this option is disabled
+selected=selected : this option is selected by default
+value=text : value that will be sent to the server when the form is submitted
+Sets of characters in HTML
+Most browsers support the following sets of characters:
+ASCII character set (see http://www.w3schools.com/tags/ref_ascii.asp)
+ISO-8859-1 character set (see http://www.w3schools.com/tags/ref_charactersets.asp)
+Math, greek and other symbols (see http://www.w3schools.com/tags/ref_symbols.asp)
+URL – Uniform Resource Locator and URI – Uniform Resource Identifier
+An URL identifies a resource in the WWW. URLs are a subset of URIs (Uniform Resource Identifiers). URLs are URIs that also provides the location for a resource. The general form of a URL is:
+resource_type://domain:port/filepathname?querystring#anchor
+where
+resource_type is the scheme name (protocol) which defines the namespace, syntax and remaining part of URL
+domain is the registered domain name or IP address of location (case-insensitive)
+port is the port number (optional, default for scheme is used)
+filepathname is the path to the resource/file on the server (usually case-sensitive)
+querystring is the data submitted to the server through forms
+anchor is a specific location inside that document
+In the following lines we give some URL examples:
+http://www.google.com
+ftp://ftp.opensuse.com/dist/11.1/
+https://www.cs.ubbcluj.ro/~forest/HtmlFolder/ac/index.html
+http://www.google.com/firefox?client=firefox-a&rls=org.mozilla:en-US:official
+http://cs.ubbcluj.ro/index.php?view=2&size=default
+http://www.java.sun.com/index.html#j2me
+
+The format of an Uniform Resource Identifier (URI) is outlined in the following picture. It is very similar to URLs.
+
+Web communication
+
+The web communication is the message exchange that happens between a client browser and an HTTP server (i.e. a web server). It is very important to understand how web communications takes place especially in the context of server-side web programming (e.g., PHP, Asp.Net, JSP etc.). The whole thing starts with the browser sending an HTTP request to the HTTP/web server. This request includes the URL of the resource that is requested. The server locates the requested resource, it encapsulates it in an HTTP response and returns it to the browser (or if we are refering to a dynamic, server-side program, like a PHP file or a Java servlet, this program is executed by an interpreter at the HTTP server and the standard output of the execution of this program is returned to the browser in an HTTP response). The browser interprets the response which is usually an html document and displays it in the browser windows.
+HTTP – HyperText Transfer Protocol
+The HTTP together with HTML forms the base of the World Wide Web (WWW) space. HTTP is standardized by IETF (RFC 2616). It is a request-response protocol which means that first it needs to be a request from the client in order for the server to send an HTTP response. In oder words there is no supports from HTTP for the web server to push information and updates at the client without the client requesting it. This is problematic for websites that when rendered in a browser, they expect real-time updates from the server; and this is usually resolved using Web sockets (converting the HTTP socket to a lower level, TCP socket) or using AJAX repeated requests. HTTP is also stateless (does not maintain a state of a session) and asynchronous (an html document is loaded asynchronous by the browser, as soon as parts of it are available). The stateless characteristic is problematic for many websites, especially those requiring authentication, because HTTP itself can not now if two different requests come from the same human client; so, in case of authentication, the user would have to send his/her username and password with each HTTP request, which is problematic for the user experience. The way this is solved in a more user-friendly way is using the concept of a session and cookies. The latest version of HTTP is HTTP/1.1. HTTP runs on top of TCP on the standardized port 80
+HTTP Request
+An HTTP request has the following form:
+Request-Method SP Request-URL SP HTTP-Version <CR><LF>
+(generic-header | request-header | entity-header <CR><LF>)
+<CR><LF>
+[message body]
+
+The Request-Method can be :
+GET – request whatever information is identified by the Request-URL
+POST – request that server accepts the entity enclosed in the request
+OPTIONS - request for information about communication options
+PUT – request that the enclosed entity be stored under the Request-URL
+DELETE – request that the server delete the resource identified by Request-URL
+TRACE – invoke a remote, application-layer loopback of the request message
+CONNECT – used by proxies in SSL connections
+HEAD – identical to GET, but server must not return a message body in response
+The Request-header can have the following fields (selection):
+Accept : MIME types of resources accepted by browser
+Accept-Charset : charset accepted by browser
+Accept-Encoding : encoding accepted by browser
+Accept-Language : language accepted by browser
+Authorization : user-agent wishes to authenticate itself with a server
+Host : the host Request-URL points to
+Referer : the URL of document refering this URL
+User-Agent : Firefox, Safari, IE
+An HTTP Request example would be the following :
+Get http://www.google.com HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset:	ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie:PREF=ID=141ca2d4581746b4:U=f22e9e94ccc4a56f:FF=4:LD=en:NR=10:CR=2:TM=1249567334:LM=1251146058:
+GM=1:S=qWowBrte7hrXniGp; NID=27=n9Khexo85YHnovw93wK4qC2lZtGa1DnzVQEB6iul9tn62fsJ7gFuMVK252ceLCD3iS54r-
+nHD6kWDdD1JP77akDhMl0EWzoTbPt3cM5g8mapG9SskdRSyEyLWcJK1LrX
+Cache-Control: max-age=0
+HTTP Response
+The HTTP response has the following form:
+Http-Version SP Status-Code SP Reason-Phrase<CR><LF>
+(generic-header | response-header | entity-header <CR><LF>)
+<CR><LF>
+[message body]
+The Response-header has the following fields (selection):
+Accept-Ranges : server indicates its acceptance of range requests for resource
+Age : sender’s estimate of the amount of time since the response was generated by server
+Location : redirect the client to a location other than Request-URL for completion of the request
+Retry-After : indicate to client how long the service is expected to be unavailable
+Server : information about software used by the server to handle the request
+An example of HTTP Response is:
+HTTP/1.1 200 OK
+Date: Tue, 13 Oct 2009 05:27:42 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: gzip
+Server: gws
+Content-Length: 3667
+X-XSS-Protection: 0
+
