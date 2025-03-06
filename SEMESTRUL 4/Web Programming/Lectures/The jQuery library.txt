@@ -1,0 +1,267 @@
+The jQuery library
+jQuery features
+jQuery is a javascript lightweight library, it is very easy to use, it is powerful and it is cross-browser compatible. jQuery is downloadable from jQuery.com and there are 2 download versions, a production version and a development version. Some of the most important jQuery features are : it allows the manipulation of the DOM structure, DOM nodes and CSS, it has CSS-like selectors, it has strong event handling support, has effects, transitions and animations, it has AJAX and simple data support, and ultimately, it offers some Javascript general utility methods.
+
+In order to link the current HTML document to the jQuery library we can use a downloaded version:
+
+ 
+<head> 
+<script src=jquery.min.js> </script> 
+</head> 
+or we can use an online version:
+ 
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+<script>
+</head>
+Basically what the jQuery library does is offering the 'jQuery' function. A short version of this function is $. When one calls the $() function, this function returns a jQuery object. Usually, the jQuery code lies in the event handler of the document "ready" event (i.e. when the document is completely loaded and the DOM is created) like so:
+ 
+$(document).ready(function() {
+	... jquery code ..
+});
+A short-hand alternative of the above code is:
+
+$(function() {
+	... jquery code ..
+});
+jQuery method call syntax
+There are two types of methods in jQuery, methods from the $.fn namespace and methods from the $ namespace. The methods called on jQuery selections are in the $.fn namespace, and automatically receive and return the selection as this. jQuery selections are constructs meant to select a DOM javascript object and then apply a method on it. jQuery uses a CSS selector syntax in order to select DOM objects. For example, in the next code, the first line selects all the <p> tags in the document and sets their textual/html content to "Test paragraph". The second line selects the <div> with the id attribute equal to "id" and removes it from the current document.
+
+$("p").html("Test paragraph");
+$("div#id").remove();
+The methods called on jQuery selections can have simple syntax or a chain syntax. In the simple syntax, we just call a method on a selected javascript DOM object: $(selector).action(params). The following code exemplifies it; the above code is also of this kind.
+
+$("div.class1").hide();
+In the chain syntax, first we select an object, then apply a method on this object which returns another object, then apply a method on this object and so on: $(selector).action1(params).action2(params).... Example:
+
+$( "#content" ).find( "h3" ).html( "new text for the h3!" ); 
+or
+$( "#content" )
+	.find( "h3" )
+	.html( "new text for the third h3!" ); 
+The methods in the $ namespace are generally utility-type methods, and do not work with selections. For example, in the next code we take each value from the array [ "foo", "bar", "baz" ] and apply the anonymous function on each value.
+
+$.each([ "foo", "bar", "baz" ], function( idx, val ) { 		
+	console.log( "element " + idx + " is " + val );
+});
+jQuery selectors
+jQuery has a CSS-like syntax for selectors:
+$("*"") – selects all elements
+$("#someid") – selects element with ID attribute=someid
+$(".someclass") – selects element with Class attribute=someclass
+$("div") – selects all the DIV elements
+$(".class1.class2") – selects elements with classes class1 and class2
+$("div p") – selects all <p> elements that are inside a <div>
+$("p:first") – selects the first p element
+$("p:last") – selects the last p element
+$("tr:even") – selects all even tr elements
+$("tr:odd") – selects all odd tr elements
+$("ul li:eq(2)") - selects the 3rd element from an unordered list
+$(":contains(‘some text’)") – select all elements containing the text
+$(this) – selects the current html element
+$("#div1 ul li .innerdiv") – compound CSS selector
+$("h1,h2,h3") – selects all h1, h2 or h3 elements
+$("div:first-child") – selects div elements that are the first child of their parents
+$("div:first-of-type") - selects div elements that are the first div child of their parents
+$("div:last-child") - selects div elements that are the last child of their parents
+$("div:last-of-type") - selects div elements that are the last div child of their parents
+$("div:nth-child(3)") - selects div elements that are the 3rd child of their parents
+$("div:nth-of-type(3)") - selects div elements that are the 3rd div child of their parents
+$("div > p") – selects elements p which are direct child of a div
+$("div + p") – selects p elements that are the nearest siblings of a div element
+$("div ~ p") – selects p elements that are siblings of div elements
+$("ul li:eq(3)") – selects list elements with a list index of 3
+$("ul li:gt(3)") – selects list elements with a list index greater than 3
+$("ul li:lt(3)") – selects list elements with a list index less than 3
+$("[attribute]") – selects elements with a specific attribute
+$("[attribute=value]") – selects elements having an attribute equal to a specific value
+$("[attribute!=value]") - selects elements having an attribute different than a specific value
+$("[attribute$=value]") - selects elements with an attribute ending with a specific value
+$("[attribute^=value]") - selects elements with an attribute starting with specific value
+$("[attribute*=value]") – selects elements with an attribute that contains value
+jQuery events
+jQuery has support for most html events. Some methods for handling mouse events are: click(), dblclick(), focus(), focusin(), focusout(), blur(), hover(), mousedown(), mouseenter(), mouseleave(), mousemove(), mouseout(), mouseover(), mouseup(). Methods for handling keyboard events: keypress(), keyup(), keydown(). Methods for handling form events: submit(), change(). Methods for handling window events: load(), resize(), ready(), scroll(), unload().
+
+We can bind/unbind events to handling functions in several ways:
+$(selector).event(function() { .... });
+Example:
+
+$("div").dblclick(function() {
+    $(this).hide();
+});
+	
+$(selector).bind("event", function() { ... });
+Example:
+
+$("li").bind("click", function() {
+console.log("list item was clicked");
+});
+	
+$(selector).unbind() – removes all event handlers from selected elements
+$(selector).on("event1 event2..", function() { ...});
+Example :
+
+$("p").on("click", function() {  
+$(this).css("background-color: red");
+});
+	
+$(selector).off("event") - unbinds the event handler
+$(selector).one("event", function) – run event only once
+The jquery event object is passed to the event handling function along with this (the selected element). For example, in the next code, we cancel the default functionality for a specific event (e.g. form submit).
+
+$("form").on("submit", function(eventObj) {
+		eventObj.preventDefault();
+... });
+The eventObj has the following properties:
+pageX, pageY – the mouse position
+type – the type of event
+data – data can be passed to handling function when evt is bound
+target – the DOM element that initiated the event
+jQuery and css
+Using jQuery we can get css properties:
+
+$("p").css("background-color")
+Also, we can set css properties:
+
+$("p").css("font-size", "14px")
+$("p").css({color: "red", width: "100%", height: "100%"})
+We can add, remove, toggle css classes. If we have the following style declarations:
+
+.fancy {
+	border: 1px dotted #00eeff;
+	background: url("pic.jpg");
+}
+the jquery code that adds/removes/toggles the .fancy class is the following:
+
+$("#div1").addClass("fancy");
+$("#div1").removeClass("fancy");
+$("#div1").toggleClass("fancy");
+jQuery effects – hide/show, fading, sliding, animations
+After we select a jQuery object, we can hide it, show it (if it's already hidden) or toggle it (hide if it's shown/ show if it's hidden):
+$(selector).hide(speed,callback);
+$(selector).show(speed,callback);
+$(selector).toggle(speed,callback);
+where speed is "slow", "fast" or miliseconds and callback is a function called after the effect is done; toggle() toggles between hide() and show(). Code example:
+
+$("button").click(function(){
+	$("p").hide(20);
+	$("p#id1").show("slow");
+});
+$("button").click(function(){
+	$("p").toggle();
+});
+After we select a jQuery object, we can fade it in, fade out, toggle and fade the object to some opacity value:
+$(selector).fadeIn(speed,callback);
+$(selector).fadeOut(speed,callback);
+$(selector).fadeToggle(speed,callback);
+$(selector).fadeTo(speed,opacity,callback);
+where speed is "slow", "fast" or miliseconds and callback is a function called after the effect is done; fadeTo() fades to an opacity value. Code example:
+
+$("button").click(function() {
+	$("#div1").fadeIn("2000");
+});
+Other jQuery effects are sliding up and down:
+$(selector).slideUp(speed,callback);
+$(selector).slideDown(speed,callback);
+$(selector).slideToggle(speed,callback);
+where speed is "slow", "fast" or miliseconds and callback is a function called after the effect is done. Code example:
+
+$("button").click(function() {
+	$("#div1").slideUp("2000");
+});
+We can also perform animations in jQuery which are like CSS animations - they animate various CSS properties in their transition from an initial value to a final value. The syntax is:
+$(selector).animate({params},speed,callback);
+where speed is "slow", "fast" or miliseconds and callback is a function called after the effect is done. Code example:
+
+$("button").click(function() {
+	$("#div1").animate({left:’100px’, top: ’75px’}); 
+});
+$("button").click(function() {
+      $("#div1").animate({
+			left: ‘500px’,
+			opacity: ‘0.3’,
+			height: ‘100px’,
+			width: ’60px’
+	 });
+});
+Getting/setting html content
+In jQuery we can manipulate the inner content of a tag. We have the text() function which sets or returns the text content of selected elements. Code example:
+
+console.log($("p").text());
+$("p").text("Test..");		
+We then have the html()function which sets or returns the content of selected elements (including HTML markup). Code example:
+
+console.log($("div").html());
+$("div").html("<p>Test</p>");
+There is also val() which sets or returns the value of form fields, and attr() which gets or sets attribute values. Code example:
+
+console.log($("a#id1").attr("href"));
+$("a#id1").attr("href", "http://www.cs.ubbcluj.ro");
+Adding/removing html content
+We can add text or html before or after a specific tag or we can remove completely the inner content of a tag or even remove the tag completely.
+$("p").append("Some appended text.");
+$("p").prepend("Some appended text.");
+$("p").after("<div>test</div>");
+$("p").before("<div>test</div>");
+$("p").remove();
+$("p").empty();
+A sliding image animation example
+A more complex example that performs sliding images animations is depicted in the code below.
+
+<html>
+<head>
+	<style>
+		ul {
+			position: absolute;
+			left: -200px;
+		}
+		li {
+			position: absolute;
+			list-style: none;
+		}
+
+	</style>
+	<script src="jquery-2.0.3.js"></script>
+	<script>
+		$(document).ready(function(){
+			var picWidth = 200;
+			var poz = 0;		
+			$("li").each(function() {
+				poz += picWidth;
+				$(this).css("left",poz);
+			});
+
+			function slide() {
+				$("li").animate({"left":"+=10px"}, 100, again);
+			}
+
+			function again() {
+				var left = $(this).parent().offset().left + $(this).offset().left;
+				console.log("left="+left);
+				if (left >= 1200) {
+					$(this).css("left",left - 1200);
+				}
+				slide();
+			}
+
+			slide();
+		});
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li><img src="1.jpg"/></li>
+		<li><img src="2.jpg"/></li>
+		<li><img src="1.jpg"/></li>
+		<li><img src="2.jpg"/></li>
+		<li><img src="1.jpg"/></li>
+		<li><img src="2.jpg"/></li>
+		<li><img src="1.jpg"/></li>
+		<li><img src="2.jpg"/></li>
+	</ul>
+</body>
+
+</html> 
+	
+
