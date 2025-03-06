@@ -1,0 +1,707 @@
+Javascript & DOM
+Javascript is the most used programming language in 2020 according to Github and Stackoverflow and maintains top positions on other top charts.
+Javascript – main properties
+Javascript is a lightweight scripting language (language used to control the browser) that is run on the client-side (browser). It was initially developed by Netscape and Sun Microsystems and introduced first in the Netscape Navigator 2.0. The language is intended to add interactivity and dynamic functionality to HTML pages. Javascript is interpreted, not compiled and inserted directly in HTML pages. It is an object-oriented language that inherits many features from Java, nevertheless it is not Java. Javascript is understood by most browsers, is an event-based language, weakly typed. The current standard version is ECMAScript 2020 (ES11), but browser conformance is ECMAScript 2015 (ES6) -2016 (ES7). Although for a lot of time Javascript was used onli within the browser, at the client side, for a couple of years now, it is also used at the server-side, as node.js.
+
+What can Javascript do ? Well, it can detect the type of browser, it can react to various events of the browser, it can alter the structure of the html document (modify, delete, add tags on the run-time), and it can validate data before being sent to the server. However, it can not modify local (client) files.
+
+We now outline the base elements of Javascript. Js inherits from Java simple data types, operators, instruction syntax. Js has predefined objects: DOM-related and general objects: Array, Boolean, Date, Error, EvalError, Function, Math, Number, Object, Range Error, ReferenceError, RegExp, String, SyntaxError, TypeError, URIError . Js has some global functions (not related to objects): decodeURI, decodeURIComponent, encodeURI, encodeURIComponent, eval, isFinite, isNaN, parseFloat, parseInt. Comments in Javascript are written as in Java using // or /*…*/. Js is weakly-typed: a variable can be bound to a specific type, then to a different type, during the course of a program execution. In the following sections, we discuss various parts of the language.
+
+Types and literals (constant values)
+We start with the constants. There are the following constants in the Javascript language:
+Number: integer (in base 2, 8, 10, 16) and real
+Boolean: true and false
+null
+undefined: a variable that does not have an assigned value;
+NaN: not a number
+String (unicode chars): 'text', "something", `text1` etc.; methods of the string class can be applied on any string literal (e.g. "sir".length); `` can span over multiple lines
+vectors: ['a', , , 'bbb', 'ccc'] will have 5 elements
+objects: lists of zero or more pairs "property : value"
+ex.: dog = {name: dog, type: animal, characteristics: getProps("dog"), age: 4}
+null – a value representing the absence of a value (like null in Java and C++
+undefined – a value of a variable that hasn't got a value yet
+Example :
+
+var x = null; // null
+var y;        // undefined
+Variables and constants
+Javascipt is a loosly-typed language. This implies the following three things: a) a variable can be bound to different types during its lifetime; b) the value of a variable is automatically converted to other types when necessary; c) the type of a variable needs not be declared. A variable is declared with var or let or just by assigning a value to it:
+
+var name;
+root="some text"; 
+i = root+1; // i="some text1"
+let x = 2;
+Variables declared with let have block scope and variables declared withvar or no var (i.e. variables declared without var, just by assigning a value to it) have global scope (if declared outside a function) or function scope (if declared inside a function). A variable without a value assigned to it will be evaluated to undefined or NaN (depending on the context), if it was declared with var or will give a run-time error if it was not declared with var. A variable is global (declared outside any function) or local to a function or has block scope (if declared with let ). Since Javascript is also a functional language, we can also have function variables:
+
+var f = function(a, b) {
+return a+b;
+}
+f(2, 3); // calling the function
+
+Constants declare entities that don't change value (as opposed to variables). The scope of a constant is block-level.
+Example:
+
+const z = 10;
+const s = "web";
+s = "programming";	 // throws error !
+Operators
+In Javascript, there are 3 types of expressions: arithmetic (evaluated to a number), string and boolean (evaluated to true or false). The operators avaliable in Js are:
+assign operators: =, +=, -=, *=, /=, %=, <<=, >>=, >>>=, &=, ^=, |=
+comparison operators: ==, !=, >, >=, <, <=
+arithmetic operators: %, /, ++, --, +, -, ** (power)
+bitwise operators: &, |, ^, ~, >>, <<, >>>
+logic operators: &&, ||, !
+string operator: + (concatenation)
+special operators
+In the category of special operators we have 10 operators, most of them being available in other programming languages:
+identity operators: === (eguality and of the same type), !== (not equal and/or of different types)
+ternary operator: condition ? true-expr : false-expr
+comma: expr1, expr2, …, exprN (the returned result is the evaluation of exprN)
+new: creates a new object
+this: refers to the calling object in a method
+typeof: typeof("test") => string
+delete: deletes an object or a property from an object or an element from a vector
+in: propNameorNumber in objectName (for parsing the list of properties of an object)
+instanceof: objectName instanceof objectType (checking the type of an object)
+void: evaluates an expression without returning a value
+Automatic type conversion system (implicit type coercion)
+Part of the loosly-typed or dynamic typed language property, we have in Javascript an automatic type conversion system. This means when applying operators, javascript automatically converts parameters to the same type, depending on the context:
+
+a = "string"+2;		→ "string2"
+b = 2+"3"		→ "23"
+c =2+true		→ 3
+d = "string"+false	→ "stringfalse"
+[]==0			→ true
+10-"1"			→ 9
+Instructions
+Many instructions of Javascript, if not all, are borrowed from Java. We have the following categories of instructions in Javascript:
+conditional: if, switch
+"falsy values" usable in a conditional context are: false, undefined, null, 0, NaN, ""
+loop: for, do while, while, label, break [label], continue [label]
+for (variable in object) { ... statements ...} : cycles through the properties of an object
+for (variable of object) { ... statements ...} : "for...in" cycles over property names, "for...of" iterates over property values:
+with (object) { ... statements ... } : sets the default object for a set of statements
+exception handling instructions: try { ... statements ... } catch (exception) { ... } throw expression;
+To illustrate the difference between the three types of 'for' cycles that exist in Javascript, we show the following code example that cycles over the values of an array.
+
+var a = [ 'x', 'y', 23 ];
+a.Test = "foo";
+for (i=0; i<a.length; i++) {
+console.log(a[i]);
+}  	// will print: x, y, 23
+for (var i in a) { 
+console.log(i); 
+}	// will print: 0, 1, 2, test
+for (var i of a) { 
+console.log(i); 
+} 	// will print: x, y, 23 
+a.forEach(function(elem) { console.log(elem); });  // will print  x, y, 23
+Strings
+Strings are in Javascript sequences of Unicode chars, each char being 1 or 2 UTF-16 code units. Strings variables, even string literals, are actually objects which have methods, some of the most useful ones being:
+charAt(index): return character from index
+concat(str): concatenate "str" to this string
+includes(str): searches "str" in this string
+startsWith(str), endsWith(str): check if this string starts/ends with
+indexOf(char): index of char in this string
+match(regex): check if regular expression matches this string
+replace(what, replaceWith): replace in this string
+search(str): search string
+slice(beginIndex, endIndex): extract subsection of this string
+split(separator): return an array of strings by splitting this string
+Collections
+In Javascript, collections are simple arrays. Each value of an array can have a simple type (number, string) or a complex one (array, object), and each value of an array has an index/key that is always an integer number. Although, a Javascript array is just a sequence of values, actually Javascript arrays are special kind of objects, meaning they have methods associated with them; these methods will be detailed later. In Javascript there are also multi-associative arrays which are also called Javascript objects - to be discussed later on. There are several ways of creating arrays in Js:
+
+var array1 = new Array(2, 3, 5); 
+var array2 = Array("abc", "de", "fghij"); 
+var array3 = [0, "abc", 2];
+var array4 = new Array(arrayLength); 
+var array5 = Array(arrayLength);
+Arrays can be itterated as you have seen previously using the 3 forms of the 'for' loop or using 'while' or 'do while' cycles. There is also a 'forEach' method available on the Array object. Please also note that the Array.length is the highest index in array + 1 (NOT the number of elements!):
+
+var a = [ 1, 2, 10];
+a[20] = 11;
+console.log(a.length); // will print 21
+Arrays, as I said before are special kind of objects in Javascript, so they have methods (i.e. we can call methods on an array object). Some of the Array methods are:
+concat(): joins two arrays and returns a new array
+join(delimiter = ','): joins all elements of an array into a string
+push(): adds one or more elements to the end of an array and returns the resulting length of the array.
+pop(): removes the last element from an array and returns that element
+shift(): removes the first element from an array and returns that element
+slice(startIndex, uptoIndex): extracts a section of an array and returns a new array.
+splice(index, countToRemove, addElement1, addElement2, ...):removes elements from an array and (optionally) replaces them. It returns the items which were removed from the array
+reverse(): transposes the elements of an array, in place: the first array element becomes the last and the last becomes the first. It returns a reference to the array
+sort(): sorts the elements of an array in place, and returns a reference to the array
+indexOf(searchElement[, fromIndex]): searches the array for searchElement and returns the index of the first match
+forEach(callback[, thisObject]): executes callback on every array item and returns undefined
+map(callback[, thisObject]): returns a new array of the return value from executing callback on every array item
+eval()
+The eval() is a special function, it is like a miniaturized Javascript interpreter. The function eval(string) does the following: if string is an expression, evaluates the expression and if string is a sequence of javascript statements, it executes those statements.
+Example :
+
+eval("2+3")   	 → 5
+a=2; eval("a+4") → 6
+eval("var x=2; console.log(x);")  → create global variable x=2 and print 2 on the console
+Functions. Javascript as a functional programming language
+In Javascript, functions are first class citizens meaning that:
+they can be saved in variables
+they can be passed as parameters
+they have properties, like other objects
+they can be defined without an identifier
+Function syntax
+Functions are usually declared in the <head> tag and called all over the html file. The syntax of declaring a function is:
+
+function name_fct(parameters, arguments) {
+... statements ...
+}
+where parameters represent specific parameters sent to the function, arguments contain a variable number of arguments; the variable arguments can be accessed inside the function through arguments[i],where i goes from 0 to arguments.length.
+All primitive parameters are passed to the function by value. Only object properties changes are visible outside the function (if param is an object). If no return is present, Javascript returns undefined for the call to that function.
+
+Rest parameters
+Another way of accessing a variable number of parameters is:
+
+function f(x, y, ...restArgs) {
+	for (let value of restArgs) { 
+    	...
+	}
+}
+
+f(1, 2, 3, 4, 5, 6); // x=1, y=2, restArgs=[3,4,5,6]
+Function expressions
+Because Javascript is also a functional programming language, function names can be used as arguments for other functions or values for variables. Code example:
+
+function cubic(x) { return x*x*x; }
+var squareFuncVar = function square (x) { return x*x; }
+
+function map(f, a) { 
+	for(i=0; i<a.length; i++) { 
+		console.log(f(a[i])); 
+	} 
+}
+var v = [ 1, 2, 3 ];
+map(cubic, v);	// will print 1, 8, 27
+map(squareFuncVar, v);	// will print 1, 4, 9
+Creating functions using the Function constructor
+
+var sum = new Function('x', 'y', 'return x+y');
+sum(2,3);
+Functions created with the Function() constructor do not create closures to their creation context, they are created in the global context. They will only be able to access their own local variables and global ones, not the ones from the scope in which the Function constructor was called. All functions, created with Function()constructor or with "function" keyword are actually objects (of the prototype Function).
+
+Anonymous functions
+In Javascript, we can declare anonymous functions. This are useful when you don't have to call them (for example if this function is an event handler) or you only need to call them once. Code example:
+
+Ex.1:  var square = function(a) { return a*a; }
+square(2);  // calling the function
+
+Ex.2:  (function(a) { 
+   	return a*a;
+}) (3);     // this function is auto-called after the declaration; returns 9
+Function scope
+Variables defined inside a function can not be accessed outside the function. But a function can access all variables from the scope in which it is defined: if the function is defined in global scope, it can access all variables defined in the global scope; if the function is defined inside another function, it can access all variables (and parameters) defined by its parent function and all variables to which the parent function has access. Functions are hoisted (i.e. in the same file, they can be called before the line in which they are defined).
+
+Inner functions and closures
+A nested (inner) function can only be accessed from statements in the outer function. The inner function forms a closure: the inner function can use the parameters and variables of the outer function, while the outer function cannot use the arguments and variables of the inner function. A closure provides a form of encapsulation for the variables of the inner function.
+Closure example:
+
+function outer(a, b) {
+var c = 3;
+function inner (x, y) {
+// a, b, and c are all accessible here
+x = x+y+c*(a+b);
+return x;
+}
+inner(a, b);
+}
+Default parameters
+Javascript allows functions with default values for parameters.
+
+function sum(a, b = 0) {
+return a+b;
+}
+
+sum(2); // returns 2
+Arrow function expressions
+The ideea of arrow function notation is that instead of:
+function(param1, param2, ..., paramN) {
+        statements
+}
+we can write: (param1, param2, ..., paramN) => { statements }. Which is just a shorter syntax for writting a function.
+
+The arrow function expression (param1, param2, ..., paramN) => expression
+is equivalent to: (param1, param2, ..., paramN) => { return expression; }
+Parentheses are optional when there's only one parameter name:
+(singleParam) => { statements }
+singleParam => { statements }
+The parameter list for a function with no parameters should be written with a pair of parentheses:
+() => { statements }
+
+Code example:
+
+var materials = [  'Hydrogen',  'Helium',  'Lithium', 'Beryllium']; 
+
+console.log(materials.map( m => m.length));
+// will output: Array [8, 6, 7, 9]
+Classes & Objects
+Js is a prototype-based language, it does not distinct between a class and a class instance (object). It only has objects. An object is an associative array (dictionary) augmented with a prototype. Almost all objects in Javascript are instances of Object. Javascript objects inherit properties and methods from Object.prototype (prototype is a property of Object). The prototype pattern implies creating a new object by cloning an existing one (a prototype). The current object is referred with this; inside a function, this refers to the object on which the function is called; if that object does not exist, this is the global object (i.e. the browser window).
+
+There are two syntaxes for working with objects in Javascript:
+Classical, functional: declare the properties and methods in a constructor-like function
+ES6 syntax: introduced by ECMAScript2015 (ES6), uses class, extends, static, constructor similar to Java, C++
+Objects. Creation, properties, methods
+Creating objects in Javascript can be done in 3 different ways:
+using an object initializer:
+
+objectName = {property1:value1, property2:value2,..., propertyN:valueN} 
+	
+using a constructor function (object prototype):
+
+function sayHi () {
+	console.log("This is student "+this.firstName+" "	
+             +this.lastName);
+}
+function Student (firstName, lastName, year) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.year = year;
+	this.sayHi = sayHi;
+}
+
+var stud = new Student("Adrian", "Sterca", 3);
+stud.sayHi();
+	
+creating an empty object first and then adding properties to it:
+
+var person = new Object(); person.name="Forest"; person.age=25;	
+	
+Objects are deleted using delete objectName. Properties of objects are accessible by obj.property or obj[index_property] or obj["property"] - all these are equivalent. Also, new properties can be added to an existing object on run-time using the syntax: obj.newProp=val.
+
+The ES6 class syntactic sugar
+ECMAScript 2015 (ES6) introduced some syntactic sugar for defining classes in order to make object-oriented programming in Javascript more similar to other languages like Java, although the Javascript object model remained the same, prototypical. A code example with the ES6 class syntactic sugar is the following:
+
+class Student {
+	constructor(firstName, lastName, year) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.year = year;
+	}
+}
+var stud = new Student("Adrian", "Sterca",3);
+Class expressions
+Class expressions are just like function expressions, meaning you can une anonymous classes, you can redefine an object method when instantiating the object etc.
+
+let stud = class {		// unnamed class
+	constructor(firstName, lastName, year) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.year = year;
+	}
+};
+let stud = class Student {	// named class
+	constructor(name) { this.name = name;}
+};
+Methods, static methods, setters & getters
+Using the ES6 class-based syntax, we can define static methods and setters and getter functions. Setter and getter functions have special syntax and they add pseudo-properties to the class. They can not be used for real properties (i.e. the ones defined in the constructor of the class). A static method can only be called using the class name, not the object name.
+
+class Student {
+	constructor(firstName, lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.grades = [ ];
+	} 
+
+	// Getters & Setters are used to create pseudo-properties.  
+	// You can't use them on a real property (specified in constructor). 
+	get studyYear() { return this.year; }              // getter
+	get specialization()  { return this.spec; }        // getter
+	set studyYear(year) { this.year = year; }           // setter
+	set specialization(spec)  { this.spec = spec; }     // setter
+
+	// method
+	addGrade(course, grade) { this.grades[course] = grade; }
+
+	// static method
+	static sayHi(text) {  
+		console.log("This is a student.", text);  
+	}
+}
+
+var stud = new Student("Adrian", "Sterca");
+stud.firstName = "Forest";   
+stud.lastName = "";  
+stud.studyYear = 2; // calling setter
+stud.specialization = "Info EN"; // calling setter
+stud.addGrade("Web", 8);
+console.log(stud.firstName+ " " +stud.lastName + ": ", stud.grades);
+//stud.sayHi("Hi");  // Error. Can not call static method on instance
+Student.sayHi("Hi");  // properly calling static method
+Inside class methods, we must refer to members of the class (properties or other methods) always using this. prefix. If we don't use the this. prefix, those properties or methods are searched outside the class. Code example:
+
+class Student {
+	...
+	transfer(faculty, specialization, y) {
+		this.faculty = faculty;
+		this.specialization = specialization;
+		this.year = y;	  // if we write year=y, the Js interpreter will set a variable called 'year' that has a scope outside the Student class
+		this.sayHi();
+	}
+}
+Public and private fields
+ES6 syntax also allows to declare public and private fields, but this is experimental and may not be implemented by all browsers. A transpiler like Babel may be needed. We can declare private fields by preceding them with the '#' sign. The rest of the fields are public fields by default.
+
+class Student {
+	id = 0;
+	grade;
+	#firstName;
+	#lastName;
+	constructor (id, grade, firstName, lastName) {
+		this.id = id;
+		this.grade = grade;
+		this.#firstName = firstName;
+		this.#lastName = lastName;	
+	}
+}
+Class inheritance
+We can have class inheritance in Javascript, together with all the features of inherintance: calling methods from the base class in the derived class, redefining methods in the derived class.
+
+class Person {
+	constructor(firstName, lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	sayHi(text) {  console.log("This is " + this.firstName + " " + this.lastName + ". " + text);  }		
+}
+
+class Student extends Person {		// inheritance
+	constructor(firstName, lastName) {
+		super(firstName, lastName);	// calling constructor from base class
+		this.grades = [ ];
+	}
+	sayHi(text) {
+		super.sayHi();		// calling method from base class
+		console.log("I'm also a student");
+	}
+}
+Predefined objects
+Besides being able to declare new objects (and classes using ES6 syntax), in Javascript we also have predifined objects that we can use. These predifined objects usually contain utility methods. The predefined objects in Js are:
+Array, Map, Set – working with arrays, maps and sets
+Boolean – true or false
+Function – specifies a string of code to be precompiled as a function
+Date – date functions
+Math – math functions
+Number – numerical constants and representations
+RegExp – regular expressions
+String – string operations
+Symbol (new from ES6) : used for identifying objects (mostly internal in the javascript engine)
+JSON
+Template literals
+Template literals are syntactic sugar that allows placing embedded expression into string constants. Template literals are written between `..`. A code example of using template literals it the following which uses variables and arithmetic expressions inside strings. The variable name and the arithmetic expression is automatically replaced with their values in the string. Also, there is an example of multi-line string.
+
+var name = "forest";
+var str = `this is ${name}`;	// variable replacement
+var str1 = ` this is a
+    multiline
+    string`;
+var str2 = `do the sum ${1+2+3}`;  // computing arithmetic expression
+The spread operator (...)
+The spread operator can be used in order to copy or concatenate arrays, it can be used to clone objects (because Js objects are just multi-associative arrays). Also, it can be used in order to specify the arguments of a function, when calling that function, through an array. Basically, the spread operator takes an array and decomposes it into the component values.
+
+var a = [1, 2, 3];
+var b = [...a, 4, 5, 6];  // b = [1,2,3,4,5,6]
+var c = [...a] ;  // array copy
+var obj = { prop1: 1; prop2: "2"; }
+var objcopy = { ...obj };  // object cloning
+var str = "hello";
+var helloarray = [ ...str];  // helloarray = ['h','e','l','l','o']
+
+// calling a function with an array parameter:
+const f = (arg1, arg2) => {} 
+const a = [1, 2] 
+f(...a)
+Deconstructing
+A similar syntactic construct as the spread operator is the deconstructing feature. This feature of Js syntax allowes the decomposition of an array or an object (i.e. multi-associative array) into its individual components (array values or object properties or object methods) and using those individual components separately.
+
+a = [1, 2, 3, 4, 5, 6];
+[first, ,third]=a; // first=1 and third=3
+
+const student = { 
+	firstName: "Forest"; 
+	lastName: " Forest";
+	age: 41
+}
+const { firstName: name, age: ageval } = student
+// name will be "Forest" and ageval will be 41
+const { lastName, age } = student
+// lastName will be "Forest" and age will be 41
+The strict mode
+The default running mode of javascript in browser is a 'sloppy mode': non-critical errors are passed over, optimization is harder to achieve. Thestrict mode is just a syntactic element that introduces some restrictions to the javascript engine: it eliminates some JavaScript silent errors by changing them to throw errors, it fixes mistakes that make your code harder to optimize by javascript engines and it prohibits the usage of some symbols maked as keywords in future versions of ECMAScript. The strict mode can be applied to a whole script or to a function (not to a block). In order to invoke strict mode, one needs to specify at the beginning of the script or function:
+'use strict';
+Concatenating 'strict mode' scripts with 'non-strict mode' scripts can be tricky.
+
+In the following code examples, we can see some strict mode mistakes converted to errors.
+
+'use strict';
+mistypeVariable = 7; // if no global variable 'mistypeVariable' exists
+        			 // (defined with "var"), this line throws ReferenceError
+// Assignment to a non-writable global 
+var undefined = 5; // throws a TypeError 
+var Infinity = 5;  // throws a TypeError
+
+var o = { p: 1, p: 2 }; // syntax error (redefinition of p)
+
+// reserved words: implements, interface, let, package, private, 
+// protected, public, static, and yield
+Javascript modules
+As the javascript code run in the browser becomes larger and larger, module usage becomes important, i.e. separating the code into module files. The module files can be *.js or *.mjs files. It's a good idea to serve modules from an http server (not from the local file system, file://) so that we don't run into CORS issues. A module can export var, let, const, functions, classes – they all need to be in the global context. A javascript code can import every exported symbol from a module or just some of them. Modules are imported into the scope of a single js script, they are not available in the global scope.
+
+Exporting symbols from a module
+Let's consider the file module.js with the following content. We can export symbols from it in order to be used in other js modules using the export keyword.
+
+export const symbol1 = "str";
+export var symbol2 = 3;
+export function doSomething(params) { ... }
+
+OR
+
+export { symbol1, symbol2, doSomething }; //  at the end of file
+Importing symbols from a module into a javascript file
+In another module main.js, we can import the symbols exported from module.js listed above:
+
+import {symbol1, symbol2, doSomething } from './module.js';
+
+OR
+
+import * from './module.js';	// import every global symbol from module.js
+In the .html file where we use main.js, we need to include it like this:
+<script type="module" src="main.js"></script>
+
+Importing into module object
+We can also import symbols (variables, constants, functions) from a module into an object, called module object, and then using these symbols from this object.
+
+import * as Module1 from './modules/mod1.js';
+import * as Module2 from './modules/mod1.js';
+...
+// calling functions from mod1.js
+Module1.function1();
+Module1.function2();
+
+// calling functions from mod2.js
+Module2.function1();
+Module2.function2();
+Dynamic module loading
+In Javascript, we can also load javascript modules dynamically as in the following example.
+
+import('./modules/myModule.js') .then(
+(module) => { 
+// Do something with the module. 
+// call functions
+});
+Events
+Javascript is an event-based language and event-handling and callback functions make a big part of the language. Examples of events in the browser are: mouse click, key pressed, element loosing focus etc. When an event is triggered by the browser, a predefined or user-defined (in Javascript) event handler takes control. Event handlers are javascript functions and are associated to a tag and an event. We can associate event handlers to tags and events in 3 ways in an html file, but we can also do this directly in the javascript code.
+<TAG eventHandler="Javascript code">
+<script type="text/javascript">
+function evHandle(x) { ... }
+</script>
+<TAG eventHandler="evHandle(this)">
+<script type="text/javascript">
+obj.eventHandler="Javascript code";
+</script>
+A selective list of browser events is outlined in the following table.
+
+A complete list of events is on w3schools.
+Javascript and HTML
+Js scripts can be used in HTML documents in 4 ways:
+as instructions or functions written inside a <SCRIPT> tag:
+<script type="text/javascript">
+... JavaScript statements...
+</script>
+Js code written in a separate javascript file:
+<script src="common.js"></script>
+using a Js expression as the value of an html attribute:
+<hr width="&{barWidth};%" align="left">
+<h4>&{myTitle};</h4>
+JavaScript entities start with "&" and end with ";" and are enclosed in "{}"
+as an event handler:
+<input type="button" value="Press Me" onClick="func()">
+The good way of including .js in .html file is using the defer keyword. The following line makes the browser run the js code in script.js only after the HTML document is completely loaded:
+
+<script src="script.js" defer></script>
+An this is useful when we have something like (a code that adds a click event handler to a '#button' button:
+
+const button = document.querySelector("#button");
+button.addEventListener('click', someFunction);
+If the above script is placed in the <head>, the browser throws an error because the <button id="button"> is not loaded yet, so the "button" constant is null.
+Pop-up boxes
+In Javascript, we have some pop-up functions (functions that create a small browser window and shows it, where we can place various information from javascript) that are useful for displaying small information to the user, for confirmations from the users or for debugging. Although, for debugging it is more efficient to print debug information through console.log(...). The following is the list of pop-up functions available in Javascript.
+alert("...text...") : displays text and the Ok button
+confirm("...text...") : displays text and returns true if the Ok button is clicked and false if the Cancel button is clicked
+prompt("text", "default value"): the user can enter an input value and then click Ok (return the value) or Cancel (return null)
+The Document Object Model (DOM)
+The Document Object Model is a standardized (by W3C) hierarchical model of an HTML or XML document. The DOM can be used for navigating in the document structure, modify the document structure (add, delete, modify child elements etc.) and also modifying attributes of an element. Each tag in an html document is a DOM object. And DOM has an API which can be used in Javascript. Javascript + DOM is sometimes called DHTML (Dynamic HTML).
+
+The Document Object Model has an hierarchical structure as it is depicted in the following figure (this is just a small part of the hierarchical sturcture of DOM).
+ Copyright: Birger Eriksson; Wikipedia
+DOM Browser Objects
+The DOM browser objects (i.e. DOM objects corresponding to parts of the browser window) are:
+Window object
+Navigator object
+Screen object
+History object
+Location object
+DOM document objects
+The DOM document objects (i.e. DOM objects corresponding to the HTML document and parts/tags of the HTML document) are:
+Document object
+Anchor object
+Area object
+Base object
+Body object
+Button object
+Event object
+Form object
+Frame object
+Frameset object
+IFrame object
+Image object
+Input Button object
+Input Checkbox object
+Input File object
+The Document object from DOM also has collections of objects (selection):
+Collection	Description
+forms[]	Returns a reference to all Form objects in the document
+images[]	Returns a reference to all Image objects in the document
+links[]	Returns a reference to all Area and Link objects in the document
+anchors[]	Returns a reference to all Anchor objects in the document
+
+
+The Document object has many properties and you see a selection of these in the table below.
+Property	Description
+body	Gives direct access to the <body> element
+cookie	Sets or returns all cookies associated with the current document
+domain	Returns the domain name for the current document
+lastModified	Returns the date and time a document was last modified
+referrer	Returns the URL of the document that loaded the current document
+title	Returns the title of the current document
+URL	Returns the URL of the current document
+
+
+A selection of Document object methods is outlined in the table below.
+Method	Description
+close()	Closes an output stream opened with the document.open() method, and displays the collected data
+getElementById()	Returns a reference to the first object with the specified id
+getElementsByName()	Returns a collection of objects with the specified name
+getElementsByTagName()	Returns a collection of objects with the specified tagname
+open()	Opens a stream to collect the output from any document.write() or document.writeln() methods
+write()	Writes HTML expressions or JavaScript code to a document
+writeln()	Identical to the write() method, with the addition of writing a new line character after each expression
+The Element Object
+A DOM Element represents an HTML tag and it has the following properties (selection):
+.attributes - returns a map of all attributes of this elem.
+.children – returns a collection of children of this elem.
+.classList – returns all classes of this element
+.className – set/get the class attribute of this elem.
+.clientHeight, .clientWidth - returns height/width including padding
+.firstChild - returns first child node
+.firstElementChild – returns first child element (ignores text and comments)
+.innerHTML, .innerText – set/get the content of this elem.
+.id – set/get the ID attribute of this element
+.lastChild - returns the last child node of this elem.
+.lastElementChild - returns the last child element of this elem. (ignores text and comments)
+.nextSibling,.previousSibling - returns the next/prev node at the same level
+.nextElementSibling,.previousElementSibling – returns the next/prev element at the same level (ignores text and comments)
+.parentNode - returns the parent node of this element
+.parentElement – returns the parent element of this element (ingnores text and comments)
+.style – set/get the style attribute of this element
+The methods of the Element object are:
+addEventListener(), removeEventListener() – adds/removes an event listener for this elem.
+appendChild(), removeChild() – append/remove a child to this element
+click() – simulates a mouse click on this elem.
+getAttribute(),setAttribute() – get/set attribute
+getElementsByTagName() – returns children by tag name
+getElementsByClassName() – returns children by class name
+insertBefore() – insert a new child node before existing child node of this element
+remove() – remove this element
+querySelector() - returns the first child that matches a selector
+querySelectorAll() – return all children that match a selector
+An important method of the document object is document.querySelector(). Please note that document is a pre-defined Javascript Object, like window. document.querySelector(selector) returns the first element that matches the CSS "selector" list. Code example:
+
+document.querySelector("#first");
+Another useful method is document.querySelectorAll(selector) which returns all elements that matche the CSS "selector" list. Code example :
+
+document.querySelectorAll(".first, p.second");
+Creating & removing elements (tags) dynamically
+Using Javascript we can alter the structure of the DOM by creating or removing tags dynamically in the DOM as we can see in the code example below.
+
+var p = document.createElement("p"); 	// create "p" tag
+var text = document.createTextNode("text content");
+p.appendChild(text); 	      // append text to tag "p"
+p.innerHTML = "other text"; // set a new content text
+var p1 = p.cloneNode();      // create copy of p
+p.insertBefore(p1);	      // add another element before
+
+p.removeChild(p.firstChild);	// remove first child of p
+p.remove();			// remove p (the element itself)
+Modifying elements (tags)
+Using the DOM we can modify properties of existing tags (in the HTML document), because every tag in the HTML document has a corresponding object in the DOM.
+
+var section = document.querySelector("section");
+section.setAttribute("class", "red-section");
+section.style.background = "red";
+section.innerHTML = "<p>test</p>";
+section.innerText = "test";
+Asynchronous programming
+The Javascript engine is single-threaded, but we can still do asynchronous programming in Js by using other threads of the browser. A simple form of asynchronous programming in Js is using the window.setTimeout function.
+
+var timeoutID = window.setTimeout(func, delay, [param1, param2, ...])
+This code calls the "funct" function with the specified parameters after "delay" miliseconds have passed. We can remove the asynchronous call using:
+
+window.clearTimeout(timeoutID);
+which clears the timeout (async function is no longer called).
+Asynchronous programming (promises)
+Javascript Promises are an advanced form of asynchronous programming. A simple code example that declares a promise is the following.
+
+const myFirstPromise = new Promise(function (resolve, reject) {   	
+// do something asynch which eventually calls either: 
+        // resolve(someValue); // fulfilled 
+        // or 
+        // reject("failure reason"); // rejected 
+});
+The executor function is executed immediately by the Promise implementation, passing resolve and reject functions (the executor is called before the Promise constructor even returns the created object); the resolve and reject functions are provided by the Javascript engine. The resolve and reject functions, when called, resolve or reject the promise, respectively. The executor normally initiates some asynchronous work, and then, once that completes, either calls the resolve function to resolve the promise or else rejects it if an error occurred. If an error is thrown in the executor function, the promise is rejected. The return value of the executor is ignored. Getting the returned result from a Promise is a little trickier. This is because Promises can not return anything, they just pass results to callbacks (which are specified with .then() function). Hence, we normally get the results of a promise in the (resolve and response) functions given as arguments to the .then() function called on the promise object.
+
+const p = new Promise(function(resolve,reject) {
+	// the asynchronous word - just a console.log()
+	console.log("Doing some work...");
+	resolve("Done");
+});
+
+// without .then() you can not get the returned result from the Promise!
+// we assume the Promise p is always resolved
+p.then(function(result) { 
+	console.log(result); // just print the returned result of the Promise
+})
+	
+Javascript and browser compatibility
+Browser compatibility is and issue even outside javascript (html, css). Different browsers show tags differently (i.e. have default styles). A web developer needs to reduce browser inconsistencies (using CSS reset or reboot packages). With javascript/ECMAScript, some browsers implement a version of ECMAScript, other browser implement other ECMAScript versions. So, we need to use polyfills (i.e. js libraries that extend the functionality of the browser): Core-js, Polyfill.io and transpilers (e.g. Babel – takes a higher ECMAScript version code and converts it into a lower ECMAScript version code).
+Javascript quirks
+Javascript can be a very powerful language, a messy one, a language full of drama .. Here is a small list of javascript quirks (larger list is here):
+
+0.5+0.1==0.6    → true
+0.2+0.1==0.3    → false
+typeof(NaN)     → number
+3+"1"	        → "31"
+10-"1"	        → 9
+true===1        → false
+true==1         → true
+[ ]+[ ]         → ""
+Browser API, Web API, Js libraries, Js frameworks
+Browser API – a set of javascript functions, objects & properties exposed by the browser; e.g. DOM; a list of browser APIs developed by w3c.org is here: https://www.w3.org/standards/techs/js#w3c_all
+Web API – a server-side API usually exposed through HTTP request-response; the response is usually a JSON expression
+Js library – one or more js files providing custom functions & objects that enhance the functionality of the javascript language; e.g. jQuery
+Js framework – a js library plus html & css code used to write an entire web application from scratch; inversion of control – key difference between libraries and frameworks: when calling a method from a library, the developer is in control; with frameworks control is inverted – the framework calls developer's code; e.g. Angular
+Js debugging tools
+Firefox's Web Console and Chrome's Inspector
+JsFiddle (https://jsfiddle.net/)
+CodePen (https://codepen.io)
+Additional Documentation
+http://www.cs.ubbcluj.ro/~forest/wp
+http://www.w3schools.com/js/default.asp
+http://www.w3schools.com/jsref/dom_obj_document.asp
+https://developer.mozilla.org/en/JavaScript
+https://babeljs.io/docs/en/learn
