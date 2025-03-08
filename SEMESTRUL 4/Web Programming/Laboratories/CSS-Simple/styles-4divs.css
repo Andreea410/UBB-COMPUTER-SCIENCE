@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eee;
+}
+
+.div1, .div2, .div3, .div4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+.div1 {
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+}
+
+.div2 {
+    width: 75%;
+    height: 75%;
+    background-color: purple;
+}
+
+
+.div3 {
+    width: 75%;
+    height: 75%;
+    background-color: yellow;
+}
+
+
+.div4 {
+    width: 75%;
+    height: 75%;
+    background-color: white;
+}
+
+.div4:hover,
+.div1:hover, 
+.div2:hover, 
+.div3:hover {
+    background-color: pink !important;
+}
