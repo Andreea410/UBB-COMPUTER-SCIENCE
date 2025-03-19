@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eee;
+}
+
+.div1, .div2, .div3, .div4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 1s ease;
+}
+
+.div1 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+}
+
+.div2 {
+    width: 75%;
+    height: 75%;
+    background-color: purple;
+}
+
+
+.div3 {
+    width: 75%;
+    height: 75%;
+    background-color: yellow;
+}
+
+
+.div4 {
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.div1:has(.div4:hover),
+.div2:has(.div4:hover),
+.div3:has(.div4:hover),
+.div4:hover
+{
+    background-color: pink !important;
+}
