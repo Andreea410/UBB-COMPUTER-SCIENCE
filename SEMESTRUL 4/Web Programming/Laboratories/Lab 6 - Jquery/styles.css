@@ -1,0 +1,10 @@
+html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+body {
+    background: radial-gradient(circle at 50% 50%, rgb(255, 0, 183) 0%, rgba(0, 0, 0, 1) 50%);
+    transition: background 2s linear;
+  }
+  
