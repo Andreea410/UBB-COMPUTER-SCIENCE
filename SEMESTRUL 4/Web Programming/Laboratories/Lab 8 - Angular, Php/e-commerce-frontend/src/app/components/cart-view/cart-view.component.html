@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <h2>Your Shopping Cart</h2>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{item.name}}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.price | currency}}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" 
+                    (click)="remove(item)">
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="text-end mt-3">
+      <h4>Total: {{total | currency}}</h4>
+    </div>
+  </div>
+</div>

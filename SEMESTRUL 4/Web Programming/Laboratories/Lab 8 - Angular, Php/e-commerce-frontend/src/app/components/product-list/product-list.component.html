@@ -1,0 +1,60 @@
+<div class="container">
+  <!-- Error Display -->
+  <div *ngIf="error" class="alert alert-danger mt-3">
+    {{ error }}
+  </div>
+
+  <!-- Category Filter -->
+  <div class="row mb-3">
+    <div class="col">
+      <select class="form-control" [(ngModel)]="selectedCat" (ngModelChange)="onCategoryChange($event)">
+        <option [ngValue]="0">All Categories</option>
+        <option *ngFor="let c of categories" [ngValue]="c.id">{{c.name}}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let p of products">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{p.name}}</h5>
+          <p class="card-text">Price: {{p.price | currency}}</p>
+          <button class="btn btn-primary" (click)="addToCart(p)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Products Message -->
+  <div *ngIf="products.length === 0" class="alert alert-info mt-3">
+    No products available.
+  </div>
+
+  <!-- Pagination Controls -->
+  <div class="row mt-4" *ngIf="pagination.totalPages > 1">
+    <div class="col">
+      <nav aria-label="Product navigation">
+        <ul class="pagination justify-content-center">
+          <li class="page-item" [class.disabled]="pagination.currentPage === 1">
+            <button class="page-link" (click)="prevPage()" [disabled]="pagination.currentPage === 1">
+              Previous
+            </button>
+          </li>
+          <li class="page-item disabled">
+            <span class="page-link">
+              Page {{pagination.currentPage}} of {{pagination.totalPages}}
+              ({{pagination.totalProducts}} products)
+            </span>
+          </li>
+          <li class="page-item" [class.disabled]="pagination.currentPage === pagination.totalPages">
+            <button class="page-link" (click)="nextPage()" [disabled]="pagination.currentPage === pagination.totalPages">
+              Next
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

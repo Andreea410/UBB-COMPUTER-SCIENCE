@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+/* Global styles */
+body {
+  padding-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  margin-bottom: 20px;
+}
+
+.header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.header nav a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #666;
+}
+
+/* Form styles */
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+}
+
+.card-header h3 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
