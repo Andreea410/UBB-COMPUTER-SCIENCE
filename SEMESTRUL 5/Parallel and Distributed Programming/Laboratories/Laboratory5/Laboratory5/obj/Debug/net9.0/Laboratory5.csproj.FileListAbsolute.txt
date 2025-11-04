@@ -1,0 +1,14 @@
+/Users/andreea/facultate/Laboratory5/Laboratory5/bin/Debug/net9.0/Laboratory5
+/Users/andreea/facultate/Laboratory5/Laboratory5/bin/Debug/net9.0/Laboratory5.deps.json
+/Users/andreea/facultate/Laboratory5/Laboratory5/bin/Debug/net9.0/Laboratory5.runtimeconfig.json
+/Users/andreea/facultate/Laboratory5/Laboratory5/bin/Debug/net9.0/Laboratory5.dll
+/Users/andreea/facultate/Laboratory5/Laboratory5/bin/Debug/net9.0/Laboratory5.pdb
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/Laboratory5.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/Laboratory5.AssemblyInfoInputs.cache
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/Laboratory5.AssemblyInfo.cs
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/Laboratory5.csproj.CoreCompileInputs.cache
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/Laboratory5.dll
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/refint/Laboratory5.dll
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/Laboratory5.pdb
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/Laboratory5.genruntimeconfig.cache
+/Users/andreea/facultate/Laboratory5/Laboratory5/obj/Debug/net9.0/ref/Laboratory5.dll

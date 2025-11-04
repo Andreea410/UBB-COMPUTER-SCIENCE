@@ -1,0 +1,14 @@
+/Users/andreea/facultate/Laboratory4/Laboratory4/bin/Debug/net9.0/Laboratory4
+/Users/andreea/facultate/Laboratory4/Laboratory4/bin/Debug/net9.0/Laboratory4.deps.json
+/Users/andreea/facultate/Laboratory4/Laboratory4/bin/Debug/net9.0/Laboratory4.runtimeconfig.json
+/Users/andreea/facultate/Laboratory4/Laboratory4/bin/Debug/net9.0/Laboratory4.dll
+/Users/andreea/facultate/Laboratory4/Laboratory4/bin/Debug/net9.0/Laboratory4.pdb
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/Laboratory4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/Laboratory4.AssemblyInfoInputs.cache
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/Laboratory4.AssemblyInfo.cs
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/Laboratory4.csproj.CoreCompileInputs.cache
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/Laboratory4.dll
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/refint/Laboratory4.dll
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/Laboratory4.pdb
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/Laboratory4.genruntimeconfig.cache
+/Users/andreea/facultate/Laboratory4/Laboratory4/obj/Debug/net9.0/ref/Laboratory4.dll
