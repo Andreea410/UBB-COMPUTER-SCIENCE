@@ -1,0 +1,24 @@
+VAR
+    x : INTEGER;
+    y : REAL;
+    name : string;
+    nums : ARRAY[5] OF INTEGER;
+BEGIN
+    READ(x)
+    READ(y);
+
+    name := "John";
+
+    x := x + 5;
+    y := y - 2.5;
+
+    IF (x < 10) THEN
+        WRITE(x)
+    ELSE
+        WRITE(y);
+
+    WHILE (x < y) DO
+        x := x + 1;
+
+    WRITE(name)
+END.

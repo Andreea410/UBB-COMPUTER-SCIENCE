@@ -1,0 +1,13 @@
+declaration -> ID : dataType
+declarationList -> declaration ;
+declaration -> ID : dataType
+declarationList -> declarationList declaration ;
+declaration -> ID : dataType
+declarationList -> declarationList declaration ;
+arrayType -> ARRAY [ INT_LITERAL ] OF dataType
+declaration -> ID : arrayType
+declarationList -> declarationList declaration ;
+ioStmt -> READ ( ID )
+simpleStmt -> ioStmt
+statement -> simpleStmt
+statementList -> statement

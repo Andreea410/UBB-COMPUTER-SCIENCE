@@ -1,0 +1,1188 @@
+Grammar
+
+    0 $accept: program $end
+
+    1 program: VAR declList compoundStmt DOT
+
+    2 declList: declarationList
+
+    3 declarationList: declaration SEMI
+    4                | declarationList declaration SEMI
+
+    5 declaration: ID COLON dataType
+    6            | ID COLON arrayType
+
+    7 dataType: BOOLEAN
+    8         | CHAR
+    9         | INTEGER
+   10         | REAL
+   11         | INT
+   12         | FLOAT
+   13         | STRING
+   14         | CHAR_T
+
+   15 arrayType: ARRAY LBRACK INT_LITERAL RBRACK OF dataType
+
+   16 compoundStmt: BEGIN_ statements END
+
+   17 statements: statementList
+
+   18 statementList: statement
+   19              | statementList SEMI statement
+
+   20 statement: simpleStmt
+   21          | structuredStmt
+
+   22 simpleStmt: assignmentStmt
+   23           | ioStmt
+
+   24 assignmentStmt: ID ASSIGN expr
+
+   25 ioStmt: READ LPAREN ID RPAREN
+   26       | WRITE LPAREN ID RPAREN
+
+   27 structuredStmt: compoundStmt
+   28               | ifStmt
+   29               | whileStmt
+
+   30 ifStmt: IF condition THEN statement
+   31       | IF condition THEN statement ELSE statement
+
+   32 whileStmt: WHILE condition DO statement
+
+   33 condition: orCondition
+
+   34 orCondition: andCondition
+   35            | andCondition OR andCondition
+
+   36 andCondition: notCondition
+   37             | notCondition AND notCondition
+
+   38 notCondition: NOT notCondition
+   39             | LPAREN expr relOp expr RPAREN
+
+   40 relOp: LT
+   41      | LE
+   42      | EQ
+   43      | NE
+   44      | GE
+   45      | GT
+
+   46 expr: term
+   47     | term PLUS term
+   48     | term MINUS term
+
+   49 term: factor
+   50     | factor MUL factor
+   51     | factor DIV factor
+   52     | factor MOD factor
+
+   53 factor: ID
+   54       | INT_LITERAL
+   55       | FLOAT_LITERAL
+   56       | STRING_LITERAL
+   57       | CHAR_LITERAL
+   58       | LPAREN expr RPAREN
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256)
+    LOWER_THAN_ELSE (258)
+    VAR (259) 1
+    BEGIN_ (260) 16
+    END (261) 16
+    IF (262) 30 31
+    THEN (263) 30 31
+    ELSE (264) 31
+    WHILE (265) 32
+    DO (266) 32
+    READ (267) 25
+    WRITE (268) 26
+    BOOLEAN (269) 7
+    CHAR (270) 8
+    INTEGER (271) 9
+    REAL (272) 10
+    INT (273) 11
+    FLOAT (274) 12
+    STRING (275) 13
+    CHAR_T (276) 14
+    ARRAY (277) 15
+    OF (278) 15
+    COLON (279) 5 6
+    SEMI (280) 3 4 19
+    DOT (281) 1
+    LPAREN (282) 25 26 39 58
+    RPAREN (283) 25 26 39 58
+    LBRACK (284) 15
+    RBRACK (285) 15
+    ID (286) 5 6 24 25 26 53
+    INT_LITERAL (287) 15 54
+    FLOAT_LITERAL (288) 55
+    STRING_LITERAL (289) 56
+    CHAR_LITERAL (290) 57
+    PLUS (291) 47
+    MINUS (292) 48
+    MUL (293) 50
+    DIV (294) 51
+    MOD (295) 52
+    ASSIGN (296) 24
+    LT (297) 40
+    LE (298) 41
+    EQ (299) 42
+    NE (300) 43
+    GE (301) 44
+    GT (302) 45
+    AND (303) 37
+    OR (304) 35
+    NOT (305) 38
+
+
+Nonterminals, with rules where they appear
+
+    $accept (51)
+        on left: 0
+    program (52)
+        on left: 1
+        on right: 0
+    declList (53)
+        on left: 2
+        on right: 1
+    declarationList (54)
+        on left: 3 4
+        on right: 2 4
+    declaration (55)
+        on left: 5 6
+        on right: 3 4
+    dataType (56)
+        on left: 7 8 9 10 11 12 13 14
+        on right: 5 15
+    arrayType (57)
+        on left: 15
+        on right: 6
+    compoundStmt (58)
+        on left: 16
+        on right: 1 27
+    statements (59)
+        on left: 17
+        on right: 16
+    statementList (60)
+        on left: 18 19
+        on right: 17 19
+    statement (61)
+        on left: 20 21
+        on right: 18 19 30 31 32
+    simpleStmt (62)
+        on left: 22 23
+        on right: 20
+    assignmentStmt (63)
+        on left: 24
+        on right: 22
+    ioStmt (64)
+        on left: 25 26
+        on right: 23
+    structuredStmt (65)
+        on left: 27 28 29
+        on right: 21
+    ifStmt (66)
+        on left: 30 31
+        on right: 28
+    whileStmt (67)
+        on left: 32
+        on right: 29
+    condition (68)
+        on left: 33
+        on right: 30 31 32
+    orCondition (69)
+        on left: 34 35
+        on right: 33
+    andCondition (70)
+        on left: 36 37
+        on right: 34 35
+    notCondition (71)
+        on left: 38 39
+        on right: 36 37 38
+    relOp (72)
+        on left: 40 41 42 43 44 45
+        on right: 39
+    expr (73)
+        on left: 46 47 48
+        on right: 24 39 58
+    term (74)
+        on left: 49 50 51 52
+        on right: 46 47 48
+    factor (75)
+        on left: 53 54 55 56 57 58
+        on right: 49 50 51 52
+
+
+State 0
+
+    0 $accept: • program $end
+
+    VAR  shift, and go to state 1
+
+    program  go to state 2
+
+
+State 1
+
+    1 program: VAR • declList compoundStmt DOT
+
+    ID  shift, and go to state 3
+
+    declList         go to state 4
+    declarationList  go to state 5
+    declaration      go to state 6
+
+
+State 2
+
+    0 $accept: program • $end
+
+    $end  shift, and go to state 7
+
+
+State 3
+
+    5 declaration: ID • COLON dataType
+    6            | ID • COLON arrayType
+
+    COLON  shift, and go to state 8
+
+
+State 4
+
+    1 program: VAR declList • compoundStmt DOT
+
+    BEGIN_  shift, and go to state 9
+
+    compoundStmt  go to state 10
+
+
+State 5
+
+    2 declList: declarationList •
+    4 declarationList: declarationList • declaration SEMI
+
+    ID  shift, and go to state 3
+
+    $default  reduce using rule 2 (declList)
+
+    declaration  go to state 11
+
+
+State 6
+
+    3 declarationList: declaration • SEMI
+
+    SEMI  shift, and go to state 12
+
+
+State 7
+
+    0 $accept: program $end •
+
+    $default  accept
+
+
+State 8
+
+    5 declaration: ID COLON • dataType
+    6            | ID COLON • arrayType
+
+    BOOLEAN  shift, and go to state 13
+    CHAR     shift, and go to state 14
+    INTEGER  shift, and go to state 15
+    REAL     shift, and go to state 16
+    INT      shift, and go to state 17
+    FLOAT    shift, and go to state 18
+    STRING   shift, and go to state 19
+    CHAR_T   shift, and go to state 20
+    ARRAY    shift, and go to state 21
+
+    dataType   go to state 22
+    arrayType  go to state 23
+
+
+State 9
+
+   16 compoundStmt: BEGIN_ • statements END
+
+    BEGIN_  shift, and go to state 9
+    IF      shift, and go to state 24
+    WHILE   shift, and go to state 25
+    READ    shift, and go to state 26
+    WRITE   shift, and go to state 27
+    ID      shift, and go to state 28
+
+    compoundStmt    go to state 29
+    statements      go to state 30
+    statementList   go to state 31
+    statement       go to state 32
+    simpleStmt      go to state 33
+    assignmentStmt  go to state 34
+    ioStmt          go to state 35
+    structuredStmt  go to state 36
+    ifStmt          go to state 37
+    whileStmt       go to state 38
+
+
+State 10
+
+    1 program: VAR declList compoundStmt • DOT
+
+    DOT  shift, and go to state 39
+
+
+State 11
+
+    4 declarationList: declarationList declaration • SEMI
+
+    SEMI  shift, and go to state 40
+
+
+State 12
+
+    3 declarationList: declaration SEMI •
+
+    $default  reduce using rule 3 (declarationList)
+
+
+State 13
+
+    7 dataType: BOOLEAN •
+
+    $default  reduce using rule 7 (dataType)
+
+
+State 14
+
+    8 dataType: CHAR •
+
+    $default  reduce using rule 8 (dataType)
+
+
+State 15
+
+    9 dataType: INTEGER •
+
+    $default  reduce using rule 9 (dataType)
+
+
+State 16
+
+   10 dataType: REAL •
+
+    $default  reduce using rule 10 (dataType)
+
+
+State 17
+
+   11 dataType: INT •
+
+    $default  reduce using rule 11 (dataType)
+
+
+State 18
+
+   12 dataType: FLOAT •
+
+    $default  reduce using rule 12 (dataType)
+
+
+State 19
+
+   13 dataType: STRING •
+
+    $default  reduce using rule 13 (dataType)
+
+
+State 20
+
+   14 dataType: CHAR_T •
+
+    $default  reduce using rule 14 (dataType)
+
+
+State 21
+
+   15 arrayType: ARRAY • LBRACK INT_LITERAL RBRACK OF dataType
+
+    LBRACK  shift, and go to state 41
+
+
+State 22
+
+    5 declaration: ID COLON dataType •
+
+    $default  reduce using rule 5 (declaration)
+
+
+State 23
+
+    6 declaration: ID COLON arrayType •
+
+    $default  reduce using rule 6 (declaration)
+
+
+State 24
+
+   30 ifStmt: IF • condition THEN statement
+   31       | IF • condition THEN statement ELSE statement
+
+    LPAREN  shift, and go to state 42
+    NOT     shift, and go to state 43
+
+    condition     go to state 44
+    orCondition   go to state 45
+    andCondition  go to state 46
+    notCondition  go to state 47
+
+
+State 25
+
+   32 whileStmt: WHILE • condition DO statement
+
+    LPAREN  shift, and go to state 42
+    NOT     shift, and go to state 43
+
+    condition     go to state 48
+    orCondition   go to state 45
+    andCondition  go to state 46
+    notCondition  go to state 47
+
+
+State 26
+
+   25 ioStmt: READ • LPAREN ID RPAREN
+
+    LPAREN  shift, and go to state 49
+
+
+State 27
+
+   26 ioStmt: WRITE • LPAREN ID RPAREN
+
+    LPAREN  shift, and go to state 50
+
+
+State 28
+
+   24 assignmentStmt: ID • ASSIGN expr
+
+    ASSIGN  shift, and go to state 51
+
+
+State 29
+
+   27 structuredStmt: compoundStmt •
+
+    $default  reduce using rule 27 (structuredStmt)
+
+
+State 30
+
+   16 compoundStmt: BEGIN_ statements • END
+
+    END  shift, and go to state 52
+
+
+State 31
+
+   17 statements: statementList •
+   19 statementList: statementList • SEMI statement
+
+    SEMI  shift, and go to state 53
+
+    $default  reduce using rule 17 (statements)
+
+
+State 32
+
+   18 statementList: statement •
+
+    $default  reduce using rule 18 (statementList)
+
+
+State 33
+
+   20 statement: simpleStmt •
+
+    $default  reduce using rule 20 (statement)
+
+
+State 34
+
+   22 simpleStmt: assignmentStmt •
+
+    $default  reduce using rule 22 (simpleStmt)
+
+
+State 35
+
+   23 simpleStmt: ioStmt •
+
+    $default  reduce using rule 23 (simpleStmt)
+
+
+State 36
+
+   21 statement: structuredStmt •
+
+    $default  reduce using rule 21 (statement)
+
+
+State 37
+
+   28 structuredStmt: ifStmt •
+
+    $default  reduce using rule 28 (structuredStmt)
+
+
+State 38
+
+   29 structuredStmt: whileStmt •
+
+    $default  reduce using rule 29 (structuredStmt)
+
+
+State 39
+
+    1 program: VAR declList compoundStmt DOT •
+
+    $default  reduce using rule 1 (program)
+
+
+State 40
+
+    4 declarationList: declarationList declaration SEMI •
+
+    $default  reduce using rule 4 (declarationList)
+
+
+State 41
+
+   15 arrayType: ARRAY LBRACK • INT_LITERAL RBRACK OF dataType
+
+    INT_LITERAL  shift, and go to state 54
+
+
+State 42
+
+   39 notCondition: LPAREN • expr relOp expr RPAREN
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    expr    go to state 61
+    term    go to state 62
+    factor  go to state 63
+
+
+State 43
+
+   38 notCondition: NOT • notCondition
+
+    LPAREN  shift, and go to state 42
+    NOT     shift, and go to state 43
+
+    notCondition  go to state 64
+
+
+State 44
+
+   30 ifStmt: IF condition • THEN statement
+   31       | IF condition • THEN statement ELSE statement
+
+    THEN  shift, and go to state 65
+
+
+State 45
+
+   33 condition: orCondition •
+
+    $default  reduce using rule 33 (condition)
+
+
+State 46
+
+   34 orCondition: andCondition •
+   35            | andCondition • OR andCondition
+
+    OR  shift, and go to state 66
+
+    $default  reduce using rule 34 (orCondition)
+
+
+State 47
+
+   36 andCondition: notCondition •
+   37             | notCondition • AND notCondition
+
+    AND  shift, and go to state 67
+
+    $default  reduce using rule 36 (andCondition)
+
+
+State 48
+
+   32 whileStmt: WHILE condition • DO statement
+
+    DO  shift, and go to state 68
+
+
+State 49
+
+   25 ioStmt: READ LPAREN • ID RPAREN
+
+    ID  shift, and go to state 69
+
+
+State 50
+
+   26 ioStmt: WRITE LPAREN • ID RPAREN
+
+    ID  shift, and go to state 70
+
+
+State 51
+
+   24 assignmentStmt: ID ASSIGN • expr
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    expr    go to state 71
+    term    go to state 62
+    factor  go to state 63
+
+
+State 52
+
+   16 compoundStmt: BEGIN_ statements END •
+
+    $default  reduce using rule 16 (compoundStmt)
+
+
+State 53
+
+   19 statementList: statementList SEMI • statement
+
+    BEGIN_  shift, and go to state 9
+    IF      shift, and go to state 24
+    WHILE   shift, and go to state 25
+    READ    shift, and go to state 26
+    WRITE   shift, and go to state 27
+    ID      shift, and go to state 28
+
+    compoundStmt    go to state 29
+    statement       go to state 72
+    simpleStmt      go to state 33
+    assignmentStmt  go to state 34
+    ioStmt          go to state 35
+    structuredStmt  go to state 36
+    ifStmt          go to state 37
+    whileStmt       go to state 38
+
+
+State 54
+
+   15 arrayType: ARRAY LBRACK INT_LITERAL • RBRACK OF dataType
+
+    RBRACK  shift, and go to state 73
+
+
+State 55
+
+   58 factor: LPAREN • expr RPAREN
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    expr    go to state 74
+    term    go to state 62
+    factor  go to state 63
+
+
+State 56
+
+   53 factor: ID •
+
+    $default  reduce using rule 53 (factor)
+
+
+State 57
+
+   54 factor: INT_LITERAL •
+
+    $default  reduce using rule 54 (factor)
+
+
+State 58
+
+   55 factor: FLOAT_LITERAL •
+
+    $default  reduce using rule 55 (factor)
+
+
+State 59
+
+   56 factor: STRING_LITERAL •
+
+    $default  reduce using rule 56 (factor)
+
+
+State 60
+
+   57 factor: CHAR_LITERAL •
+
+    $default  reduce using rule 57 (factor)
+
+
+State 61
+
+   39 notCondition: LPAREN expr • relOp expr RPAREN
+
+    LT  shift, and go to state 75
+    LE  shift, and go to state 76
+    EQ  shift, and go to state 77
+    NE  shift, and go to state 78
+    GE  shift, and go to state 79
+    GT  shift, and go to state 80
+
+    relOp  go to state 81
+
+
+State 62
+
+   46 expr: term •
+   47     | term • PLUS term
+   48     | term • MINUS term
+
+    PLUS   shift, and go to state 82
+    MINUS  shift, and go to state 83
+
+    $default  reduce using rule 46 (expr)
+
+
+State 63
+
+   49 term: factor •
+   50     | factor • MUL factor
+   51     | factor • DIV factor
+   52     | factor • MOD factor
+
+    MUL  shift, and go to state 84
+    DIV  shift, and go to state 85
+    MOD  shift, and go to state 86
+
+    $default  reduce using rule 49 (term)
+
+
+State 64
+
+   38 notCondition: NOT notCondition •
+
+    $default  reduce using rule 38 (notCondition)
+
+
+State 65
+
+   30 ifStmt: IF condition THEN • statement
+   31       | IF condition THEN • statement ELSE statement
+
+    BEGIN_  shift, and go to state 9
+    IF      shift, and go to state 24
+    WHILE   shift, and go to state 25
+    READ    shift, and go to state 26
+    WRITE   shift, and go to state 27
+    ID      shift, and go to state 28
+
+    compoundStmt    go to state 29
+    statement       go to state 87
+    simpleStmt      go to state 33
+    assignmentStmt  go to state 34
+    ioStmt          go to state 35
+    structuredStmt  go to state 36
+    ifStmt          go to state 37
+    whileStmt       go to state 38
+
+
+State 66
+
+   35 orCondition: andCondition OR • andCondition
+
+    LPAREN  shift, and go to state 42
+    NOT     shift, and go to state 43
+
+    andCondition  go to state 88
+    notCondition  go to state 47
+
+
+State 67
+
+   37 andCondition: notCondition AND • notCondition
+
+    LPAREN  shift, and go to state 42
+    NOT     shift, and go to state 43
+
+    notCondition  go to state 89
+
+
+State 68
+
+   32 whileStmt: WHILE condition DO • statement
+
+    BEGIN_  shift, and go to state 9
+    IF      shift, and go to state 24
+    WHILE   shift, and go to state 25
+    READ    shift, and go to state 26
+    WRITE   shift, and go to state 27
+    ID      shift, and go to state 28
+
+    compoundStmt    go to state 29
+    statement       go to state 90
+    simpleStmt      go to state 33
+    assignmentStmt  go to state 34
+    ioStmt          go to state 35
+    structuredStmt  go to state 36
+    ifStmt          go to state 37
+    whileStmt       go to state 38
+
+
+State 69
+
+   25 ioStmt: READ LPAREN ID • RPAREN
+
+    RPAREN  shift, and go to state 91
+
+
+State 70
+
+   26 ioStmt: WRITE LPAREN ID • RPAREN
+
+    RPAREN  shift, and go to state 92
+
+
+State 71
+
+   24 assignmentStmt: ID ASSIGN expr •
+
+    $default  reduce using rule 24 (assignmentStmt)
+
+
+State 72
+
+   19 statementList: statementList SEMI statement •
+
+    $default  reduce using rule 19 (statementList)
+
+
+State 73
+
+   15 arrayType: ARRAY LBRACK INT_LITERAL RBRACK • OF dataType
+
+    OF  shift, and go to state 93
+
+
+State 74
+
+   58 factor: LPAREN expr • RPAREN
+
+    RPAREN  shift, and go to state 94
+
+
+State 75
+
+   40 relOp: LT •
+
+    $default  reduce using rule 40 (relOp)
+
+
+State 76
+
+   41 relOp: LE •
+
+    $default  reduce using rule 41 (relOp)
+
+
+State 77
+
+   42 relOp: EQ •
+
+    $default  reduce using rule 42 (relOp)
+
+
+State 78
+
+   43 relOp: NE •
+
+    $default  reduce using rule 43 (relOp)
+
+
+State 79
+
+   44 relOp: GE •
+
+    $default  reduce using rule 44 (relOp)
+
+
+State 80
+
+   45 relOp: GT •
+
+    $default  reduce using rule 45 (relOp)
+
+
+State 81
+
+   39 notCondition: LPAREN expr relOp • expr RPAREN
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    expr    go to state 95
+    term    go to state 62
+    factor  go to state 63
+
+
+State 82
+
+   47 expr: term PLUS • term
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    term    go to state 96
+    factor  go to state 63
+
+
+State 83
+
+   48 expr: term MINUS • term
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    term    go to state 97
+    factor  go to state 63
+
+
+State 84
+
+   50 term: factor MUL • factor
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    factor  go to state 98
+
+
+State 85
+
+   51 term: factor DIV • factor
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    factor  go to state 99
+
+
+State 86
+
+   52 term: factor MOD • factor
+
+    LPAREN          shift, and go to state 55
+    ID              shift, and go to state 56
+    INT_LITERAL     shift, and go to state 57
+    FLOAT_LITERAL   shift, and go to state 58
+    STRING_LITERAL  shift, and go to state 59
+    CHAR_LITERAL    shift, and go to state 60
+
+    factor  go to state 100
+
+
+State 87
+
+   30 ifStmt: IF condition THEN statement •
+   31       | IF condition THEN statement • ELSE statement
+
+    ELSE  shift, and go to state 101
+
+    $default  reduce using rule 30 (ifStmt)
+
+
+State 88
+
+   35 orCondition: andCondition OR andCondition •
+
+    $default  reduce using rule 35 (orCondition)
+
+
+State 89
+
+   37 andCondition: notCondition AND notCondition •
+
+    $default  reduce using rule 37 (andCondition)
+
+
+State 90
+
+   32 whileStmt: WHILE condition DO statement •
+
+    $default  reduce using rule 32 (whileStmt)
+
+
+State 91
+
+   25 ioStmt: READ LPAREN ID RPAREN •
+
+    $default  reduce using rule 25 (ioStmt)
+
+
+State 92
+
+   26 ioStmt: WRITE LPAREN ID RPAREN •
+
+    $default  reduce using rule 26 (ioStmt)
+
+
+State 93
+
+   15 arrayType: ARRAY LBRACK INT_LITERAL RBRACK OF • dataType
+
+    BOOLEAN  shift, and go to state 13
+    CHAR     shift, and go to state 14
+    INTEGER  shift, and go to state 15
+    REAL     shift, and go to state 16
+    INT      shift, and go to state 17
+    FLOAT    shift, and go to state 18
+    STRING   shift, and go to state 19
+    CHAR_T   shift, and go to state 20
+
+    dataType  go to state 102
+
+
+State 94
+
+   58 factor: LPAREN expr RPAREN •
+
+    $default  reduce using rule 58 (factor)
+
+
+State 95
+
+   39 notCondition: LPAREN expr relOp expr • RPAREN
+
+    RPAREN  shift, and go to state 103
+
+
+State 96
+
+   47 expr: term PLUS term •
+
+    $default  reduce using rule 47 (expr)
+
+
+State 97
+
+   48 expr: term MINUS term •
+
+    $default  reduce using rule 48 (expr)
+
+
+State 98
+
+   50 term: factor MUL factor •
+
+    $default  reduce using rule 50 (term)
+
+
+State 99
+
+   51 term: factor DIV factor •
+
+    $default  reduce using rule 51 (term)
+
+
+State 100
+
+   52 term: factor MOD factor •
+
+    $default  reduce using rule 52 (term)
+
+
+State 101
+
+   31 ifStmt: IF condition THEN statement ELSE • statement
+
+    BEGIN_  shift, and go to state 9
+    IF      shift, and go to state 24
+    WHILE   shift, and go to state 25
+    READ    shift, and go to state 26
+    WRITE   shift, and go to state 27
+    ID      shift, and go to state 28
+
+    compoundStmt    go to state 29
+    statement       go to state 104
+    simpleStmt      go to state 33
+    assignmentStmt  go to state 34
+    ioStmt          go to state 35
+    structuredStmt  go to state 36
+    ifStmt          go to state 37
+    whileStmt       go to state 38
+
+
+State 102
+
+   15 arrayType: ARRAY LBRACK INT_LITERAL RBRACK OF dataType •
+
+    $default  reduce using rule 15 (arrayType)
+
+
+State 103
+
+   39 notCondition: LPAREN expr relOp expr RPAREN •
+
+    $default  reduce using rule 39 (notCondition)
+
+
+State 104
+
+   31 ifStmt: IF condition THEN statement ELSE statement •
+
+    $default  reduce using rule 31 (ifStmt)
