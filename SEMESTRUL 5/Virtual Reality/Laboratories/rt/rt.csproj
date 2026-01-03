@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace>rt</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Win32.SystemEvents" Version="8.0.0-rc.2.23479.6" />
+      <PackageReference Include="SkiaSharp" Version="3.119.1" />
+    </ItemGroup>
+
+</Project>
